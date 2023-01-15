@@ -78,15 +78,10 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-*.elf
-*.o
 *.bin
 *.objdump
 *.srec
 *.list
 *.diss
-*.so
-*.map
-build/
 cmake-build-debug/
-.idea/
+/MDK-ARM/DanGPS.uvguix.geos2
