@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "E:\OneDrivePersonal\OneDrive\SS\EasyEda\SnowDan\firmware\DanGPS\EWARM\settings\DanGPS.DanGPS.general.xcl" --backend -f "E:\OneDrivePersonal\OneDrive\SS\EasyEda\SnowDan\firmware\DanGPS\EWARM\settings\DanGPS.DanGPS.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "E:\OneDrivePersonal\OneDrive\SS\DanGPS\EWARM\settings\DanGPS.DanGPS.general.xcl" --backend -f "E:\OneDrivePersonal\OneDrive\SS\DanGPS\EWARM\settings\DanGPS.DanGPS.driver.xcl" 
 }
 else
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "E:\OneDrivePersonal\OneDrive\SS\EasyEda\SnowDan\firmware\DanGPS\EWARM\settings\DanGPS.DanGPS.general.xcl" --debug_file=$debugfile --backend -f "E:\OneDrivePersonal\OneDrive\SS\EasyEda\SnowDan\firmware\DanGPS\EWARM\settings\DanGPS.DanGPS.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "E:\OneDrivePersonal\OneDrive\SS\DanGPS\EWARM\settings\DanGPS.DanGPS.general.xcl" --debug_file=$debugfile --backend -f "E:\OneDrivePersonal\OneDrive\SS\DanGPS\EWARM\settings\DanGPS.DanGPS.driver.xcl" 
 }

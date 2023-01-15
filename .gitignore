@@ -85,3 +85,4 @@ dkms.conf
 *.diss
 cmake-build-debug/
 /MDK-ARM/DanGPS.uvguix.geos2
+/EWARM/DanGPS/

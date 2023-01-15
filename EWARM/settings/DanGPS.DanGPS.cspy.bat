@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "E:\OneDrivePersonal\OneDrive\SS\EasyEda\SnowDan\firmware\DanGPS\EWARM\settings\DanGPS.DanGPS.general.xcl" --backend -f "E:\OneDrivePersonal\OneDrive\SS\EasyEda\SnowDan\firmware\DanGPS\EWARM\settings\DanGPS.DanGPS.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "E:\OneDrivePersonal\OneDrive\SS\DanGPS\EWARM\settings\DanGPS.DanGPS.general.xcl" --backend -f "E:\OneDrivePersonal\OneDrive\SS\DanGPS\EWARM\settings\DanGPS.DanGPS.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "E:\OneDrivePersonal\OneDrive\SS\EasyEda\SnowDan\firmware\DanGPS\EWARM\settings\DanGPS.DanGPS.general.xcl" "--debug_file=%~1" --backend -f "E:\OneDrivePersonal\OneDrive\SS\EasyEda\SnowDan\firmware\DanGPS\EWARM\settings\DanGPS.DanGPS.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "E:\OneDrivePersonal\OneDrive\SS\DanGPS\EWARM\settings\DanGPS.DanGPS.general.xcl" "--debug_file=%~1" --backend -f "E:\OneDrivePersonal\OneDrive\SS\DanGPS\EWARM\settings\DanGPS.DanGPS.driver.xcl" 
 
 @echo off 
 :end
