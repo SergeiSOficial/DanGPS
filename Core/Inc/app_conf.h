@@ -41,37 +41,14 @@
 /**
  * Define Advertising parameters
  */
-#define CFG_ADV_BD_ADDRESS                (0x000000000000)
-
-/**
- * Define BD_ADDR type: define proper address. Can only be GAP_PUBLIC_ADDR (0x00) or GAP_STATIC_RANDOM_ADDR (0x01)
- */
-#define CFG_IDENTITY_ADDRESS              GAP_PUBLIC_ADDR
-
-/**
- * Define privacy: PRIVACY_DISABLED or PRIVACY_ENABLED
- */
-#define CFG_PRIVACY                       PRIVACY_DISABLED
-
-/**
- * Define BLE Address Type
- * Bluetooth address types defined in ble_legacy.h
- * if CFG_PRIVACY equals PRIVACY_DISABLED, CFG_BLE_ADDRESS_TYPE has 2 allowed values: GAP_PUBLIC_ADDR or GAP_STATIC_RANDOM_ADDR
- * if CFG_PRIVACY equals PRIVACY_ENABLED, CFG_BLE_ADDRESS_TYPE has 2 allowed values: GAP_RESOLVABLE_PRIVATE_ADDR or GAP_NON_RESOLVABLE_PRIVATE_ADDR
- */
-#define CFG_BLE_ADDRESS_TYPE              GAP_PUBLIC_ADDR
-
-#define CFG_FAST_CONN_ADV_INTERVAL_MIN    (0x80)      /**< 80ms */
-#define CFG_FAST_CONN_ADV_INTERVAL_MAX    (0xA0)      /**< 100ms */
-#define CFG_LP_CONN_ADV_INTERVAL_MIN      (0x640)     /**< 1s */
-#define CFG_LP_CONN_ADV_INTERVAL_MAX      (0xFA0)     /**< 2.5s */
+#define CFG_ADV_BD_ADDRESS                (0x7257acd87a6c)
 
 /**
  * Define IO Authentication
  */
 #define CFG_BONDING_MODE                 (1)
 #define CFG_FIXED_PIN                    (111111)
-#define CFG_USED_FIXED_PIN               (0)
+#define CFG_USED_FIXED_PIN               (1)
 #define CFG_ENCRYPTION_KEY_SIZE_MAX      (16)
 #define CFG_ENCRYPTION_KEY_SIZE_MIN      (8)
 
@@ -84,7 +61,7 @@
 #define CFG_IO_CAPABILITY_NO_INPUT_NO_OUTPUT  (0x03)
 #define CFG_IO_CAPABILITY_KEYBOARD_DISPLAY    (0x04)
 
-#define CFG_IO_CAPABILITY                     CFG_IO_CAPABILITY_DISPLAY_YES_NO
+#define CFG_IO_CAPABILITY                     CFG_IO_CAPABILITY_DISPLAY_ONLY
 
 /**
  * Define MITM modes
@@ -124,17 +101,6 @@
 #define CFG_GAP_DEVICE_NAME_LENGTH      (8)
 
 /**
- * Define PHY
- */
-#define ALL_PHYS_PREFERENCE                             0x00
-#define RX_2M_PREFERRED                                 0x02
-#define TX_2M_PREFERRED                                 0x02
-#define TX_1M                                           0x01
-#define TX_2M                                           0x02
-#define RX_1M                                           0x01
-#define RX_2M                                           0x02
-
-/**
 *   Identity root key used to derive LTK and CSRK
 */
 #define CFG_BLE_IRK     {0x12, 0x34, 0x56, 0x78, 0x9A, 0xBC, 0xDE, 0xF0, 0x12, 0x34, 0x56, 0x78, 0x9A, 0xBC, 0xDE, 0xF0}
@@ -151,42 +117,19 @@
 /**< specific parameters */
 /*****************************************************/
 
-#define P2P_SERVER1    1    /*1 = Device is Peripherique*/
-#define P2P_SERVER2    0
-#define P2P_SERVER3    0
-#define P2P_SERVER4    0
-#define P2P_SERVER5    0
-#define P2P_SERVER6    0
-
+#define CFG_MAX_CONNECTION                      1
+#define UUID_128BIT_FORMAT                      1
 #define CFG_DEV_ID_P2P_SERVER1                  (0x83)
-#define CFG_DEV_ID_P2P_SERVER2                  (0x84)
-#define CFG_DEV_ID_P2P_SERVER3                  (0x87)
-#define CFG_DEV_ID_P2P_SERVER4                  (0x88)
-#define CFG_DEV_ID_P2P_SERVER5                  (0x89)
-#define CFG_DEV_ID_P2P_SERVER6                  (0x8A)
-#define CFG_DEV_ID_P2P_ROUTER                   (0x85)
-
-#define  RADIO_ACTIVITY_EVENT   1          /* 1 for OOB Demo */
-
-/**
-* AD Element - Group B Feature
-*/
-/* LSB - First Byte */
-#define CFG_FEATURE_THREAD_SWITCH               (0x40)
-
-/* LSB - Second Byte */
-#define CFG_FEATURE_OTA_REBOOT                  (0x20)
-
 #define CONN_L(x) ((int)((x)/0.625f))
 #define CONN_P(x) ((int)((x)/1.25f))
-
-  /*  L2CAP Connection Update request parameters used for test only with smart Phone */
-#define L2CAP_REQUEST_NEW_CONN_PARAM             0
-
-#define L2CAP_INTERVAL_MIN              CONN_P(1000) /* 1s */
-#define L2CAP_INTERVAL_MAX              CONN_P(1000) /* 1s */
-#define L2CAP_SLAVE_LATENCY             0x0000
-#define L2CAP_TIMEOUT_MULTIPLIER        0x1F4
+#define SCAN_P (0x320)
+#define SCAN_L (0x320)
+#define CONN_P1   (CONN_P(50))
+#define CONN_P2   (CONN_P(100))
+#define SUPERV_TIMEOUT (0x1F4)
+#define CONN_L1   (CONN_L(10))
+#define CONN_L2   (CONN_L(10))
+#define OOB_DEMO                                1   /* Out Of Box Demo */
 
 /* USER CODE BEGIN Specific_Parameters */
 
@@ -352,7 +295,7 @@
 
 #define CFG_BLE_MIN_TX_POWER            (0)
 
-#define CFG_BLE_MAX_TX_POWER            (0)
+#define CFG_BLE_MAX_TX_POWER            (20)
 
 /**
  * BLE Rx model configuration flags to be configured with:
@@ -470,7 +413,7 @@
  *  When set to 1, the low power mode is enable
  *  When set to 0, the device stays in RUN mode
  */
-#define CFG_LPM_SUPPORTED    0
+#define CFG_LPM_SUPPORTED    1
 
  /**
  * This shall be set to 1 when standby is supported while the wireless stack on CPU2 is running
@@ -671,10 +614,10 @@ typedef enum
 /**< Add in that list all tasks that may send a ACI/HCI command */
 typedef enum
 {
-  CFG_TASK_ADV_CANCEL_ID,
-#if (L2CAP_REQUEST_NEW_CONN_PARAM != 0 )
-  CFG_TASK_CONN_UPDATE_REG_ID,
-#endif
+  CFG_TASK_START_SCAN_ID,
+  CFG_TASK_CONN_DEV_1_ID,
+  CFG_TASK_SEARCH_SERVICE_ID,
+  CFG_TASK_CONN_UPDATE_ID,
   CFG_TASK_HCI_ASYNCH_EVT_ID,
   /* USER CODE BEGIN CFG_Task_Id_With_HCI_Cmd_t */
 
