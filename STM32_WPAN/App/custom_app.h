@@ -1,9 +1,9 @@
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file    App/p2p_client_app.h
+  * @file    App/custom_app.h
   * @author  MCD Application Team
-  * @brief   Header for p2p_client_app.c module
+  * @brief   Header for custom_app.c module
   ******************************************************************************
   * @attention
   *
@@ -19,8 +19,8 @@
 /* USER CODE END Header */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef P2P_APPLICATION_H
-#define P2P_APPLICATION_H
+#ifndef CUSTOM_APP_H
+#define CUSTOM_APP_H
 
 #ifdef __cplusplus
 extern "C" {
@@ -36,16 +36,15 @@ extern "C" {
 /* Exported types ------------------------------------------------------------*/
 typedef enum
 {
-  PEER_CONN_HANDLE_EVT,
-  PEER_DISCON_HANDLE_EVT,
-} P2PC_APP_Opcode_Notification_evt_t;
+  CUSTOM_CONN_HANDLE_EVT,
+  CUSTOM_DISCON_HANDLE_EVT,
+} Custom_App_Opcode_Notification_evt_t;
 
 typedef struct
 {
-  P2PC_APP_Opcode_Notification_evt_t          P2P_Evt_Opcode;
-  uint16_t                                    ConnectionHandle;
-
-}P2PC_APP_ConnHandle_Not_evt_t;
+  Custom_App_Opcode_Notification_evt_t     Custom_Evt_Opcode;
+  uint16_t                                 ConnectionHandle;
+} Custom_App_ConnHandle_Not_evt_t;
 /* USER CODE BEGIN ET */
 
 /* USER CODE END ET */
@@ -66,15 +65,14 @@ typedef struct
 /* USER CODE END EM */
 
 /* Exported functions ---------------------------------------------*/
-void P2PC_APP_Init( void );
-void P2PC_APP_Notification( P2PC_APP_ConnHandle_Not_evt_t *pNotification );
-uint8_t P2P_Client_APP_Get_State( void );
-/* USER CODE BEGIN EFP */
+void Custom_APP_Init(void);
+void Custom_APP_Notification(Custom_App_ConnHandle_Not_evt_t *pNotification);
+/* USER CODE BEGIN EF */
 
-/* USER CODE END EFP */
+/* USER CODE END EF */
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif /*P2P_APPLICATION_H */
+#endif /* CUSTOM_APP_H */

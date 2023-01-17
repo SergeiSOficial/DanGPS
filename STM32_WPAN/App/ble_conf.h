@@ -36,13 +36,13 @@
  * This setting shall be set to '1' if the device needs to support the Peripheral Role
  * In the MS configuration, both BLE_CFG_PERIPHERAL and BLE_CFG_CENTRAL shall be set to '1'
  */
-#define BLE_CFG_PERIPHERAL                                                     0
+#define BLE_CFG_PERIPHERAL                                                     1
 
 /**
  * This setting shall be set to '1' if the device needs to support the Central Role
  * In the MS configuration, both BLE_CFG_PERIPHERAL and BLE_CFG_CENTRAL shall be set to '1'
  */
-#define BLE_CFG_CENTRAL                                                        1
+#define BLE_CFG_CENTRAL                                                        0
 
 /**
  * There is one handler per service enabled
@@ -53,7 +53,7 @@
  */
 #define BLE_CFG_SVC_MAX_NBR_CB                                                 7
 
-#define BLE_CFG_CLT_MAX_NBR_CB                                                 1
+#define BLE_CFG_CLT_MAX_NBR_CB                                                 0
 
 /******************************************************************************
  * GAP Service - Appearance
@@ -62,5 +62,10 @@
 #define BLE_CFG_UNKNOWN_APPEARANCE                  (0)
 #define BLE_CFG_HR_SENSOR_APPEARANCE                (832)
 #define BLE_CFG_GAP_APPEARANCE                      (BLE_CFG_UNKNOWN_APPEARANCE)
+
+/******************************************************************************
+ * Over The Air Feature (OTA) - STM Proprietary
+ ******************************************************************************/
+#define BLE_CFG_OTA_REBOOT_CHAR         0/**< REBOOT OTA MODE CHARACTERISTIC */
 
 #endif /*BLE_CONF_H */
