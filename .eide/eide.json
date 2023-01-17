@@ -1,0 +1,608 @@
+{
+  "name": "DanGPS",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    ".eide/deps"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "Application",
+        "files": [],
+        "folders": [
+          {
+            "name": "MDK-ARM",
+            "files": [
+              {
+                "path": "MDK-ARM/startup_stm32wb10xx_cm4.s"
+              },
+              {
+                "path": "MDK-ARM/armlib_lock_glue.c"
+              }
+            ],
+            "folders": []
+          },
+          {
+            "name": "User",
+            "files": [],
+            "folders": [
+              {
+                "name": "Core",
+                "files": [
+                  {
+                    "path": "Core/Src/main.c"
+                  },
+                  {
+                    "path": "Core/Src/gpio.c"
+                  },
+                  {
+                    "path": "Core/Src/adc.c"
+                  },
+                  {
+                    "path": "Core/Src/aes.c"
+                  },
+                  {
+                    "path": "Core/Src/crc.c"
+                  },
+                  {
+                    "path": "Core/Src/flash_driver.c"
+                  },
+                  {
+                    "path": "Core/Src/i2c.c"
+                  },
+                  {
+                    "path": "Core/Src/ipcc.c"
+                  },
+                  {
+                    "path": "Core/Src/iwdg.c"
+                  },
+                  {
+                    "path": "Core/Src/lptim.c"
+                  },
+                  {
+                    "path": "Core/Src/pka.c"
+                  },
+                  {
+                    "path": "Core/Src/rf.c"
+                  },
+                  {
+                    "path": "Core/Src/rng.c"
+                  },
+                  {
+                    "path": "Core/Src/rtc.c"
+                  },
+                  {
+                    "path": "Core/Src/spi.c"
+                  },
+                  {
+                    "path": "Core/Src/app_entry.c"
+                  },
+                  {
+                    "path": "Core/Src/app_debug.c"
+                  },
+                  {
+                    "path": "Core/Src/hw_timerserver.c"
+                  },
+                  {
+                    "path": "Core/Src/stm32_lpm_if.c"
+                  },
+                  {
+                    "path": "Core/Src/standby.c"
+                  },
+                  {
+                    "path": "Core/Src/tsc.c"
+                  },
+                  {
+                    "path": "Core/Src/usart.c"
+                  },
+                  {
+                    "path": "Core/Src/stm32wbxx_it.c"
+                  },
+                  {
+                    "path": "Core/Src/stm32wbxx_hal_msp.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32_WPAN",
+                "files": [],
+                "folders": [
+                  {
+                    "name": "App",
+                    "files": [
+                      {
+                        "path": "STM32_WPAN/App/app_ble.c"
+                      },
+                      {
+                        "path": "STM32_WPAN/App/p2p_server_app.c"
+                      },
+                      {
+                        "path": "STM32_WPAN/App/custom_stm.c"
+                      },
+                      {
+                        "path": "STM32_WPAN/App/custom_app.c"
+                      },
+                      {
+                        "path": "STM32_WPAN/App/otas_app.c"
+                      }
+                    ],
+                    "folders": []
+                  },
+                  {
+                    "name": "Target",
+                    "files": [
+                      {
+                        "path": "STM32_WPAN/Target/hw_ipcc.c"
+                      }
+                    ],
+                    "folders": []
+                  }
+                ]
+              },
+              {
+                "name": "TOUCHSENSING",
+                "files": [],
+                "folders": [
+                  {
+                    "name": "App",
+                    "files": [
+                      {
+                        "path": "TOUCHSENSING/App/touchsensing.c"
+                      },
+                      {
+                        "path": "TOUCHSENSING/App/tsl_user.c"
+                      },
+                      {
+                        "path": "TOUCHSENSING/App/stmCriticalSection.c"
+                      }
+                    ],
+                    "folders": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Drivers",
+        "files": [],
+        "folders": [
+          {
+            "name": "STM32WBxx_HAL_Driver",
+            "files": [
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_adc.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_adc_ex.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_adc.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_rcc.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc_ex.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash_ex.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_hsem.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma_ex.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr_ex.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_cortex.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_exti.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_cryp.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_cryp_ex.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_crc.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_crc_ex.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_i2c.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_i2c_ex.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_ipcc.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_iwdg.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_lptim.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pka.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rng.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc_ex.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_spi.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_spi_ex.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim_ex.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tsc.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart.c"
+              },
+              {
+                "path": "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart_ex.c"
+              }
+            ],
+            "folders": []
+          },
+          {
+            "name": "CMSIS",
+            "files": [
+              {
+                "path": "Core/Src/system_stm32wbxx.c"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      },
+      {
+        "name": "Middlewares",
+        "files": [],
+        "folders": [
+          {
+            "name": "STM32_WPAN",
+            "files": [
+              {
+                "path": "Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl_mbox.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_WPAN/utilities/dbg_trace.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_WPAN/utilities/otp.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_WPAN/utilities/stm_list.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_WPAN/utilities/stm_queue.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_WPAN/ble/core/template/osal.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hal_aci.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_WPAN/ble/core/auto/ble_l2cap_aci.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_WPAN/ble/svc/Src/p2p_stm.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl_if.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl_if.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_WPAN/ble/svc/Src/svc_ctl.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_WPAN/ble/core/auto/ble_events.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_WPAN/ble/svc/Src/otas_stm.c"
+              }
+            ],
+            "folders": []
+          },
+          {
+            "name": "TouchSensing",
+            "files": [
+              {
+                "path": "Middlewares/ST/STM32_TouchSensing_Library/src/tsl.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_TouchSensing_Library/src/tsl_acq_tsc.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_TouchSensing_Library/src/tsl_globals.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_TouchSensing_Library/src/tsl_touchkey.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_TouchSensing_Library/src/tsl_acq.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_TouchSensing_Library/src/tsl_dxs.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_TouchSensing_Library/src/tsl_linrot.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_TouchSensing_Library/src/tsl_ecs.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_TouchSensing_Library/src/tsl_object.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_TouchSensing_Library/src/tsl_time.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_TouchSensing_Library/src/tsl_filter.c"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      },
+      {
+        "name": "Utilities",
+        "files": [
+          {
+            "path": "Utilities/lpm/tiny_lpm/stm32_lpm.c"
+          },
+          {
+            "path": "Utilities/sequencer/stm32_seq.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "::CMSIS",
+        "files": [],
+        "folders": []
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "c588b1884aad0e940b2891f6f6151bc6"
+  },
+  "targets": {
+    "DanGPS": {
+      "excludeList": [],
+      "toolchain": "AC6",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "single",
+        "scatterFilePath": "stm32wb10xx_flash_cm4.sct",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x3000"
+              },
+              "isChecked": true,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x20030000",
+                "size": "0x2800"
+              },
+              "isChecked": true,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x8000000",
+                "size": "0x28000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "Core/Inc",
+          "STM32_WPAN/App",
+          "TOUCHSENSING/App",
+          "Drivers/STM32WBxx_HAL_Driver/Inc",
+          "Drivers/STM32WBxx_HAL_Driver/Inc/Legacy",
+          "Utilities/lpm/tiny_lpm",
+          "Middlewares/ST/STM32_WPAN",
+          "Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread",
+          "Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl",
+          "Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci",
+          "Middlewares/ST/STM32_WPAN/utilities",
+          "Middlewares/ST/STM32_WPAN/ble/core",
+          "Middlewares/ST/STM32_WPAN/ble/core/auto",
+          "Middlewares/ST/STM32_WPAN/ble/core/template",
+          "Middlewares/ST/STM32_WPAN/ble/svc/Inc",
+          "Middlewares/ST/STM32_WPAN/ble/svc/Src",
+          "Middlewares/ST/STM32_TouchSensing_Library/inc",
+          "Drivers/CMSIS/Device/ST/STM32WBxx/Include",
+          "Utilities/sequencer",
+          "Middlewares/ST/STM32_WPAN/ble",
+          "Drivers/CMSIS/Include",
+          ".cmsis/include",
+          "MDK-ARM/RTE/_DanGPS",
+          ".eide/deps"
+        ],
+        "libList": [],
+        "sourceDirList": [],
+        "defineList": [
+          "USE_HAL_DRIVER",
+          "STM32WB10xx",
+          "STM32_THREAD_SAFE_STRATEGY=3"
+        ]
+      }
+    }
+  },
+  "version": "3.3"
+}
