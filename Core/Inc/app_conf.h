@@ -104,7 +104,7 @@
 #define CFG_SECURE_OPTIONAL                   (0x01)
 #define CFG_SECURE_MANDATORY                  (0x02)
 
-#define CFG_SC_SUPPORT                        CFG_SECURE_OPTIONAL
+#define CFG_SC_SUPPORT                        CFG_SECURE_MANDATORY
 
 /**
  * Define Keypress Notification Support
