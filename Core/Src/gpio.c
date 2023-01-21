@@ -32,14 +32,7 @@
 
 /* USER CODE END 1 */
 
-/** Configure pins as
-        * Analog
-        * Input
-        * Output
-        * EVENT_OUT
-        * EXTI
-        * Free pins are configured automatically as Analog (this feature is enabled through
-        * the Code Generation settings)
+/** Configure pins
      PA2   ------> RCC_LSCO
 */
 void MX_GPIO_Init(void)
@@ -53,6 +46,12 @@ void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOE_CLK_ENABLE();
+
+  /*Configure GPIO pins : PC14 PC15 */
+  GPIO_InitStruct.Pin = GPIO_PIN_14|GPIO_PIN_15;
+  GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pin : PH3 */
   GPIO_InitStruct.Pin = GPIO_PIN_3;

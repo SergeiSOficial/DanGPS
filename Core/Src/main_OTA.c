@@ -80,7 +80,11 @@ void PeriphCommonClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+  /**
+   * The OPTVERR flag is wrongly set at power on
+   * It shall be cleared before using any HAL_FLASH_xxx() api
+   */
+  __HAL_FLASH_CLEAR_FLAG(FLASH_FLAG_OPTVERR);
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -109,20 +113,8 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_ADC1_Init();
-  MX_CRC_Init();
-  MX_IWDG_Init();
   MX_RF_Init();
   MX_RTC_Init();
-  MX_SPI1_Init();
-  MX_TSC_Init();
-  MX_TOUCHSENSING_Init();
-  MX_I2C1_Init();
-  MX_LPTIM1_Init();
-  MX_USART1_UART_Init();
-  MX_AES2_Init();
-  MX_PKA_Init();
-  MX_RNG_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -136,7 +128,6 @@ int main(void)
   {
     /* USER CODE END WHILE */
     MX_APPE_Process();
-
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
