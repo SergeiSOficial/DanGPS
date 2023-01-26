@@ -2315,21 +2315,6 @@
                     </file>
                 </group>
             </group>
-            <group>
-                <name>TOUCHSENSING</name>
-                <group>
-                    <name>App</name>
-                    <file>
-                        <name>$PROJ_DIR$\..\TOUCHSENSING\App\stmCriticalSection.c</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\..\TOUCHSENSING\App\touchsensing.c</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\..\TOUCHSENSING\App\tsl_user.c</name>
-                    </file>
-                </group>
-            </group>
         </group>
     </group>
     <group>

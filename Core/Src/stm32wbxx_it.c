@@ -6,22 +6,20 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
-  * All rights reserved.</center></h2>
+  * Copyright (c) 2021 STMicroelectronics.
+  * All rights reserved.
   *
-  * This software component is licensed by ST under Ultimate Liberty license
-  * SLA0044, the "License"; You may not use this file except in compliance with
-  * the License. You may obtain a copy of the License at:
-  *                             www.st.com/SLA0044
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
   */
 /* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
-#include "main.h"
+#include "app_common.h"
 #include "stm32wbxx_it.h"
-#include "tsl_time.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 /* USER CODE END Includes */
@@ -57,166 +55,139 @@
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
-
 /* USER CODE BEGIN EV */
 
 /* USER CODE END EV */
 
+
 /******************************************************************************/
-/*           Cortex Processor Interruption and Exception Handlers          */
+/*            Cortex-M4 Processor Exceptions Handlers                         */
 /******************************************************************************/
+
 /**
-  * @brief This function handles Non maskable interrupt.
-  */
+ * @brief  This function handles NMI exception.
+ * @param  None
+ * @retval None
+ */
 void NMI_Handler(void)
 {
-  /* USER CODE BEGIN NonMaskableInt_IRQn 0 */
-
-  /* USER CODE END NonMaskableInt_IRQn 0 */
-  /* USER CODE BEGIN NonMaskableInt_IRQn 1 */
-  while (1)
-  {
-  }
-  /* USER CODE END NonMaskableInt_IRQn 1 */
 }
 
 /**
-  * @brief This function handles Hard fault interrupt.
-  */
+ * @brief  This function handles Hard Fault exception.
+ * @param  None
+ * @retval None
+ */
 void HardFault_Handler(void)
 {
-  /* USER CODE BEGIN HardFault_IRQn 0 */
-
-  /* USER CODE END HardFault_IRQn 0 */
+  /* Go to infinite loop when Hard Fault exception occurs */
   while (1)
   {
-    /* USER CODE BEGIN W1_HardFault_IRQn 0 */
-    /* USER CODE END W1_HardFault_IRQn 0 */
   }
 }
 
 /**
-  * @brief This function handles Memory management fault.
-  */
-void MemManage_Handler(void)
-{
-  /* USER CODE BEGIN MemoryManagement_IRQn 0 */
-
-  /* USER CODE END MemoryManagement_IRQn 0 */
-  while (1)
-  {
-    /* USER CODE BEGIN W1_MemoryManagement_IRQn 0 */
-    /* USER CODE END W1_MemoryManagement_IRQn 0 */
-  }
-}
-
-/**
-  * @brief This function handles Prefetch fault, memory access fault.
-  */
-void BusFault_Handler(void)
-{
-  /* USER CODE BEGIN BusFault_IRQn 0 */
-
-  /* USER CODE END BusFault_IRQn 0 */
-  while (1)
-  {
-    /* USER CODE BEGIN W1_BusFault_IRQn 0 */
-    /* USER CODE END W1_BusFault_IRQn 0 */
-  }
-}
-
-/**
-  * @brief This function handles Undefined instruction or illegal state.
-  */
-void UsageFault_Handler(void)
-{
-  /* USER CODE BEGIN UsageFault_IRQn 0 */
-
-  /* USER CODE END UsageFault_IRQn 0 */
-  while (1)
-  {
-    /* USER CODE BEGIN W1_UsageFault_IRQn 0 */
-    /* USER CODE END W1_UsageFault_IRQn 0 */
-  }
-}
-
-/**
-  * @brief This function handles System service call via SWI instruction.
-  */
+ * @brief  This function handles SVCall exception.
+ * @param  None
+ * @retval None
+ */
 void SVC_Handler(void)
 {
-  /* USER CODE BEGIN SVCall_IRQn 0 */
-
-  /* USER CODE END SVCall_IRQn 0 */
-  /* USER CODE BEGIN SVCall_IRQn 1 */
-
-  /* USER CODE END SVCall_IRQn 1 */
 }
 
 /**
-  * @brief This function handles Debug monitor.
-  */
+ * @brief  This function handles Debug Monitor exception.
+ * @param  None
+ * @retval None
+ */
 void DebugMon_Handler(void)
 {
-  /* USER CODE BEGIN DebugMonitor_IRQn 0 */
-
-  /* USER CODE END DebugMonitor_IRQn 0 */
-  /* USER CODE BEGIN DebugMonitor_IRQn 1 */
-
-  /* USER CODE END DebugMonitor_IRQn 1 */
 }
 
 /**
-  * @brief This function handles Pendable request for system service.
-  */
+ * @brief  This function handles PendSVC exception.
+ * @param  None
+ * @retval None
+ */
 void PendSV_Handler(void)
 {
-  /* USER CODE BEGIN PendSV_IRQn 0 */
-
-  /* USER CODE END PendSV_IRQn 0 */
-  /* USER CODE BEGIN PendSV_IRQn 1 */
-
-  /* USER CODE END PendSV_IRQn 1 */
 }
 
 /**
-  * @brief This function handles System tick timer.
-  */
+ * @brief  This function handles SysTick Handler.
+ * @param  None
+ * @retval None
+ */
 void SysTick_Handler(void)
 {
-  /* USER CODE BEGIN SysTick_IRQn 0 */
-
-  /* USER CODE END SysTick_IRQn 0 */
   HAL_IncTick();
-  /* TSL timing for ECS, DTO */
-  TSL_tim_ProcessIT();
-  /* USER CODE BEGIN SysTick_IRQn 1 */
-
-  /* USER CODE END SysTick_IRQn 1 */
 }
 
-/******************************************************************************/
-/* STM32WBxx Peripheral Interrupt Handlers                                    */
-/* Add here the Interrupt Handlers for the used peripherals.                  */
-/* For the available peripheral interrupt handler names,                      */
-/* please refer to the startup file (startup_stm32wbxx.s).                    */
-/******************************************************************************/
+/********************************************************************************/
+/*                 STM32WBxx Peripherals Interrupt Handlers                     */
+/*  Add here the Interrupt Handler for the used peripheral(s), for the          */
+/*  available peripheral interrupt handler's name please refer to the startup   */
+/*  file (startup_stm32wb55xx_cm4.s).                                           */
+/********************************************************************************/
 
 /**
-  * @brief This function handles HSEM global interrupt.
-  */
-void HSEM_IRQHandler(void)
-{
-  /* USER CODE BEGIN HSEM_IRQn 0 */
-
-  /* USER CODE END HSEM_IRQn 0 */
-  HAL_HSEM_IRQHandler();
-  /* USER CODE BEGIN HSEM_IRQn 1 */
-
-  /* USER CODE END HSEM_IRQn 1 */
+ * @brief  This function handles External line
+ *         interrupt request.
+ * @param  None
+ * @retval None
+ */
+void PUSH_BUTTON_SW1_EXTI_IRQHandler(void)
+{ 
 }
 
-/* USER CODE BEGIN 1 */
+/**
+ * @brief  This function handles External line
+ *         interrupt request.
+ * @param  None
+ * @retval None
+ */
+void PUSH_BUTTON_SW2_EXTI_IRQHandler(void)
+{
+}
+
+/**
+ * @brief  This function handles External line
+ *         interrupt request.
+ * @param  None
+ * @retval None
+ */
+void PUSH_BUTTON_SW3_EXTI_IRQHandler(void)
+{
+}
+
+#if(CFG_HW_USART1_ENABLED == 1)
+void USART1_IRQHandler(void)
+{
+  HW_UART_Interrupt_Handler(hw_uart1);
+}
+#endif
+
+#if(CFG_HW_USART1_DMA_TX_SUPPORTED == 1)
+void CFG_HW_USART1_DMA_TX_IRQHandler( void )
+{
+  HW_UART_DMA_Interrupt_Handler(hw_uart1);
+}
+#endif
+
+#if(CFG_HW_LPUART1_ENABLED == 1)
+void LPUART1_IRQHandler(void)
+{
+  HW_UART_Interrupt_Handler(hw_lpuart1);
+}
+#endif
+
+#if(CFG_HW_LPUART1_DMA_TX_SUPPORTED == 1)
+void CFG_HW_LPUART1_DMA_TX_IRQHandler( void )
+{
+  HW_UART_DMA_Interrupt_Handler(hw_lpuart1);
+}
+#endif
+
 void RTC_WKUP_IRQHandler(void)
 {
   HW_TS_RTC_Wakeup_Handler();
@@ -234,4 +205,5 @@ void IPCC_C1_RX_IRQHandler(void)
   HW_IPCC_Rx_Handler();
   return;
 }
-/* USER CODE END 1 */
+
+

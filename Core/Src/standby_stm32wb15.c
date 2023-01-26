@@ -6,13 +6,12 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
-  * All rights reserved.</center></h2>
+  * Copyright (c) 2019-2021 STMicroelectronics.
+  * All rights reserved.
   *
-  * This software component is licensed by ST under Ultimate Liberty license
-  * SLA0044, the "License"; You may not use this file except in compliance with
-  * the License. You may obtain a copy of the License at:
-  *                             www.st.com/SLA0044
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
   */
@@ -58,7 +57,7 @@ uint32_t standby_boot_mng(void);
 void standby_hw_save(void);
 void standby_hw_restore(void);
 /* USER CODE BEGIN PFP */
-
+ 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -113,7 +112,7 @@ void standby_hw_restore(void)
 
   /* In this user section add MX init functions present in main.c , except MX_RTC_Init() */
   /* USER CODE BEGIN standby_hw_restore_2 */
-
+  
   /* USER CODE END standby_hw_restore_2 */
 
   HW_TS_Init(hw_ts_InitMode_Limited, &hrtc);
@@ -121,7 +120,8 @@ void standby_hw_restore(void)
   LL_PWR_EnableSRAM2Retention();
 
   /* USER CODE BEGIN standby_hw_restore_3 */
-
+  APPE_Led_Init();
+  APPE_Button_Init();
   /* USER CODE END standby_hw_restore_3 */
 
   return;
@@ -159,4 +159,3 @@ uint32_t standby_boot_mng(void)
   return boot_after_standby;
 }
 
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

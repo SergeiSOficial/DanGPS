@@ -38,7 +38,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "app_entry.h"
+#include "stm32_seq.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -65,7 +66,10 @@
 void SystemClock_Config(void);
 void PeriphCommonClock_Config(void);
 /* USER CODE BEGIN PFP */
-
+static void Reset_BackupDomain( void );
+static void Init_RTC( void );
+static void Reset_Device( void );
+static void Reset_IPCC( void );
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -79,58 +83,32 @@ void PeriphCommonClock_Config(void);
   */
 int main(void)
 {
-  /* USER CODE BEGIN 1 */
   /**
    * The OPTVERR flag is wrongly set at power on
    * It shall be cleared before using any HAL_FLASH_xxx() api
    */
   __HAL_FLASH_CLEAR_FLAG(FLASH_FLAG_OPTVERR);
-  /* USER CODE END 1 */
 
-  /* MCU Configuration--------------------------------------------------------*/
-
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
-  /* Config code for STM32_WPAN (HSE Tuning must be done before system clock configuration) */
-  MX_APPE_Config();
 
-  /* USER CODE BEGIN Init */
+  Reset_Device();
 
-  /* USER CODE END Init */
+  /**
+   * When the application is expected to run at higher speed, it should be better to set the correct system clock
+   * in system_stm32yyxx.c so that the initialization phase is running at max speed.
+   */
+  SystemClock_Config(); /**< Configure the system clock */
 
-  /* Configure the system clock */
-  SystemClock_Config();
+  Init_Exti( );
 
-/* Configure the peripherals common clocks */
-  PeriphCommonClock_Config();
+  Init_RTC();
 
-  /* IPCC initialisation */
-  MX_IPCC_Init();
+  APPE_Init( );
 
-  /* USER CODE BEGIN SysInit */
-
-  /* USER CODE END SysInit */
-
-  /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  MX_RF_Init();
-  MX_RTC_Init();
-  /* USER CODE BEGIN 2 */
-
-  /* USER CODE END 2 */
-
-  /* Init code for STM32_WPAN */
-  MX_APPE_Init();
-
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-  while (1)
+  while(1)
   {
-    /* USER CODE END WHILE */
-    MX_APPE_Process();
-    /* USER CODE BEGIN 3 */
+    UTIL_SEQ_Run( UTIL_SEQ_DEFAULT );
   }
-  /* USER CODE END 3 */
 }
 
 /**
@@ -198,6 +176,115 @@ void PeriphCommonClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 
+static void Reset_Device( void )
+{
+#if ( CFG_HW_RESET_BY_FW == 1 )
+  Reset_BackupDomain();
+
+  Reset_IPCC();
+#endif
+
+  return;
+}
+
+static void Reset_IPCC( void )
+{
+  LL_AHB3_GRP1_EnableClock(LL_AHB3_GRP1_PERIPH_IPCC);
+
+  LL_C1_IPCC_ClearFlag_CHx(
+      IPCC,
+      LL_IPCC_CHANNEL_1 | LL_IPCC_CHANNEL_2 | LL_IPCC_CHANNEL_3 | LL_IPCC_CHANNEL_4
+      | LL_IPCC_CHANNEL_5 | LL_IPCC_CHANNEL_6);
+
+  LL_C2_IPCC_ClearFlag_CHx(
+      IPCC,
+      LL_IPCC_CHANNEL_1 | LL_IPCC_CHANNEL_2 | LL_IPCC_CHANNEL_3 | LL_IPCC_CHANNEL_4
+      | LL_IPCC_CHANNEL_5 | LL_IPCC_CHANNEL_6);
+
+  LL_C1_IPCC_DisableTransmitChannel(
+      IPCC,
+      LL_IPCC_CHANNEL_1 | LL_IPCC_CHANNEL_2 | LL_IPCC_CHANNEL_3 | LL_IPCC_CHANNEL_4
+      | LL_IPCC_CHANNEL_5 | LL_IPCC_CHANNEL_6);
+
+  LL_C2_IPCC_DisableTransmitChannel(
+      IPCC,
+      LL_IPCC_CHANNEL_1 | LL_IPCC_CHANNEL_2 | LL_IPCC_CHANNEL_3 | LL_IPCC_CHANNEL_4
+      | LL_IPCC_CHANNEL_5 | LL_IPCC_CHANNEL_6);
+
+  LL_C1_IPCC_DisableReceiveChannel(
+      IPCC,
+      LL_IPCC_CHANNEL_1 | LL_IPCC_CHANNEL_2 | LL_IPCC_CHANNEL_3 | LL_IPCC_CHANNEL_4
+      | LL_IPCC_CHANNEL_5 | LL_IPCC_CHANNEL_6);
+
+  LL_C2_IPCC_DisableReceiveChannel(
+      IPCC,
+      LL_IPCC_CHANNEL_1 | LL_IPCC_CHANNEL_2 | LL_IPCC_CHANNEL_3 | LL_IPCC_CHANNEL_4
+      | LL_IPCC_CHANNEL_5 | LL_IPCC_CHANNEL_6);
+
+  return;
+}
+
+static void Reset_BackupDomain( void )
+{
+  if ((LL_RCC_IsActiveFlag_PINRST() != FALSE) && (LL_RCC_IsActiveFlag_SFTRST() == FALSE))
+  {
+    HAL_PWR_EnableBkUpAccess(); /**< Enable access to the RTC registers */
+
+    /**
+     *  Write twice the value to flush the APB-AHB bridge
+     *  This bit shall be written in the register before writing the next one
+     */
+    HAL_PWR_EnableBkUpAccess();
+
+    __HAL_RCC_BACKUPRESET_FORCE();
+    __HAL_RCC_BACKUPRESET_RELEASE();
+  }
+
+  return;
+}
+
+static void Init_RTC( void )
+{
+  HAL_PWR_EnableBkUpAccess(); /**< Enable access to the RTC registers */
+
+  /**
+   *  Write twice the value to flush the APB-AHB bridge
+   *  This bit shall be written in the register before writing the next one
+   */
+  HAL_PWR_EnableBkUpAccess();
+
+  __HAL_RCC_RTC_CONFIG(RCC_RTCCLKSOURCE_LSE); /**< Select LSI as RTC Input */
+
+  __HAL_RCC_RTC_ENABLE(); /**< Enable RTC */
+
+  hrtc.Instance = RTC; /**< Define instance */
+
+  /**
+   * Set the Asynchronous prescaler
+   */
+  hrtc.Init.AsynchPrediv = CFG_RTC_ASYNCH_PRESCALER;
+  hrtc.Init.SynchPrediv = CFG_RTC_SYNCH_PRESCALER;
+  HAL_RTC_Init(&hrtc);
+
+  /* Disable RTC registers write protection */
+  LL_RTC_DisableWriteProtection(RTC);
+
+  LL_RTC_WAKEUP_SetClock(RTC, CFG_RTC_WUCKSEL_DIVIDER);
+
+  /* Enable RTC registers write protection */
+  LL_RTC_EnableWriteProtection(RTC);
+
+  return;
+}
+
+void Init_Exti( void )
+{
+  /**< Disable all wakeup interrupt on CPU1  except IPCC(36), HSEM(38) */
+  LL_EXTI_DisableIT_0_31(~0);
+  LL_EXTI_DisableIT_32_63( (~0) & (~(LL_EXTI_LINE_36 | LL_EXTI_LINE_38)) );
+
+  return;
+}
 /* USER CODE END 4 */
 
 /**
