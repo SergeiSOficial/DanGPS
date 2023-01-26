@@ -54,9 +54,9 @@ extern "C" {
 /* USER CODE END EM */
 
 /* Exported functions ---------------------------------------------*/
-void APPE_Config(void);
-void APPE_Init(void);
-void APPE_Process(void);
+void MX_APPE_Config(void);
+void MX_APPE_Init(void);
+void MX_APPE_Process(void);
 void Init_Exti(void);
 
 /* USER CODE BEGIN EF */

@@ -103,7 +103,7 @@ int main(void)
 
   Init_RTC();
 
-  APPE_Init( );
+  MX_APPE_Init( );
 
   while(1)
   {
@@ -277,14 +277,6 @@ static void Init_RTC( void )
   return;
 }
 
-void Init_Exti( void )
-{
-  /**< Disable all wakeup interrupt on CPU1  except IPCC(36), HSEM(38) */
-  LL_EXTI_DisableIT_0_31(~0);
-  LL_EXTI_DisableIT_32_63( (~0) & (~(LL_EXTI_LINE_36 | LL_EXTI_LINE_38)) );
-
-  return;
-}
 /* USER CODE END 4 */
 
 /**

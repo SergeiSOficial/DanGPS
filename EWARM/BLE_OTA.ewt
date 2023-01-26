@@ -2861,61 +2861,22 @@
             <group>
                 <name>Core</name>
                 <file>
-                    <name>$PROJ_DIR$\..\Core\Src\adc.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\Core\Src\aes.c</name>
-                </file>
-                <file>
                     <name>$PROJ_DIR$\..\Core\Src\app_debug.c</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\Core\Src\app_entry.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Core\Src\crc.c</name>
-                </file>
-                <file>
                     <name>$PROJ_DIR$\..\Core\Src\flash_driver.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\Core\Src\gpio.c</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\Core\Src\hw_timerserver.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Core\Src\i2c.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\Core\Src\ipcc.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\Core\Src\iwdg.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\Core\Src\lptim.c</name>
-                </file>
-                <file>
                     <name>$PROJ_DIR$\..\Core\Src\main_OTA.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Core\Src\pka.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\Core\Src\rf.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\Core\Src\rng.c</name>
-                </file>
-                <file>
                     <name>$PROJ_DIR$\..\Core\Src\rtc.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\Core\Src\spi.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\Core\Src\standby.c</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\Core\Src\stm32_lpm_if.c</name>
@@ -2925,12 +2886,6 @@
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\Core\Src\stm32wbxx_it.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\Core\Src\tsc.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\Core\Src\usart.c</name>
                 </file>
             </group>
             <group>
@@ -3157,42 +3112,6 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\tl_mbox.c</name>
-            </file>
-        </group>
-        <group>
-            <name>TouchSensing</name>
-            <file>
-                <name>$PROJ_DIR$\..\Middlewares\ST\STM32_TouchSensing_Library\src\tsl.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Middlewares\ST\STM32_TouchSensing_Library\src\tsl_acq.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Middlewares\ST\STM32_TouchSensing_Library\src\tsl_acq_tsc.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Middlewares\ST\STM32_TouchSensing_Library\src\tsl_dxs.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Middlewares\ST\STM32_TouchSensing_Library\src\tsl_ecs.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Middlewares\ST\STM32_TouchSensing_Library\src\tsl_filter.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Middlewares\ST\STM32_TouchSensing_Library\src\tsl_globals.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Middlewares\ST\STM32_TouchSensing_Library\src\tsl_linrot.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Middlewares\ST\STM32_TouchSensing_Library\src\tsl_object.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Middlewares\ST\STM32_TouchSensing_Library\src\tsl_time.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Middlewares\ST\STM32_TouchSensing_Library\src\tsl_touchkey.c</name>
             </file>
         </group>
     </group>
