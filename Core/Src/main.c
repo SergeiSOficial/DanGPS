@@ -31,8 +31,6 @@
 #include "rng.h"
 #include "rtc.h"
 #include "spi.h"
-#include "touchsensing.h"
-#include "tsc.h"
 #include "usart.h"
 #include "gpio.h"
 
@@ -115,8 +113,6 @@ int main(void)
   MX_RF_Init();
   MX_RTC_Init();
   MX_SPI1_Init();
-  MX_TSC_Init();
-  MX_TOUCHSENSING_Init();
   MX_I2C1_Init();
   MX_LPTIM1_Init();
   MX_USART1_UART_Init();
@@ -159,7 +155,7 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_LSI1
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_LSI2
                               |RCC_OSCILLATORTYPE_HSE|RCC_OSCILLATORTYPE_LSE
                               |RCC_OSCILLATORTYPE_MSI;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
