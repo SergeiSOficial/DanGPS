@@ -1,766 +1,460 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>5</fileVersion>
-    <fileChecksum>2656321942</fileChecksum>
+    <fileChecksum>1695192305</fileChecksum>
     <configuration>
         <name>DanGPS</name>
         <outputs>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_ipcc.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_adc.h</file>
-            <file>$PROJ_DIR$\..\Core\Inc\stm32_lpm_if.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\lls.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\p2p_stm.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\adc.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_dma.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_crs.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\stm32_lpm_if.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\aarch32\iccarm_builtin.h</file>
-            <file>$PROJ_DIR$\..\Drivers\CMSIS\Include\mpu_armv7.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_hsem.o</file>
-            <file>$PROJ_DIR$\..\Core\Inc\app_common.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\eds_stm.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl.h</file>
-            <file>$PROJ_DIR$\DanGPS\Exe\DanGPS.out</file>
-            <file>$TOOLKIT_DIR$\lib\dl7M_tlf.a</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_ll_exti.o</file>
-            <file>$PROJ_DIR$\..\Core\Inc\rf.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\lptim.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_dma_ex.o</file>
-            <file>$PROJ_DIR$\..\Core\Inc\hw_conf.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
-            <file>$PROJ_DIR$\stm32_lock.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_i2c_ex.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\dbg_trace.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_ll_adc.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\svc_ctl.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_ll_utils.o</file>
-            <file>$PROJ_DIR$\..\STM32_WPAN\App\app_ble.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_ll_dma.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\ble_l2cap_aci.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_rcc_ex.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_gpio.h</file>
-            <file>$PROJ_DIR$\..\Core\Inc\aes.h</file>
-            <file>$PROJ_DIR$\..\Core\Inc\iwdg.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_types.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_dma_ex.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_cortex.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\STM32_WPAN\App\custom_app.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_cortex.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_dma.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\shci_tl.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_uart_ex.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\flash_driver.o</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\bas.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_cryp_ex.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\ble_common.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_l2cap_aci.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_crc_ex.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_crc.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\ble_legacy.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_cryp.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\STM32_WPAN\App\p2p_server_app.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_gpio.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_rtc_ex.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_adc.o</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\hids.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\rng.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_spi.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\app_debug.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_crc.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_rcc.h</file>
-            <file>$PROJ_DIR$\..\Core\Inc\i2c.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_gatt_aci.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_uart_ex.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\gpio.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_bus.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_ll_spi.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_rtc.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_cryp.h</file>
-            <file>$PROJ_DIR$\DanGPS\List\DanGPS.map</file>
-            <file>$PROJ_DIR$\..\STM32_WPAN\App\custom_stm.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\stm32_wpan_common.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_uart.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_rtc_ex.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\STM32_WPAN\App\otas_app.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_exti.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\osal.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\ble_hci_le.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_tim_ex.o</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\p2p_stm.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Utilities\stm32_lpm.o</file>
-            <file>$PROJ_DIR$\..\Core\Inc\crc.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_flash.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\tl_mbox.o</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Src\common_blesvc.h</file>
-            <file>$PROJ_DIR$\..\Core\Inc\app_conf.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal.h</file>
-            <file>$PROJ_DIR$\..\Core\Inc\rng.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_rtc.h</file>
-            <file>$PROJ_DIR$\..\Core\Inc\lptim.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_hal_aci.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\EWARM\startup_stm32wb10xx_cm4.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\usart.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\i2c.o</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\stm_list.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\ias.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_cortex.o</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\hw.h</file>
-            <file>$PROJ_DIR$\..\Drivers\CMSIS\Include\core_cm4.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\rtc.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\spi.o</file>
-            <file>$PROJ_DIR$\..\Drivers\CMSIS\Include\cmsis_compiler.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\ble_events.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\CMSIS\system_stm32wbxx.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_dma.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\pka.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_tim.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_hsem.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_cryp_ex.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_gpio_ex.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_uart.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\otp.h</file>
-            <file>$PROJ_DIR$\..\STM32_WPAN\App\ble_dbg_conf.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\shci\shci.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_ipcc.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_rng.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_lptim.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\ipcc.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_rng.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\template\compiler.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_adc_ex.o</file>
-            <file>$PROJ_DIR$\..\Core\Inc\stm32wbxx_it.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_rcc.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_rcc.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\svc_ctl.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\uuid.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_lptim.o</file>
-            <file>$PROJ_DIR$\..\Drivers\CMSIS\Include\cmsis_iccarm.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\tps.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\hrs.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\dis.h</file>
-            <file>$PROJ_DIR$\..\Utilities\lpm\tiny_lpm\stm32_lpm.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\STM32_WPAN\App\otas_stm.o</file>
-            <file>$PROJ_DIR$\..\STM32_WPAN\App\ble_conf.h</file>
-            <file>$PROJ_DIR$\..\Core\Inc\utilities_conf.h</file>
-            <file>$PROJ_DIR$\..\Core\Inc\stm32_assert.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\stm_queue.o</file>
-            <file>$PROJ_DIR$\..\Drivers\CMSIS\Device\ST\STM32WBxx\Include\system_stm32wbxx.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\ble_std.h</file>
-            <file>$PROJ_DIR$\..\Core\Inc\gpio.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\stm_list.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_rtc.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\bls.h</file>
-            <file>$PROJ_DIR$\..\STM32_WPAN\App\p2p_server_app.h</file>
-            <file>$PROJ_DIR$\..\Drivers\CMSIS\Device\ST\STM32WBxx\Include\stm32wb10xx.h</file>
-            <file>$PROJ_DIR$\dlib_lock_glue.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_adc.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_dma.c</file>
-            <file>$PROJ_DIR$\..\STM32_WPAN\App\custom_app.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\aes.c</file>
-            <file>$PROJ_DIR$\startup_stm32wb10xx_cm4.s</file>
-            <file>$PROJ_DIR$\..\Core\Src\stm32wbxx_hal_msp.c</file>
-            <file>$PROJ_DIR$\..\STM32_WPAN\App\otas_app.c</file>
-            <file>$PROJ_DIR$\..\STM32_WPAN\Target\hw_ipcc.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rcc_ex.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\rtc.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_gpio.c</file>
-            <file>$PROJ_DIR$\..\STM32_WPAN\App\otas_stm.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_dma_ex.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\iwdg.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_cryp.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\rng.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_adc_ex.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_adc.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\main.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\hw_timerserver.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\pka.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\stm32wbxx_it.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\ipcc.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\lptim.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\rf.c</file>
-            <file>$PROJ_DIR$\..\STM32_WPAN\App\app_ble.c</file>
-            <file>$PROJ_DIR$\..\STM32_WPAN\App\p2p_server_app.c</file>
-            <file>$PROJ_DIR$\..\STM32_WPAN\App\custom_stm.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\system_stm32wbxx.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_cryp_ex.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\gpio.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_crc.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\standby.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\app_debug.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rcc.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_crc_ex.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_i2c.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_flash_ex.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_i2c_ex.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_ipcc.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\crc.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\usart.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_utils.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_exti.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_rcc.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\i2c.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\adc.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_hsem.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\spi.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\stm32_lpm_if.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_flash.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pwr.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_cortex.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_exti.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\app_entry.c</file>
-            <file>$PROJ_DIR$\..\Core\Src\flash_driver.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pwr_ex.c</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\ble_hal_aci.o</file>
-            <file>$PROJ_DIR$\..\Core\Inc\app_entry.h</file>
-            <file>$PROJ_DIR$\..\Utilities\sequencer\stm32_seq.c</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\ble_gatt_aci.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\dbg_trace.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_tim.c</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\otp.c</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\stm_list.c</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Src\svc_ctl.c</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\shci\shci.c</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\shci_tl.c</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_events.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_gpio.c</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\tl_mbox.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pka.c</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl.c</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl_if.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_dma.c</file>
-            <file>$PROJ_DIR$\..\Core\Inc\hw_if.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_lptim.c</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\stm_queue.c</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_gap_aci.c</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\iwdg.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_iwdg.c</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_hal_aci.c</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Src\p2p_stm.c</file>
-            <file>$PROJ_DIR$\..\Core\Inc\pka.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_tim_ex.c</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_hci_le.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_spi.c</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_gatt_aci.c</file>
-            <file>$PROJ_DIR$\..\Utilities\lpm\tiny_lpm\stm32_lpm.c</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\hw_timerserver.o</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\utilities_common.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_l2cap_aci.c</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_pwr.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_uart.c</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\zdd_stm.h</file>
-            <file>$PROJ_DIR$\..\Core\Inc\rtc.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rtc_ex.c</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\otas_stm.h</file>
-            <file>$PROJ_DIR$\..\Core\Inc\app_debug.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\hts.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rng.c</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\template\osal.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_uart_ex.c</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rtc.c</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_flash.o</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\template_stm.h</file>
-            <file>$PROJ_DIR$\stm32wb10xx_flash_cm4.icf</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal.o</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\shci_tl_if.c</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\STM32_WPAN\App\custom_stm.o</file>
-            <file>$PROJ_DIR$\..\STM32_WPAN\App\custom_app.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_ll_gpio.o</file>
-            <file>$PROJ_DIR$\DanGPS\Exe\DanGPS.hex</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\hci_tl_if.o</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_events.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_rcc_ex.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_pwr.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_ipcc.o</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\template\ble_const.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_pwr.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_flash_ex.o</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\ble_bufsize.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\aes.o</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\shci_tl.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_adc_ex.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\rf.o</file>
-            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_flash_ex.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_exti.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\standby.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_system.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\mesh.h</file>
-            <file>$PROJ_DIR$\..\STM32_WPAN\App\tl_dbg_conf.h</file>
-            <file>$PROJ_DIR$\..\Core\Inc\stm32wbxx_hal_conf.h</file>
-            <file>$PROJ_DIR$\..\Core\Inc\adc.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\stm_queue.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\EWARM\dlib_lock_glue.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\stm32wbxx_hal_msp.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\ble_gap_aci.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Utilities\stm32_seq.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\stm32wbxx_it.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_crc_ex.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\crc.o</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\dbg_trace.h</file>
-            <file>$PROJ_DIR$\..\Core\Inc\standby.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_gpio.o</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_gap_aci.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_pka.h</file>
             <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\crs_stm.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_pka.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\STM32_WPAN\App\app_ble.o</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\ble_defs.h</file>
-            <file>$PROJ_DIR$\..\Core\Inc\spi.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_iwdg.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\app_entry.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_iwdg.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_exti.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_i2c.o</file>
-            <file>$PROJ_DIR$\..\Core\Inc\ipcc.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\hci_tl.o</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\dbg_trace.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\hts.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_gap_aci.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_events.h</file>
             <file>$PROJ_DIR$\..\Drivers\CMSIS\Device\ST\STM32WBxx\Include\stm32wbxx.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_pwr_ex.o</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\template\osal.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\shci_tl_if.o</file>
-            <file>$PROJ_DIR$\..\Core\Inc\main.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$PROJ_DIR$\..\Utilities\sequencer\stm32_seq.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_hsem.h</file>
+            <file>$PROJ_DIR$\stm32wb10xx_flash_cm4.icf</file>
+            <file>$TOOLKIT_DIR$\inc\c\time64.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\smtc_hal\smtc_hal_adc.o</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_def.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_gpio.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_exti.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\smtc_hal\smtc_hal_spi.o</file>
+            <file>$PROJ_DIR$\..\Core\Inc\smtc_hal\smtc_hal_adc.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Utilities\stm32_seq.o</file>
+            <file>$PROJ_DIR$\..\Core\Inc\smtc_hal\smtc_hal_flash.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\smtc_hal\smtc_hal_flash.o</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\crs_stm.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\ble_gap_aci.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\radio\lr1110.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\crc.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_rcc_ex.o</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\ble_bufsize.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\adc.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_pka.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\ipcc.h</file>
+            <file>$PROJ_DIR$\..\STM32_WPAN\App\tl_dbg_conf.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_pwr.h</file>
             <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_ll_rcc.o</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\motenv_stm.h</file>
-            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_i2c.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\STM32_WPAN\Target\hw_ipcc.o</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\shci.o</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\ble_core.h</file>
-            <file>$TOOLKIT_DIR$\lib\th7M_tlf.a</file>
-            <file>$PROJ_DIR$\..\Core\Inc\usart.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_adc.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_dmamux.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal.o</file>
+            <file>$PROJ_DIR$\..\Core\Inc\boards\board-config.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_exti.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\smtc_hal\smtc_hal_gpio.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_i2c.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\app_entry.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\radio\lr1110_modem_hal.o</file>
+            <file>$PROJ_DIR$\..\Drivers\BSP\Components\hall_effect\hall_effect.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\main.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\aes.o</file>
+            <file>$PROJ_DIR$\..\Utilities\sequencer\stm32_seq.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_ipcc.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\STM32_WPAN\App\custom_stm.o</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_flash_ex.h</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
             <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_i2c_ex.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\otp.o</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_hci_le.h</file>
-            <file>$PROJ_DIR$\..\Drivers\CMSIS\Include\cmsis_version.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\smtc_hal\smtc_hal_rng.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\hci_tl_if.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_iwdg.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_pka.o</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_pwr.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\STM32_WPAN\App\app_ble.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\rf.o</file>
+            <file>$PROJ_DIR$\DanGPS\Exe\DanGPS.hex</file>
+            <file>$PROJ_DIR$\..\Drivers\BSP\Components\lis2de12\lis2de12.h</file>
+            <file>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem\src\lr1110_modem_system.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\smtc_hal\smtc_hal_i2c.o</file>
+            <file>$PROJ_DIR$\..\Core\Inc\smtc_hal\smtc_hal_options.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\smtc_hal\smtc_hal_uart.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\boards\utilities.h</file>
+            <file>$PROJ_DIR$\..\Drivers\BSP\Components\usr_button\usr_button.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\utilities.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\smtc_hal\smtc_hal_tmr.o</file>
+            <file>$PROJ_DIR$\..\Core\Inc\smtc_hal\smtc_hal_gpio.h</file>
+            <file>$PROJ_DIR$\..\Drivers\BSP\Components\external_supply\external_supply.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\smtc_hal\smtc_hal_dbg_trace.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\tl.h</file>
+            <file>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem\src\lr1110_hal.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\smtc_hal\smtc_hal_watchdog.o</file>
+            <file>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem\src\lr1110_modem_hal.h</file>
+            <file>$PROJ_DIR$\..\Drivers\BSP\Components\rf_switch\pe4259.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\STM32_WPAN\App\otas_app.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_rtc.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_uart.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_pwr_ex.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\ble_hci_le.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_crc.o</file>
+            <file>$PROJ_DIR$\..\Core\Inc\i2c.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\hids.h</file>
+            <file>$PROJ_DIR$\DanGPS\List\DanGPS.map</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_rtc_ex.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_uart_ex.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_spi.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_gatt_aci.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\p2p_stm.o</file>
+            <file>$PROJ_DIR$\..\Core\Inc\stm32_lpm_if.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\STM32_WPAN\App\p2p_server_app.o</file>
+            <file>$PROJ_DIR$\..\Core\Inc\aes.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\hw_conf.h</file>
+            <file>$PROJ_DIR$\..\STM32_WPAN\App\custom_stm.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\mesh.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\EWARM\dlib_lock_glue.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tlf.a</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\adc.o</file>
+            <file>$PROJ_DIR$\..\Core\Inc\rf.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_gpio.h</file>
+            <file>$PROJ_DIR$\DanGPS\Exe\DanGPS.out</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\STM32_WPAN\Target\hw_ipcc.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\smtc_hal\smtc_hal_uart.o</file>
             <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\ble.h</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_utils.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\smtc_hal\smtc_hal.h</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem\src\lr1110_modem_common.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\standby.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_dmamux.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_system.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\otp.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\shci_tl_if.o</file>
             <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\mbox_def.h</file>
             <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_pwr_ex.h</file>
-            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\main.o</file>
-            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_def.h</file>
-            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\tl.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\smtc_hal\smtc_hal_rng.o</file>
+            <file>$PROJ_DIR$\..\Core\Src\radio\lr1110.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\smtc_hal\smtc_hal_rtc.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\lib\th7M_tlf.a</file>
+            <file>$PROJ_DIR$\..\Core\Inc\stm32wbxx_hal_conf.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_flash_ex.o</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\template\ble_const.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_hci_le.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\ble_core.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\main.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\motenv_stm.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\shci.o</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\ble_defs.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_adc_ex.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_flash.o</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_hsem.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_cortex.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_adc.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\time.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\stm_queue.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_crc_ex.h</file>
+            <file>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem\src\lr1110_bootloader.h</file>
+            <file>$PROJ_DIR$\..\Core\Src\apps\Tracker\tracker_utility.h</file>
+            <file>$PROJ_DIR$\..\Core\Src\radio\gnss\gnss_scan.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\smtc_hal\smtc_hal_i2c.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\..\Drivers\CMSIS\Include\cmsis_version.h</file>
+            <file>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem\src\lr1110_modem_lorawan.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_utils.h</file>
+            <file>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem\src\lr1110_modem_gnss.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\smtc_hal\smtc_hal_mcu.h</file>
+            <file>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem\src\lr1110_modem_wifi.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\smtc_hal\smtc_hal_spi.h</file>
             <file>$PROJ_DIR$\..\Core\Inc\flash_driver.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\usart.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\smtc_hal\smtc_hal_mcu.o</file>
+            <file>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem\src\lr1110_modem_helper.h</file>
+            <file>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem\src\lr1110_bootloader_types.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_i2c.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\smtc_hal\smtc_hal_tmr_list.o</file>
+            <file>$PROJ_DIR$\..\Core\Inc\smtc_hal\smtc_hal_gpio_pin_names.h</file>
+            <file>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem\src\lr1110_types.h</file>
+            <file>$PROJ_DIR$\..\Drivers\BSP\Components\Leds\leds.h</file>
+            <file>$PROJ_DIR$\..\Core\Src\radio\wifi\wifi_scan.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\crc.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_float_setup.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\..\STM32_WPAN\App\ble_dbg_conf.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_flash.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\smtc_hal\smtc_hal_rtc.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\usart.o</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_rtc.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_dma.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_cortex.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\tl_mbox.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\hw.h</file>
+            <file>$PROJ_DIR$\..\Drivers\CMSIS\Include\cmsis_compiler.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\CMSIS\system_stm32wbxx.o</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_hsem.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\app_conf.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Src\common_blesvc.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\smtc_hal\smtc_hal_tmr_list.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_uart.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\boards\lr1110_tracker_board.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\rng.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\spi.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\ias.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\stm32wbxx_hal_msp.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\pka.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\stm32wbxx_it.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\hci_tl.o</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\shci_tl.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\i2c.o</file>
+            <file>$PROJ_DIR$\..\Core\Inc\rtc.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\spi.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\ble_events.o</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\standby.o</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\template_stm.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_iwdg.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_ipcc.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\stm_list.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_spi_ex.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\ble_common.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_l2cap_aci.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_tim_ex.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_crc_ex.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_dma.o</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\ble_legacy.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\iwdg.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_spi_ex.o</file>
+            <file>$PROJ_DIR$\stm32_lock.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_cryp_ex.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\bas.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\ble_l2cap_aci.o</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_dma_ex.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\osal.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\flash_driver.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_uart_ex.o</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_cortex.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_crc.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\app_debug.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Utilities\stm32_lpm.o</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_cryp.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_cryp.o</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_spi.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_rcc_ex.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\p2p_stm.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_rng.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\shci_tl.o</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_gpio.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_exti.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\template\compiler.h</file>
+            <file>$PROJ_DIR$\..\STM32_WPAN\App\app_ble.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\STM32_WPAN\App\custom_app.o</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_ipcc.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\hrs.h</file>
+            <file>$PROJ_DIR$\..\STM32_WPAN\App\app_ble.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_tmr_list.c</file>
+            <file>$PROJ_DIR$\..\STM32_WPAN\App\p2p_server_app.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_adc.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rcc.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_flash.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_gpio.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_hsem.c</file>
+            <file>$PROJ_DIR$\..\STM32_WPAN\App\otas_app.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\system_stm32wbxx.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_rcc.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_uart.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_dma_ex.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pwr_ex.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rcc_ex.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_exti.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_crc.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_i2c.c</file>
+            <file>$PROJ_DIR$\..\STM32_WPAN\App\otas_stm.c</file>
+            <file>$PROJ_DIR$\..\STM32_WPAN\App\custom_stm.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_dma.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_iwdg.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_lptim.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pka.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_flash_ex.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rng.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_ipcc.c</file>
+            <file>$PROJ_DIR$\..\STM32_WPAN\Target\hw_ipcc.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_adc.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_cortex.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_cryp.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_cryp_ex.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pwr.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_adc_ex.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_crc_ex.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_i2c_ex.c</file>
+            <file>$PROJ_DIR$\..\STM32_WPAN\App\custom_app.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_tmr.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_watchdog.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\tps.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_rtc.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_rcc.h</file>
+            <file>$PROJ_DIR$\..\STM32_WPAN\App\ble_conf.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\iwdg.o</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\stm32_lpm_if.o</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_dma.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_crs.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\aarch32\iccarm_builtin.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\svc_ctl.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_adc_ex.o</file>
+            <file>$PROJ_DIR$\..\STM32_WPAN\App\p2p_server_app.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\hw_if.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\zdd_stm.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\EWARM\startup_stm32wb10xx_cm4.o</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\uuid.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\gpio.h</file>
+            <file>$PROJ_DIR$\..\Utilities\lpm\tiny_lpm\stm32_lpm.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_lptim.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\ble_gatt_aci.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_cryp_ex.o</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\shci\shci.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_rng.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\ipcc.o</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_hal_aci.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\app_entry.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\ble_hal_aci.o</file>
+            <file>$PROJ_DIR$\..\Core\Inc\lptim.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\otp.h</file>
+            <file>$PROJ_DIR$\..\Drivers\CMSIS\Device\ST\STM32WBxx\Include\stm32wb10xx.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_rcc.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\STM32_WPAN\App\otas_stm.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_pwr.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\rtc.o</file>
+            <file>$PROJ_DIR$\..\Core\Inc\smtc_hal\smtc_hal_watchdog.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\stm_queue.o</file>
+            <file>$PROJ_DIR$\..\Core\Inc\utilities_conf.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_gpio_ex.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_tim.o</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\dis.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\stm32wbxx_it.h</file>
+            <file>$PROJ_DIR$\..\Drivers\CMSIS\Include\cmsis_iccarm.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\stm_list.o</file>
+            <file>$PROJ_DIR$\..\Core\Inc\pka.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\bls.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\utilities_common.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_lptim.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\smtc_hal\smtc_hal_tmr.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\ble_std.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_l2cap_aci.c</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_uart_ex.c</file>
+            <file>$PROJ_DIR$\..\Utilities\lpm\tiny_lpm\stm32_lpm.c</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\template\osal.c</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_hci_le.c</file>
+            <file>$PROJ_DIR$\..\STM32_WPAN\App\custom_app.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\otas_stm.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\stm_list.c</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\template\osal.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\tl_mbox.c</file>
+            <file>$PROJ_DIR$\..\Core\Inc\app_debug.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\shci_tl.c</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_rtc_ex.o</file>
+            <file>$PROJ_DIR$\..\Drivers\CMSIS\Include\core_cm4.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_uart.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_spi_ex.c</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\otp.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_tim_ex.c</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\stm_queue.c</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_gatt_aci.c</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_hal_aci.c</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Src\p2p_stm.c</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl_if.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_spi.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rtc.c</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_tim.c</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Src\svc_ctl.c</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\dbg_trace.c</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\shci_tl_if.c</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_events.c</file>
+            <file>$PROJ_DIR$\..\Utilities\sequencer\stm32_seq.c</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_gap_aci.c</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\stm32_wpan_common.h</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rtc_ex.c</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\shci\shci.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_adc.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_mcu.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\lptim.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\hw_timerserver.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\stm32wbxx_hal_msp.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\iwdg.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\app_debug.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_rng.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\pka.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\flash_driver.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\main.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\rng.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\gpio.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\i2c.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\rtc.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\standby.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\crc.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\rf.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\radio\lr1110.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\app_entry.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem_hal.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\spi.c</file>
+            <file>$PROJ_DIR$\startup_stm32wb10xx_cm4.s</file>
+            <file>$PROJ_DIR$\..\Core\Src\usart.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_i2c.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_flash.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\aes.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_gpio.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\ipcc.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_rtc.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_spi.c</file>
+            <file>$PROJ_DIR$\..\Drivers\CMSIS\Device\ST\STM32WBxx\Include\system_stm32wbxx.h</file>
+            <file>$PROJ_DIR$\..\Core\Src\adc.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\stm32_lpm_if.c</file>
+            <file>$PROJ_DIR$\..\Core\Src\stm32wbxx_it.c</file>
+            <file>$PROJ_DIR$\dlib_lock_glue.c</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\lptim.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_i2c_ex.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\hw_timerserver.o</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\eds_stm.h</file>
+            <file>$PROJ_DIR$\..\Drivers\CMSIS\Include\mpu_armv7.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\svc_ctl.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Inc\lls.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\rng.o</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_bus.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Middlewares\STM32_WPAN\dbg_trace.o</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_adc.h</file>
+            <file>$PROJ_DIR$\..\Core\Inc\app_common.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_adc.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_spi.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_ll_adc.o</file>
+            <file>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_types.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_hsem.o</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Application\User\Core\gpio.o</file>
+            <file>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_rcc.h</file>
+            <file>$PROJ_DIR$\DanGPS\Obj\Drivers\STM32WBxx_HAL_Driver\stm32wbxx_hal_dma_ex.o</file>
         </outputs>
+        <file>
+            <name>$PROJ_DIR$\DanGPS\Exe\DanGPS.hex</name>
+            <inputs>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 100</file>
+                </tool>
+            </inputs>
+        </file>
         <file>
             <name>$PROJ_DIR$\DanGPS\Exe\DanGPS.out</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 74</file>
+                    <file> 81</file>
                 </tool>
                 <tool>
                     <name>OBJCOPY</name>
-                    <file> 273</file>
+                    <file> 53</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 267 5 283 312 63 316 110 299 219 216 83 34 303 42 270 28 297 47 69 321 274 335 250 101 128 240 22 351 82 80 143 344 56 4 113 286 61 107 336 45 325 108 290 99 86 10 300 268 59 131 104 64 52 55 118 44 23 289 265 281 306 13 319 27 278 317 137 298 311 253 323 133 276 126 72 79 116 84 78 68 301 29 33 19 272 330 71 31 152 147 30 111 89 100 332 309 338 287 18</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\dlib_lock_glue.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 297</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 114 25 98 333 97 115 151 6 76 239 342 26 327 109 138 11</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_adc.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 59</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_dma.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 44</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32_WPAN\App\custom_app.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 42</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 326 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 91 105 24 235 0 41 348 117 57 153 282 217 14 8 123 76 239 342 220 62 304 347 144 122 337 149 313 307 39 279 324 130 67 96 345 51 275 54 48 154 310 141 15 60 140 260 103 3 139 331 85 255 258 77 292 266 135 136 271 75 328</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\aes.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 283</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 37 326 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 91 105 24 235 0 41 348 117 57 153 282 217 14 8 123 76 239 342 220 62</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\startup_stm32wb10xx_cm4.s</name>
-            <outputs>
-                <tool>
-                    <name>AARM</name>
-                    <file> 99</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\stm32wbxx_hal_msp.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 298</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 326 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 91 105 24 235 0 41 348 117 57 153 282 217 14 8 123 76 239 342 220 62</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32_WPAN\App\otas_app.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 80</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 14 327 98 333 97 115 151 8 6 123 76 239 342 220 91 105 24 235 322 156 106 346 109 138 11 12 148 92 294 7 352 21 25 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 0 41 348 117 57 153 282 347 144 122 337 149 313 307 39 279 324 130 67 96 345 51 275 54 48 154 310 141 15 60 140 260 103 3 139 331 85 255 258 77 292 266 135 136 124 349 354</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32_WPAN\Target\hw_ipcc.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 335</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 14 327 98 333 97 115 151 8 6 123 76 239 342 220 91 105 24 235 322 156 106 346 109 138 11 12 148 92 294 7 352 21 25 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 0 41 348 117 57 153 282 349 77</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rcc_ex.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 276</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\rtc.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 107</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 256 326 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 91 105 24 235 0 41 348 117 57 153 282 217 14 8 123 76 239 342 220 62</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_gpio.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 306</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32_WPAN\App\otas_stm.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 143</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 90 50 327 98 333 97 115 151 8 6 123 76 239 342 220 144 91 105 24 235 322 156 106 346 109 138 11 12 148 92 294 7 352 21 25 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 0 41 348 117 57 153 282 122 347 337 149 313 307 39 279 324 130 67 96 345 51 275 54 48 154 310 141 15 60 140 260 103 3 139 331 85 255 258 77 292 266 135 136 304</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_dma_ex.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 23</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\iwdg.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 240</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 38 326 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 91 105 24 235 0 41 348 117 57 153 282 217 14 8 123 76 239 342 220 62</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_cryp.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 55</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\rng.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 61</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 93 326 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 91 105 24 235 0 41 348 117 57 153 282 217 14 8 123 76 239 342 220 62</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_adc_ex.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 131</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_adc.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 29</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 1 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 92 294 7 352 21 25 6 112 341 40 340 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 146</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\main.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 351</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 326 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 91 105 24 235 0 41 348 117 57 153 282 217 14 8 123 76 239 342 220 62 295 37 87 66 320 38 95 244 20 93 256 314 339 150</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\hw_timerserver.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 250</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 14 327 98 333 97 115 151 8 6 123 76 239 342 220 91 105 24 235 322 156 106 346 109 138 11 12 148 92 294 7 352 21 25 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 0 41 348 117 57 153 282</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\pka.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 113</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 244 326 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 91 105 24 235 0 41 348 117 57 153 282 217 14 8 123 76 239 342 220 62</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\stm32wbxx_it.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 301</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 326 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 91 105 24 235 0 41 348 117 57 153 282 217 14 8 123 76 239 342 220 62 132</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\ipcc.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 128</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 320 326 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 91 105 24 235 0 41 348 117 57 153 282 217 14 8 123 76 239 342 220 62</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\lptim.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 22</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 95 326 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 91 105 24 235 0 41 348 117 57 153 282 217 14 8 123 76 239 342 220 62</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\rf.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 286</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 20 326 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 91 105 24 235 0 41 348 117 57 153 282 217 14 8 123 76 239 342 220 62</file>
+                    <file> 6 97 38 51 219 34 192 18 297 304 77 212 20 232 41 412 93 215 421 186 47 101 404 188 301 280 402 19 35 37 214 73 309 110 88 86 184 52 410 311 126 227 111 8 16 32 57 150 114 116 12 63 154 102 70 190 195 291 220 282 14 29 416 287 168 78 204 222 298 205 423 11 129 120 10 420 33 403 40 48 325 183 49 310 76 308 21 300 74 343 417 208 316 203 75 216 185 418 28 321 313 407 173 169 165 105 0 118 44 95</file>
                 </tool>
             </inputs>
         </file>
@@ -769,13 +463,28 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 312</file>
+                    <file> 51</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 326 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 91 105 24 235 0 41 348 117 57 153 282 217 14 8 123 76 239 342 220 62 304 347 144 122 337 149 313 307 39 279 324 130 67 96 345 51 275 54 48 154 310 141 15 60 140 260 103 3 139 331 85 255 258 77 292 266 135 136 353 32 16 328 124 349 142 121 251 155 271</file>
+                    <file> 124 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 175 171 90 289 233 131 143 174 228 277 22 303 414 94 161 336 293 43 318 1 103 279 162 123 328 127 3 419 121 339 230 85 302 122 202 4 206 211 323 17 317 405 80 234 2 182 409 276 125 225 290 337 363 92 196 286 292 68 231 281 39 299 112 295 306 324 288 335</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_tmr_list.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 154</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 117 326 140 170 194 275 67 193 119 283 9 5 307 344 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 145 177 164 277</file>
                 </tool>
             </inputs>
         </file>
@@ -784,363 +493,57 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 56</file>
+                    <file> 88</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 326 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 91 105 24 235 0 41 348 117 57 153 282 217 14 8 123 76 239 342 220 62 304 347 144 122 337 149 313 307 39 279 324 130 67 96 345 51 275 54 48 154 310 141 15 60 140 260 103 3 139 331 85 255 258 77 292 266 135 136 155 328</file>
+                    <file> 124 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 175 171 90 289 233 131 143 174 228 277 22 303 414 94 161 336 293 43 318 1 103 279 162 123 328 127 3 419 121 339 230 85 302 122 202 4 206 211 323 17 317 405 80 234 2 182 409 276 125 225 290 337 363 92 196 286 292 288 39</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\STM32_WPAN\App\custom_stm.c</name>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_adc.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 270</file>
+                    <file> 418</file>
                 </tool>
             </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 90 50 327 98 333 97 115 151 8 6 123 76 239 342 220 144 91 105 24 235 322 156 106 346 109 138 11 12 148 92 294 7 352 21 25 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 0 41 348 117 57 153 282 122 347 337 149 313 307 39 279 324 130 67 96 345 51 275 54 48 154 310 141 15 60 140 260 103 3 139 331 85 255 258 77 292 266 135 136 304 75</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\system_stm32wbxx.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 111</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 14 327 98 333 97 115 151 8 6 123 76 239 342 220 91 105 24 235 322 156 106 346 109 138 11 12 148 92 294 7 352 21 25 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 0 41 348 117 57 153 282 121 251</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 268</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_cryp_ex.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 118</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\gpio.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 69</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 150 326 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 91 105 24 235 0 41 348 117 57 153 282 217 14 8 123 76 239 342 220 62</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_crc.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 64</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\standby.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 290</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 326 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 91 105 24 235 0 41 348 117 57 153 282 217 14 8 123 76 239 342 220 62 259 305</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\app_debug.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 63</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 14 327 98 333 97 115 151 8 6 123 76 239 342 220 91 105 24 235 322 156 106 346 109 138 11 12 148 92 294 7 352 21 25 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 0 41 348 117 57 153 282 259 251 124 349 77 353 304</file>
-                </tool>
-            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rcc.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 133</file>
+                    <file> 308</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_crc_ex.c</name>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_flash.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 52</file>
+                    <file> 129</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_i2c.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 319</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_flash_ex.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 281</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_i2c_ex.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 27</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_ipcc.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 278</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\crc.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 303</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 87 326 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 91 105 24 235 0 41 348 117 57 153 282 217 14 8 123 76 239 342 220 62</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\usart.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 100</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 339 326 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 91 105 24 235 0 41 348 117 57 153 282 217 14 8 123 76 239 342 220 62</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_utils.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 31</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 348 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 92 294 7 352 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 146</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_exti.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 19</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 81 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 92 294 7 352 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 350 134 65 70 35 9 129 94 58 120 46 291 146</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_rcc.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 330</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 65 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 92 294 7 352 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 70 35 9 129 94 58 120 46 291 146</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\i2c.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 101</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 66 326 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 91 105 24 235 0 41 348 117 57 153 282 217 14 8 123 76 239 342 220 62</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\adc.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 5</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 295 326 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 91 105 24 235 0 41 348 117 57 153 282 217 14 8 123 76 239 342 220 62</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_hsem.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 13</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\spi.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 108</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 314 326 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 91 105 24 235 0 41 348 117 57 153 282 217 14 8 123 76 239 342 220 62</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\stm32_lpm_if.c</name>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_gpio.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
@@ -1150,97 +553,91 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 2 142 327 98 333 97 115 151 91 105 24 235 322 156 106 346 109 138 11 12 148 92 294 7 352 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 0 41 348 117 57 153 282 326 217 14 8 123 76 239 342 220 62 305</file>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_flash.c</name>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_hsem.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 265</file>
+                    <file> 420</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pwr.c</name>
+            <name>$PROJ_DIR$\..\STM32_WPAN\App\otas_app.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 253</file>
+                    <file> 73</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
+                    <file> 414 117 326 140 170 194 275 94 408 161 336 293 43 318 175 171 90 289 5 307 344 141 172 320 285 406 397 193 119 283 9 96 415 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 233 131 143 174 228 277 22 103 279 162 123 328 127 3 419 121 339 230 85 302 122 202 4 206 211 323 17 317 405 80 234 2 182 409 276 125 225 290 337 363 92 196 286 292 299 112 148</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_cortex.c</name>
+            <name>$PROJ_DIR$\..\Core\Src\system_stm32wbxx.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 104</file>
+                    <file> 173</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
+                    <file> 414 117 326 140 170 194 275 94 408 161 336 293 43 318 175 171 90 289 5 307 344 141 172 320 285 406 397 193 119 283 9 96 415 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 233 131 143 174 228 277 22 306 324</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_exti.c</name>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_rcc.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 289</file>
+                    <file> 28</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 102</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
+                    <file> 117 326 140 170 194 275 67 193 119 283 9 5 307 344 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 155 59 145</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Core\Src\app_entry.c</name>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_dma_ex.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 316</file>
+                    <file> 423</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 14 327 98 333 97 115 151 8 6 123 76 239 342 220 91 105 24 235 322 156 106 346 109 138 11 12 148 92 294 7 352 21 25 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 0 41 348 117 57 153 282 326 217 62 32 16 77 353 347 144 122 337 149 313 307 39 279 324 130 67 96 345 51 275 54 48 154 310 141 15 60 140 260 103 3 139 331 85 255 258 292 266 135 136 328 284 142 259 304 124 349 121 251</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Core\Src\flash_driver.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 47</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 14 327 98 333 97 115 151 8 6 123 76 239 342 220 91 105 24 235 322 156 106 346 109 138 11 12 148 92 294 7 352 21 25 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 0 41 348 117 57 153 282 354 124 349 77 145</file>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
                 </tool>
             </inputs>
         </file>
@@ -1249,423 +646,48 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 323</file>
+                    <file> 76</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Utilities\sequencer\stm32_seq.c</name>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rcc_ex.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 300</file>
+                    <file> 21</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 328 327 98 333 97 115 151 145 109 138 11 8 6 123</file>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\dbg_trace.c</name>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_exti.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 28</file>
+                    <file> 11</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 251 327 98 333 97 115 151 8 6 123 76 239 342 220 91 105 24 235 322 156 106 346 109 138 11 12 148 92 294 7 352 21 25 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 0 41 348 117 57 153 282 296 304</file>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_tim.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 116</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\otp.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 344</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 251 327 98 333 97 115 151 8 6 123 76 239 342 220 91 105 24 235 322 156 106 346 109 138 11 12 148 92 294 7 352 21 25 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 0 41 348 117 57 153 282 121</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\stm_list.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 152</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 251 327 98 333 97 115 151 8 6 123 76 239 342 220 91 105 24 235 322 156 106 346 109 138 11 12 148 92 294 7 352 21 25 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 0 41 348 117 57 153 282 102 77</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Src\svc_ctl.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 30</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 90 50 327 98 333 97 115 151 8 6 123 76 239 342 220 144 91 105 24 235 322 156 106 346 109 138 11 12 148 92 294 7 352 21 25 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 0 41 348 117 57 153 282 122 347 337 149 313 307 39 279 324 130 67 96 345 51 275 54 48 154 310 141 15 60 140 260 103 3 139 331 85 255 258 77 292 266 135 136 304</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\shci\shci.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 336</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 77 327 98 333 97 115 151 8 6 123 76 239 342 220 109 138 11 284 353 124 349 322 156 106 346 12 148 92 294 7 352 21 25 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\shci_tl.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 45</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 77 327 98 333 97 115 151 8 6 123 76 239 342 220 109 138 11 102 284 353</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_events.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 110</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 275 39 327 98 333 97 115 151 279 8 6 123 149 313 324 130</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_gpio.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 272</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 92 294 7 352 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 146</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\tl_mbox.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 89</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 77 327 98 333 97 115 151 8 6 123 76 239 342 220 109 138 11 105 102 353 349 293 91 24 235 322 156 106 346 12 148 92 294 7 352 21 25 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 0 41 348 117 57 153 282 304</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pka.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 311</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 321</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 50 327 98 333 97 115 151 8 6 123 76 239 342 220 144 91 105 24 235 322 156 106 346 109 138 11 12 148 92 294 7 352 21 25 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 0 41 348 117 57 153 282 122 279 149 313 324 130 102 77 353 16</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl_if.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 274</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 16 77 327 98 333 97 115 151 8 6 123 76 239 342 220 109 138 11 353</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_dma.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 33</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 112 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 92 294 7 352 21 25 6 40 341 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 146</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_lptim.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 137</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\stm_queue.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 147</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 251 327 98 333 97 115 151 8 6 123 76 239 342 220 91 105 24 235 322 156 106 346 109 138 11 12 148 92 294 7 352 21 25 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 0 41 348 117 57 153 282 296</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_gap_aci.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 299</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 307 39 327 98 333 97 115 151 279 8 6 123 149 313 324 130</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_iwdg.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 317</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_hal_aci.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 216</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 96 39 327 98 333 97 115 151 279 8 6 123 149 313 324 130</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Src\p2p_stm.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 4</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 90 50 327 98 333 97 115 151 8 6 123 76 239 342 220 144 91 105 24 235 322 156 106 346 109 138 11 12 148 92 294 7 352 21 25 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 0 41 348 117 57 153 282 122 347 337 149 313 307 39 279 324 130 67 96 345 51 275 54 48 154 310 141 15 60 140 260 103 3 139 331 85 255 258 77 292 266 135 136 304</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_tim_ex.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 84</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_hci_le.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 83</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 345 39 327 98 333 97 115 151 279 8 6 123 149 313 324 130</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_spi.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 71</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 62 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 92 294 7 352 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291 146</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_gatt_aci.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 219</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 67 39 327 98 333 97 115 151 279 8 6 123 149 313 324 130</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Utilities\lpm\tiny_lpm\stm32_lpm.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 86</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 142 327 98 333 97 115 151 145 109 138 11 8 6 123</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_l2cap_aci.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 34</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 51 39 327 98 333 97 115 151 279 8 6 123 149 313 324 130</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_uart.c</name>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_crc.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
@@ -1675,87 +697,87 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rtc_ex.c</name>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_i2c.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 79</file>
+                    <file> 33</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rng.c</name>
+            <name>$PROJ_DIR$\..\STM32_WPAN\App\otas_stm.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 126</file>
+                    <file> 309</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
+                    <file> 176 201 117 326 140 170 194 275 94 408 161 336 293 43 318 279 175 171 90 289 5 307 344 141 172 320 285 406 397 193 119 283 9 96 415 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 233 131 143 174 228 277 22 162 103 123 328 127 3 419 121 339 230 85 302 122 202 4 206 211 323 17 317 405 80 234 2 182 409 276 125 225 290 337 363 92 196 286 292 1</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\template\osal.c</name>
+            <name>$PROJ_DIR$\..\STM32_WPAN\App\custom_stm.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 82</file>
+                    <file> 41</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 8 98 333 97 115 151 6 123 324</file>
+                    <file> 176 201 117 326 140 170 194 275 94 408 161 336 293 43 318 279 175 171 90 289 5 307 344 141 172 320 285 406 397 193 119 283 9 96 415 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 233 131 143 174 228 277 22 162 103 123 328 127 3 419 121 339 230 85 302 122 202 4 206 211 323 17 317 405 80 234 2 182 409 276 125 225 290 337 363 92 196 286 292 1 91</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_uart_ex.c</name>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_dma.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 68</file>
+                    <file> 205</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rtc.c</name>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_iwdg.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 72</file>
+                    <file> 48</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 92 294 7 352 322 156 106 327 98 333 97 115 151 346 109 138 11 12 148 21 25 6 112 341 40 340 1 285 43 53 302 73 49 318 88 288 36 119 329 334 343 125 315 127 308 277 280 81 350 134 65 70 35 9 129 94 58 120 46 291</file>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\shci_tl_if.c</name>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_lptim.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
@@ -1765,16 +787,1216 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 284 353 77 327 98 333 97 115 151 8 6 123 76 239 342 220 109 138 11</file>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\DanGPS\Exe\DanGPS.hex</name>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pka.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 49</file>
+                </tool>
+            </outputs>
             <inputs>
                 <tool>
-                    <name>OBJCOPY</name>
-                    <file> 17</file>
+                    <name>ICCARM</name>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_flash_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 120</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rng.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 300</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_ipcc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 40</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32_WPAN\Target\hw_ipcc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 101</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 414 117 326 140 170 194 275 94 408 161 336 293 43 318 175 171 90 289 5 307 344 141 172 320 285 406 397 193 119 283 9 96 415 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 233 131 143 174 228 277 22 112 363</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_adc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 416</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 29</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_cortex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 168</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_cryp.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 222</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_cryp_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 298</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pwr.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 310</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_adc_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 287</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_crc_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 204</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_i2c_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 403</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32_WPAN\App\custom_app.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 232</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 124 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 175 171 90 289 233 131 143 174 228 277 22 303 414 94 161 336 293 43 318 1 103 279 162 123 328 127 3 419 121 339 230 85 302 122 202 4 206 211 323 17 317 405 80 234 2 182 409 276 125 225 290 337 363 92 196 286 292 335 91 39</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_tmr.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 63</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 117 326 140 170 194 275 67 193 119 283 9 5 307 344 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 145 327</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_watchdog.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 70</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 117 326 140 170 194 275 67 193 119 283 9 5 307 344 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 312</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_l2cap_aci.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 212</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 202 419 117 326 140 170 194 275 121 94 408 161 328 127 339 230</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 186</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 201 117 326 140 170 194 275 94 408 161 336 293 43 318 279 175 171 90 289 5 307 344 141 172 320 285 406 397 193 119 283 9 96 415 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 233 131 143 174 228 277 22 162 121 328 127 339 230 199 363 68 281</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_uart_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 216</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Utilities\lpm\tiny_lpm\stm32_lpm.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 220</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 295 117 326 140 170 194 275 314 172 320 285 94 408 161</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\template\osal.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 214</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 94 326 140 170 194 275 408 161 339</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_hci_le.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 77</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 122 419 117 326 140 170 194 275 121 94 408 161 328 127 339 230</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\stm_list.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 321</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 324 117 326 140 170 194 275 94 408 161 336 293 43 318 175 171 90 289 5 307 344 141 172 320 285 406 397 193 119 283 9 96 415 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 233 131 143 174 228 277 22 199 363</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\tl_mbox.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 169</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 363 117 326 140 170 194 275 94 408 161 336 293 43 318 172 320 285 171 199 68 112 26 175 90 289 5 307 344 141 406 397 193 119 283 9 96 415 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 233 131 143 174 228 277 22 1</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\shci_tl.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 227</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 363 117 326 140 170 194 275 94 408 161 336 293 43 318 172 320 285 199 187 68</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_spi_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 208</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\otp.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 110</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 324 117 326 140 170 194 275 94 408 161 336 293 43 318 175 171 90 289 5 307 344 141 172 320 285 406 397 193 119 283 9 96 415 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 233 131 143 174 228 277 22 306</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_tim_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 203</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\stm_queue.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 313</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 324 117 326 140 170 194 275 94 408 161 336 293 43 318 175 171 90 289 5 307 344 141 172 320 285 406 397 193 119 283 9 96 415 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 233 131 143 174 228 277 22 134</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_gatt_aci.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 297</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 85 419 117 326 140 170 194 275 121 94 408 161 328 127 339 230</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_hal_aci.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 304</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 302 419 117 326 140 170 194 275 121 94 408 161 328 127 339 230</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Src\p2p_stm.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 86</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 176 201 117 326 140 170 194 275 94 408 161 336 293 43 318 279 175 171 90 289 5 307 344 141 172 320 285 406 397 193 119 283 9 96 415 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 233 131 143 174 228 277 22 162 103 123 328 127 3 419 121 339 230 85 302 122 202 4 206 211 323 17 317 405 80 234 2 182 409 276 125 225 290 337 363 92 196 286 292 1</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl_if.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 47</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 281 363 117 326 140 170 194 275 94 408 161 336 293 43 318 172 320 285 68</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_spi.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 417</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rtc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 74</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_tim.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 316</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\svc\Src\svc_ctl.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 407</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 176 201 117 326 140 170 194 275 94 408 161 336 293 43 318 279 175 171 90 289 5 307 344 141 172 320 285 406 397 193 119 283 9 96 415 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 233 131 143 174 228 277 22 162 103 123 328 127 3 419 121 339 230 85 302 122 202 4 206 211 323 17 317 405 80 234 2 182 409 276 125 225 290 337 363 92 196 286 292 1</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\utilities\dbg_trace.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 412</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 324 117 326 140 170 194 275 94 408 161 336 293 43 318 175 171 90 289 5 307 344 141 172 320 285 406 397 193 119 283 9 96 415 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 233 131 143 174 228 277 22 134 1</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\shci_tl_if.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 111</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 187 68 363 117 326 140 170 194 275 94 408 161 336 293 43 318 172 320 285</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_events.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 192</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 4 419 117 326 140 170 194 275 121 94 408 161 328 127 339 230</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Utilities\sequencer\stm32_seq.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 14</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 39 117 326 140 170 194 275 314 172 320 285 94 408 161</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\ble\core\auto\ble_gap_aci.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 18</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 3 419 117 326 140 170 194 275 121 94 408 161 328 127 339 230</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rtc_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 343</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\shci\shci.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 126</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 363 117 326 140 170 194 275 94 408 161 336 293 43 318 172 320 285 187 68 299 112 5 307 344 141 406 397 193 119 283 9 96 415 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_adc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 8</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 117 326 140 170 194 275 67 193 119 283 9 5 307 344 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 145</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_mcu.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 150</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 117 326 140 170 194 275 67 193 119 283 9 5 307 344 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 143 179 336 94 161 104 58 66 145 64 155 164 277 327 177 312 46 147 84 59 15 139 60 13 30 54 56 160 157 36 65 72 61 115 136 152 156 106 71 69 144 142 55 146 151 137 158 138 318</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\lptim.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 402</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 305 124 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 175 171 90 289 233 131 143 174 228 277 22 303 414 94 161 336 293 43 318</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\hw_timerserver.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 404</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 414 117 326 140 170 194 275 94 408 161 336 293 43 318 175 171 90 289 5 307 344 141 172 320 285 406 397 193 119 283 9 96 415 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 233 131 143 174 228 277 22</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\stm32wbxx_hal_msp.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 183</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 124 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 175 171 90 289 233 131 143 174 228 277 22 303 414 94 161 336 293 43 318</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\iwdg.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 280</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 207 124 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 175 171 90 289 233 131 143 174 228 277 22 303 414 94 161 336 293 43 318</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\app_debug.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 219</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 414 117 326 140 170 194 275 94 408 161 336 293 43 318 175 171 90 289 5 307 344 141 172 320 285 406 397 193 119 283 9 96 415 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 233 131 143 174 228 277 22 341 324 299 112 363 68 1</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_rng.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 114</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 117 326 140 170 194 275 67 193 119 283 9 5 307 344 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 46 145</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\pka.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 184</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 322 124 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 175 171 90 289 233 131 143 174 228 277 22 303 414 94 161 336 293 43 318</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\flash_driver.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 215</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 414 117 326 140 170 194 275 94 408 161 336 293 43 318 175 171 90 289 5 307 344 141 172 320 285 406 397 193 119 283 9 96 415 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 233 131 143 174 228 277 22 148 299 112 363 314</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 37</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 124 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 175 171 90 289 233 131 143 174 228 277 22 303 414 94 161 336 293 43 318 23 89 159 79 25 207 305 322 98 180 189 181 149 294</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\rng.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 410</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 180 124 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 175 171 90 289 233 131 143 174 228 277 22 303 414 94 161 336 293 43 318</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 421</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 294 124 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 175 171 90 289 233 131 143 174 228 277 22 303 414 94 161 336 293 43 318</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\i2c.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 188</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 79 124 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 175 171 90 289 233 131 143 174 228 277 22 303 414 94 161 336 293 43 318</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\rtc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 311</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 189 124 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 175 171 90 289 233 131 143 174 228 277 22 303 414 94 161 336 293 43 318</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\standby.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 195</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 124 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 175 171 90 289 233 131 143 174 228 277 22 303 414 94 161 336 293 43 318 341 107</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\crc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 20</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 159 124 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 175 171 90 289 233 131 143 174 228 277 22 303 414 94 161 336 293 43 318</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\rf.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 52</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 98 124 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 175 171 90 289 233 131 143 174 228 277 22 303 414 94 161 336 293 43 318</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\radio\lr1110.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 19</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 115 117 326 140 170 194 275 104 58 67 66 145 64 155 164 193 119 283 9 5 307 344 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 277 327 177 312 46 147 84 59 15 139 60 13 30 54 56 160 157 36 65 72 61 136 152 156 106 71 69 144 142 55 146 151 179 336 94 161</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\app_entry.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 34</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 414 117 326 140 170 194 275 94 408 161 336 293 43 318 175 171 90 289 5 307 344 141 172 320 285 406 397 193 119 283 9 96 415 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 233 131 143 174 228 277 22 124 303 231 281 363 68 103 279 162 123 328 127 3 419 121 339 230 85 302 122 202 4 206 211 323 17 317 405 80 234 2 182 409 276 125 225 290 337 92 196 286 292 39 187 295 341 1 299 112 306 324</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem_hal.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 35</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 293 326 140 170 194 275 408 43 69 117 67 71 106 55 179 336 94 161 104 58 66 145 64 155 164 193 119 283 9 5 307 344 141 172 320 285 406 397 96 415 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 277 327 177 312 46 147 84 59 15 139 60 13 30 54 56 160 157 36 65 72 61 115 136 152 156 144 142 146 151</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\spi.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 190</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 181 124 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 175 171 90 289 233 131 143 174 228 277 22 303 414 94 161 336 293 43 318</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\startup_stm32wb10xx_cm4.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 291</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\usart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 165</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 149 124 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 175 171 90 289 233 131 143 174 228 277 22 303 414 94 161 336 293 43 318</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_i2c.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 57</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 155 139 67 60 145</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_flash.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 16</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 117 326 140 170 194 275 67 336 408 193 119 283 9 5 307 344 141 172 320 285 406 397 96 415 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 15 60</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\aes.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 38</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 89 124 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 175 171 90 289 233 131 143 174 228 277 22 303 414 94 161 336 293 43 318</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 32</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 117 326 140 170 194 275 67 193 119 283 9 5 307 344 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 145 64 155</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\ipcc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 301</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 25 124 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 175 171 90 289 233 131 143 174 228 277 22 303 414 94 161 336 293 43 318</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_rtc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 116</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 133 326 140 170 194 275 408 7 56 160 164 193 119 283 9 5 307 344 117 141 172 320 285 406 397 96 415 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 277 177 67 145</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_spi.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 117 326 140 170 194 275 67 193 119 283 9 5 307 344 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 84 155 147 145</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\adc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 97</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 23 124 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 175 171 90 289 233 131 143 174 228 277 22 303 414 94 161 336 293 43 318</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\stm32_lpm_if.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 282</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 87 295 117 326 140 170 194 275 175 171 90 289 5 307 344 141 172 320 285 406 397 193 119 283 9 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 233 131 143 174 228 277 22 124 303 414 94 161 336 293 43 318 107</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Core\Src\stm32wbxx_it.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 185</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 124 193 119 283 9 5 307 344 117 326 140 170 194 275 141 172 320 285 406 397 96 415 408 167 108 213 132 413 128 217 218 135 221 210 31 163 42 99 315 130 153 45 198 197 296 24 27 50 229 113 278 422 411 224 284 226 166 82 223 200 178 83 109 175 171 90 289 233 131 143 174 228 277 22 303 414 94 161 336 293 43 318 319</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\dlib_lock_glue.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 93</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 191 415 326 140 170 194 275 408 336 293 43 209 117 172 320 285</file>
                 </tool>
             </inputs>
         </file>
@@ -1783,7 +2005,7 @@
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 17 74</file>
+                    <file> 100 81</file>
                 </tool>
             </outputs>
         </file>

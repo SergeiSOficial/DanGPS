@@ -229,10 +229,6 @@
           <state>USE_HAL_DRIVER</state>
           <state>STM32WB10xx</state>
           <state>STM32_THREAD_SAFE_STRATEGY=3</state>
-          <state>USE_FULL_LL_DRIVER</state>
-          <state></state>
-          <state></state>
-          <state></state>
           <state></state>
         </option>
         <option>
@@ -373,6 +369,19 @@
           <state>$PROJ_DIR$/../Utilities/sequencer</state>
           <state>$PROJ_DIR$/../Middlewares/ST/STM32_WPAN/ble</state>
           <state>$PROJ_DIR$/../Drivers/CMSIS/Include</state>
+          <state>$PROJ_DIR$\..\Core\Inc\smtc_hal</state>
+          <state>$PROJ_DIR$\..\Core\Inc\boards</state>
+          <state>$PROJ_DIR$\..\Drivers\BSP\Components\Leds</state>
+          <state>$PROJ_DIR$\..\Drivers\BSP\Components\lis2de12</state>
+          <state>$PROJ_DIR$\..\Drivers\BSP\Components\hall_effect</state>
+          <state>$PROJ_DIR$\..\Drivers\BSP\Components\external_supply</state>
+          <state>$PROJ_DIR$\..\Drivers\BSP\Components\rf_switch</state>
+          <state>$PROJ_DIR$\..\Drivers\BSP\Components\usr_button</state>
+          <state>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem\src</state>
+          <state>$PROJ_DIR$\..\Core\Src\radio\gnss</state>
+          <state>$PROJ_DIR$\..\Core\Src\radio\wifi</state>
+          <state>$PROJ_DIR$\..\Core\Src\radio</state>
+          <state>$PROJ_DIR$\..\Core\Src\apps\Tracker</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
@@ -1190,6 +1199,54 @@
         </file>
       </group>
       <group>
+        <name>radio</name>
+        <file>
+          <name>$PROJ_DIR$\..\Core\Src\radio\lr1110.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem_hal.c</name>
+        </file>
+      </group>
+      <group>
+        <name>smtc_hal</name>
+        <file>
+          <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_adc.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_flash.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_gpio.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_i2c.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_mcu.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_rng.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_rtc.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_spi.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_tmr.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_tmr_list.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_uart.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_watchdog.c</name>
+        </file>
+      </group>
+      <group>
         <name>STM32_WPAN</name>
         <group>
           <name>App</name>
@@ -1231,12 +1288,6 @@
     </group>
     <group>
       <name>STM32WBxx_HAL_Driver</name>
-      <file>
-        <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_utils.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_exti.c</name>
-      </file>
       <file>
         <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_adc.c</name>
       </file>
@@ -1328,13 +1379,10 @@
         <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rtc_ex.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_spi.c</name>
+        <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_spi.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_gpio.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_dma.c</name>
+        <name>$PROJ_DIR$/../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_spi_ex.c</name>
       </file>
       <file>
         <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_tim.c</name>

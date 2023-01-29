@@ -1505,10 +1505,55 @@
                     <name>$PROJ_DIR$\..\Core\Src\stm32wbxx_it.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Core\Src\tsc.c</name>
+                    <name>$PROJ_DIR$\..\Core\Src\usart.c</name>
+                </file>
+            </group>
+            <group>
+                <name>radio</name>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\radio\lr1110.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Core\Src\usart.c</name>
+                    <name>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem_hal.c</name>
+                </file>
+            </group>
+            <group>
+                <name>smtc_hal</name>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_adc.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_flash.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_gpio.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_i2c.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_mcu.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_rng.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_rtc.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_spi.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_tmr.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_tmr_list.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_uart.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\smtc_hal\smtc_hal_watchdog.c</name>
                 </file>
             </group>
             <group>
@@ -1538,21 +1583,6 @@
                     <name>Target</name>
                     <file>
                         <name>$PROJ_DIR$\..\STM32_WPAN\Target\hw_ipcc.c</name>
-                    </file>
-                </group>
-            </group>
-            <group>
-                <name>TOUCHSENSING</name>
-                <group>
-                    <name>App</name>
-                    <file>
-                        <name>$PROJ_DIR$\..\TOUCHSENSING\App\stmCriticalSection.c</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\..\TOUCHSENSING\App\touchsensing.c</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\..\TOUCHSENSING\App\tsl_user.c</name>
                     </file>
                 </group>
             </group>
@@ -1653,13 +1683,13 @@
                 <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rtc_ex.c</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_spi.c</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_tim.c</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_tim_ex.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_tsc.c</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_uart.c</name>
@@ -1750,42 +1780,6 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\tl_mbox.c</name>
-            </file>
-        </group>
-        <group>
-            <name>TouchSensing</name>
-            <file>
-                <name>$PROJ_DIR$\..\Middlewares\ST\STM32_TouchSensing_Library\src\tsl.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Middlewares\ST\STM32_TouchSensing_Library\src\tsl_acq.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Middlewares\ST\STM32_TouchSensing_Library\src\tsl_acq_tsc.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Middlewares\ST\STM32_TouchSensing_Library\src\tsl_dxs.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Middlewares\ST\STM32_TouchSensing_Library\src\tsl_ecs.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Middlewares\ST\STM32_TouchSensing_Library\src\tsl_filter.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Middlewares\ST\STM32_TouchSensing_Library\src\tsl_globals.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Middlewares\ST\STM32_TouchSensing_Library\src\tsl_linrot.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Middlewares\ST\STM32_TouchSensing_Library\src\tsl_object.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Middlewares\ST\STM32_TouchSensing_Library\src\tsl_time.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Middlewares\ST\STM32_TouchSensing_Library\src\tsl_touchkey.c</name>
             </file>
         </group>
     </group>
