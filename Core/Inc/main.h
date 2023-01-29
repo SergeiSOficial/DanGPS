@@ -74,6 +74,24 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define VCC_2_4GHz_SW_Pin GPIO_PIN_8
+#define VCC_2_4GHz_SW_GPIO_Port GPIOA
+#define GHz2_4_SWITCH_Pin GPIO_PIN_9
+#define GHz2_4_SWITCH_GPIO_Port GPIOA
+#define LNA_PON_MCU_Pin GPIO_PIN_0
+#define LNA_PON_MCU_GPIO_Port GPIOB
+#define LR_BUSY_Pin GPIO_PIN_1
+#define LR_BUSY_GPIO_Port GPIOB
+#define LR_IRQ_Pin GPIO_PIN_4
+#define LR_IRQ_GPIO_Port GPIOE
+#define LR_NRESET_Pin GPIO_PIN_10
+#define LR_NRESET_GPIO_Port GPIOA
+#define TX1_Pin GPIO_PIN_11
+#define TX1_GPIO_Port GPIOA
+#define RX1_Pin GPIO_PIN_12
+#define RX1_GPIO_Port GPIOA
+#define ACC_INT1_Pin GPIO_PIN_7
+#define ACC_INT1_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
