@@ -22,10 +22,10 @@
     <StLinkDriver>
         <stlinkserialNo>USB0</stlinkserialNo>
         <stlinkfoundProbes />
-        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
-        <CStepIntDis>_ 0</CStepIntDis>
         <stlinkResetStyle>0</stlinkResetStyle>
         <stlinkResetStrategy>2</stlinkResetStrategy>
+        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
+        <CStepIntDis>_ 0</CStepIntDis>
     </StLinkDriver>
     <DebugChecksum>
         <Checksum>219626887</Checksum>
@@ -63,11 +63,6 @@
         <ITMportsLogFile>0</ITMportsLogFile>
         <ITMlogFile>$PROJ_DIR$\ITM.log</ITMlogFile>
     </SWOTraceHWSettings>
-    <LogFile>
-        <LoggingEnabled>_ 0</LoggingEnabled>
-        <LogFile>_ "$PROJ_DIR$\LogFile1.log"</LogFile>
-        <Category2>_ 2</Category2>
-    </LogFile>
     <Trace2>
         <Enabled>0</Enabled>
         <ShowSource>0</ShowSource>
@@ -124,6 +119,11 @@
         <Symbiont>0</Symbiont>
         <Exclusions />
     </DriverProfiling>
+    <LogFile>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ "$PROJ_DIR$\LogFile1.log"</LogFile>
+        <Category2>_ 2</Category2>
+    </LogFile>
     <DisassembleMode>
         <mode>0</mode>
     </DisassembleMode>
