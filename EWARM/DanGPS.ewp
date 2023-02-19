@@ -382,6 +382,7 @@
                     <state>$PROJ_DIR$\..\Core\Src\radio\wifi</state>
                     <state>$PROJ_DIR$\..\Core\Src\radio</state>
                     <state>$PROJ_DIR$\..\Core\Src\apps\Tracker</state>
+                    <state>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem\src</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -786,11 +787,11 @@
                 </option>
                 <option>
                     <name>IlinkIcfOverride</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$PROJ_DIR$/stm32wb10xx_flash_cm4.icf</state>
+                    <state>$TOOLKIT_DIR$/config/linker/ST/stm32wb1xxC.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -1124,6 +1125,15 @@
         <group>
             <name>User</name>
             <group>
+                <name>board</name>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\boards\lr1110_tracker_board.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\tracker_utility.c</name>
+                </file>
+            </group>
+            <group>
                 <name>Core</name>
                 <file>
                     <name>$PROJ_DIR$\..\Core\Src\adc.c</name>
@@ -1139,6 +1149,9 @@
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\Core\Src\crc.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\dantag_lr1110.c</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\Core\Src\flash_driver.c</name>
@@ -1198,10 +1211,40 @@
             <group>
                 <name>radio</name>
                 <file>
+                    <name>$PROJ_DIR$\..\Core\Src\apps_utilities.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\radio\gnss\gnss_scan.c</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\..\Core\Src\radio\lr1110.c</name>
                 </file>
                 <file>
+                    <name>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem\src\lr1110_bootloader.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem\src\lr1110_modem_driver_version.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem\src\lr1110_modem_gnss.c</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem_hal.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem\src\lr1110_modem_helper.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem\src\lr1110_modem_lorawan.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem\src\lr1110_modem_system.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\radio\lr1110_modem\src\lr1110_modem_wifi.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\radio\wifi\wifi_scan.c</name>
                 </file>
             </group>
             <group>
@@ -1277,6 +1320,27 @@
     </group>
     <group>
         <name>Drivers</name>
+        <group>
+            <name>BSP</name>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\BSP\Components\external_supply\external_supply.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\BSP\Components\hall_effect\hall_effect.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\BSP\Components\Leds\leds.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\BSP\Components\lis2de12\lis2de12.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\BSP\Components\rf_switch\pe4259.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\BSP\Components\usr_button\usr_button.c</name>
+            </file>
+        </group>
         <group>
             <name>CMSIS</name>
             <file>

@@ -1065,7 +1065,7 @@ void tracker_get_device_settings( uint8_t* buffer, uint16_t* buffer_len )
                                       tracker_ctx.gnss_settings.nb_sat );
     memcpy( buffer + *buffer_len, output_buffer_tmp, output_buffer_len_tmp );
     *buffer_len += output_buffer_len_tmp;
-    memcpy( &epoch_time, localtime( &tracker_ctx.last_almanac_update ), sizeof( struct tm ) );
+    memcpy( &epoch_time, localtime( (time_t const*)&tracker_ctx.last_almanac_update ), sizeof( struct tm ) );
 
     output_buffer_len_tmp =
         snprintf( output_buffer_tmp, INTERNAL_LOG_BUFFER_LEN - *buffer_len,
@@ -3399,7 +3399,7 @@ static void tracker_print_device_settings( void )
     HAL_DBG_TRACE_PRINTF( "#\tsearch_mode : %d\r\n", tracker_ctx.gnss_settings.search_mode );
     HAL_DBG_TRACE_PRINTF( "#\tinput_parameters : %d\r\n", tracker_ctx.gnss_settings.input_parameters );
     HAL_DBG_TRACE_PRINTF( "#\tnb_sat : %d\r\n", tracker_ctx.gnss_settings.nb_sat );
-    memcpy( &epoch_time, localtime( &tracker_ctx.last_almanac_update ), sizeof( struct tm ) );
+    memcpy( &epoch_time, localtime( (time_t const*)&tracker_ctx.last_almanac_update ), sizeof( struct tm ) );
     HAL_DBG_TRACE_PRINTF( "#\tlast_almanac_update : [%d-%d-%d %d:%d:%d.000]\r\n", epoch_time.tm_year + 1900,
                           epoch_time.tm_mon + 1, epoch_time.tm_mday, epoch_time.tm_hour, epoch_time.tm_min,
                           epoch_time.tm_sec );

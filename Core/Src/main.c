@@ -36,7 +36,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "dantag_lr1110.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -120,7 +120,7 @@ int main(void)
   MX_PKA_Init();
   MX_RNG_Init();
   /* USER CODE BEGIN 2 */
-
+  lr1110_Init();
   /* USER CODE END 2 */
 
   /* Init code for STM32_WPAN */
@@ -130,6 +130,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    lr1110_MainLoop();
     /* USER CODE END WHILE */
     MX_APPE_Process();
 

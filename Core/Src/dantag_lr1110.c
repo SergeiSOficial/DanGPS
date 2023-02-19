@@ -1,35 +1,45 @@
 /**
- * @file lora-track.c
+ * @file dantag_lr1110.c
  * @author Sergei Savkin (ssavkin@dairymaster.com)
  * @brief
  * @version 0.1
- * @date 2023-01-29
+ * @date 2023-02-19
  *
  * @copyright Copyright (c) 2023
  *
  */
-
-#include "lora-track.h"
-
-#include "main_tracker.h"
-#include "lorawan_commissioning.h"
-#include "lr1110_tracker_board.h"
-#include "wifi_scan.h"
-#include "gnss_scan.h"
-#include "tracker_utility.h"
-#include "ble_thread.h"
-#include "apps_utilities.h"
-#include "utilities.h"
+#include "dantag_lr1110.h"
 
 /*!
  * @addtogroup apps_tracker
  * LR1110 Modem-E Tracker Application
  * @{
  */
+
+/*
+ * -----------------------------------------------------------------------------
+ * --- PRIVATE MACROS-----------------------------------------------------------
+ */
+
+/*
+ * -----------------------------------------------------------------------------
+ * --- PRIVATE CONSTANTS -------------------------------------------------------
+ */
+
 /*!
  * @brief Force a new tracker context in flash memory
  */
 #define FORCE_NEW_TRACKER_CONTEXT 0
+
+/*
+ * -----------------------------------------------------------------------------
+ * --- PRIVATE TYPES -----------------------------------------------------------
+ */
+
+/*
+ * -----------------------------------------------------------------------------
+ * --- PRIVATE VARIABLES -------------------------------------------------------
+ */
 
 /*!
  * @brief Tracker context structure
@@ -315,19 +325,18 @@ static void tracker_wifi_run_scan(const wifi_settings_t *wifi_settings, wifi_sca
  * --- PUBLIC FUNCTIONS DEFINITION ---------------------------------------------
  */
 
+lr1110_modem_response_code_t modem_response_code = LR1110_MODEM_RESPONSE_CODE_OK;
+uint8_t dev_eui[LORAWAN_DEVICE_EUI_LEN]          = LORAWAN_DEVICE_EUI;
+uint8_t join_eui[LORAWAN_JOIN_EUI_LEN]           = LORAWAN_JOIN_EUI;
+uint8_t app_key[LORAWAN_APP_KEY_LEN]             = LORAWAN_APP_KEY;
 /**
  * @brief Main application entry point.
  */
-int LoraTrackInit(void)
+void lr1110_Init(void)
 {
-    lr1110_modem_response_code_t modem_response_code = LR1110_MODEM_RESPONSE_CODE_OK;
     lr1110_modem_event_callback_t lr1110_modem_event_callback;
     int32_t voltage_drop           = 0;
     uint32_t voltage_recovery_time = 0;
-
-    uint8_t dev_eui[LORAWAN_DEVICE_EUI_LEN] = LORAWAN_DEVICE_EUI;
-    uint8_t join_eui[LORAWAN_JOIN_EUI_LEN]  = LORAWAN_JOIN_EUI;
-    uint8_t app_key[LORAWAN_APP_KEY_LEN]    = LORAWAN_APP_KEY;
 
     /* Init board */
     hal_mcu_init();
@@ -364,7 +373,7 @@ int LoraTrackInit(void)
         HAL_DBG_TRACE_INFO("Something goes wrong with the LR1110 firmware, stay in BLE mode and update it\n\r");
         tracker_ctx.has_lr1110_firmware = false;
         tracker_restore_app_ctx();
-        start_ble_thread(0);
+        // start_ble_thread(0);
     } else {
         tracker_ctx.has_lr1110_firmware = true;
     }
@@ -428,7 +437,7 @@ int LoraTrackInit(void)
     timer_set_value(&led_rx_timer, LED_PERIOD_MS);
 
     /* Start BLE advertisement for 30s */
-    start_ble_thread(TRACKER_ADV_TIMEOUT_MS);
+    // start_ble_thread(TRACKER_ADV_TIMEOUT_MS);
 
     /* Init tracker context volatile parameters */
     tracker_ctx.has_date                   = false;
@@ -451,7 +460,7 @@ int LoraTrackInit(void)
     }
 }
 
-int LoraTrackMainLoop(void)
+void lr1110_MainLoop(void)
 {
     /* Process Event */
     if (lr1110.event.callback != NULL) {
@@ -669,7 +678,7 @@ int LoraTrackMainLoop(void)
             } while (modem_response_code != LR1110_MODEM_RESPONSE_CODE_OK);
 
             /* Start the BLE thread*/
-            start_ble_thread(TRACKER_ADV_TIMEOUT_MS);
+            //start_ble_thread(TRACKER_ADV_TIMEOUT_MS);
 
             if (tracker_ctx.airplane_mode == true) {
                 /* Stop Hall Effect sensors while the tracker is static in airplane mode */
@@ -724,7 +733,6 @@ int LoraTrackMainLoop(void)
         }
     }
 }
-
 /*
  * -----------------------------------------------------------------------------
  * --- PRIVATE FUNCTIONS DEFINITION --------------------------------------------
