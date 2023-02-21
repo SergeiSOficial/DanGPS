@@ -61,40 +61,37 @@ extern "C" {
  */
 
 /* LR1110 */
-#define RADIO_RESET PA_0
-#define RADIO_MOSI PA_7
+#define RADIO_RESET PA_10
+#define RADIO_MOSI PA_5
 #define RADIO_MISO PA_6
-#define RADIO_SCLK PA_5
-#define RADIO_NSS PA_4
-#define RADIO_BUSY PB_0
-#define RADIO_EVENT PB_4
+#define RADIO_SCLK PA_1
+#define RADIO_NSS PA_0
+#define RADIO_BUSY PB_1
+#define RADIO_EVENT PE_4
 
-#define VCC_SWITCH_WIFI_BLE PA_3
-#define SWITCH_WIFI_BLE PA_15
-#define GPS_SWITCH PB_8
-#define LNA_PON PA_8
+#define VCC_SWITCH_WIFI_BLE PA_8
+#define SWITCH_WIFI_BLE PA_9
+#define GPS_SWITCH PA_3
+#define LNA_PON PB_2
 
 /* Sensors */
-#define I2C_SCL PB_6
-#define I2C_SDA PB_7
+#define I2C_SCL PB_8
+#define I2C_SDA PB_9
 
-#define VCC_SENSORS_MCU PA_1
+#define VCC_SENSORS_MCU PB_5
 
-#define EFFECT_HALL_OUT PB_2
-#define ACC_INT1 PB_1
-#define USER_BUTTON PB_9
+#define EFFECT_HALL_OUT PB_4
+#define ACC_INT1 PB_7
+#define USER_BUTTON PB_4
 
 /* LED */
-#define LED_RX PE_4
-#define LED_TX PB_5
+#define LED_RX PA_11
+#define LED_TX PA_12
 
-/* USB */
-#define USB_DP PA_12
-#define USB_DM PA_11
 
 /* Debug pins definition */
-#define BOARD_DBG_PIN_TX PA_9
-#define BOARD_DBG_PIN_RX PA_10
+#define BOARD_DBG_PIN_TX PB_6
+#define BOARD_DBG_PIN_RX PB_6
 
 #define OSC_LSE_IN PC_14
 #define OSC_LSE_OUT PC_15

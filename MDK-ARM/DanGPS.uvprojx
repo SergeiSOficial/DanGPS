@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32WB10xx,STM32_THREAD_SAFE_STRATEGY=3,USE_FULL_LL_DRIVER,LR1110_TRACKER</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../STM32_WPAN/App;../TOUCHSENSING/App;../Drivers/STM32WBxx_HAL_Driver/Inc;../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy;../Utilities/lpm/tiny_lpm;../Middlewares/ST/STM32_WPAN;../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread;../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl;../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci;../Middlewares/ST/STM32_WPAN/utilities;../Middlewares/ST/STM32_WPAN/ble/core;../Middlewares/ST/STM32_WPAN/ble/core/auto;../Middlewares/ST/STM32_WPAN/ble/core/template;../Middlewares/ST/STM32_WPAN/ble/svc/Inc;../Middlewares/ST/STM32_WPAN/ble/svc/Src;../Middlewares/ST/STM32_TouchSensing_Library/inc;../Drivers/CMSIS/Device/ST/STM32WBxx/Include;../Utilities/sequencer;../Middlewares/ST/STM32_WPAN/ble;../Drivers/CMSIS/Include</IncludePath>
+              <IncludePath>../Core/Inc;../STM32_WPAN/App;../TOUCHSENSING/App;../Drivers/STM32WBxx_HAL_Driver/Inc;../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy;../Utilities/lpm/tiny_lpm;../Middlewares/ST/STM32_WPAN;../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread;../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl;../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci;../Middlewares/ST/STM32_WPAN/utilities;../Middlewares/ST/STM32_WPAN/ble/core;../Middlewares/ST/STM32_WPAN/ble/core/auto;../Middlewares/ST/STM32_WPAN/ble/core/template;../Middlewares/ST/STM32_WPAN/ble/svc/Inc;../Middlewares/ST/STM32_WPAN/ble/svc/Src;../Middlewares/ST/STM32_TouchSensing_Library/inc;../Drivers/CMSIS/Device/ST/STM32WBxx/Include;../Utilities/sequencer;../Middlewares/ST/STM32_WPAN/ble;../Drivers/CMSIS/Include;..\Core\Src;..\Core\Src\radio\lr1110_modem\src;..\Core\Src\apps\Tracker;..\Core\Src\radio;..\Core\Src\radio\wifi;..\Core\Src\radio\gnss;..\Drivers\BSP\Components\external_supply;..\Drivers\BSP\Components\hall_effect;..\Drivers\BSP\Components\Leds;..\Drivers\BSP\Components\rf_switch;..\Drivers\BSP\Components\lis2de12;..\Drivers\BSP\Components\usr_button;..\Core\Inc\boards;..\Core\Inc\smtc_hal</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -496,11 +496,6 @@
               <FilePath>../Core/Src/standby.c</FilePath>
             </File>
             <File>
-              <FileName>tsc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Core/Src/tsc.c</FilePath>
-            </File>
-            <File>
               <FileName>usart.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/usart.c</FilePath>
@@ -516,9 +511,24 @@
               <FilePath>../Core/Src/stm32wbxx_hal_msp.c</FilePath>
             </File>
             <File>
-              <FileName>main_OTA.c</FileName>
+              <FileName>dantag_lr1110.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Core\Src\main_OTA.c</FilePath>
+              <FilePath>..\Core\Src\dantag_lr1110.c</FilePath>
+            </File>
+            <File>
+              <FileName>tracker_utility.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\tracker_utility.c</FilePath>
+            </File>
+            <File>
+              <FileName>apps_utilities.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\apps_utilities.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\main.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -717,26 +727,6 @@
               <FileName>hw_ipcc.c</FileName>
               <FileType>1</FileType>
               <FilePath>../STM32_WPAN/Target/hw_ipcc.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Application/User/TOUCHSENSING/App</GroupName>
-          <Files>
-            <File>
-              <FileName>touchsensing.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../TOUCHSENSING/App/touchsensing.c</FilePath>
-            </File>
-            <File>
-              <FileName>tsl_user.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../TOUCHSENSING/App/tsl_user.c</FilePath>
-            </File>
-            <File>
-              <FileName>stmCriticalSection.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../TOUCHSENSING/App/stmCriticalSection.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1184,11 +1174,6 @@
               <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim_ex.c</FilePath>
             </File>
             <File>
-              <FileName>stm32wbxx_hal_tsc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tsc.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32wbxx_hal_uart.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart.c</FilePath>
@@ -1197,6 +1182,16 @@
               <FileName>stm32wbxx_hal_uart_ex.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32wbxx_hal_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32wbxx_hal_spi_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_spi_ex.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1413,66 +1408,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Middlewares/TouchSensing</GroupName>
-          <Files>
-            <File>
-              <FileName>tsl.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/ST/STM32_TouchSensing_Library/src/tsl.c</FilePath>
-            </File>
-            <File>
-              <FileName>tsl_acq_tsc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/ST/STM32_TouchSensing_Library/src/tsl_acq_tsc.c</FilePath>
-            </File>
-            <File>
-              <FileName>tsl_globals.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/ST/STM32_TouchSensing_Library/src/tsl_globals.c</FilePath>
-            </File>
-            <File>
-              <FileName>tsl_touchkey.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/ST/STM32_TouchSensing_Library/src/tsl_touchkey.c</FilePath>
-            </File>
-            <File>
-              <FileName>tsl_acq.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/ST/STM32_TouchSensing_Library/src/tsl_acq.c</FilePath>
-            </File>
-            <File>
-              <FileName>tsl_dxs.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/ST/STM32_TouchSensing_Library/src/tsl_dxs.c</FilePath>
-            </File>
-            <File>
-              <FileName>tsl_linrot.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/ST/STM32_TouchSensing_Library/src/tsl_linrot.c</FilePath>
-            </File>
-            <File>
-              <FileName>tsl_ecs.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/ST/STM32_TouchSensing_Library/src/tsl_ecs.c</FilePath>
-            </File>
-            <File>
-              <FileName>tsl_object.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/ST/STM32_TouchSensing_Library/src/tsl_object.c</FilePath>
-            </File>
-            <File>
-              <FileName>tsl_time.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/ST/STM32_TouchSensing_Library/src/tsl_time.c</FilePath>
-            </File>
-            <File>
-              <FileName>tsl_filter.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/ST/STM32_TouchSensing_Library/src/tsl_filter.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>Utilities</GroupName>
           <Files>
             <File>
@@ -1484,6 +1419,176 @@
               <FileName>stm32_seq.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Utilities/sequencer/stm32_seq.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Application/radio</GroupName>
+          <Files>
+            <File>
+              <FileName>lr1110_tracker_board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\boards\lr1110_tracker_board.c</FilePath>
+            </File>
+            <File>
+              <FileName>utilities.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\boards\utilities.c</FilePath>
+            </File>
+            <File>
+              <FileName>gnss_scan.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\radio\gnss\gnss_scan.c</FilePath>
+            </File>
+            <File>
+              <FileName>lr1110_bootloader.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\radio\lr1110_modem\src\lr1110_bootloader.c</FilePath>
+            </File>
+            <File>
+              <FileName>lr1110_modem_driver_version.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\radio\lr1110_modem\src\lr1110_modem_driver_version.c</FilePath>
+            </File>
+            <File>
+              <FileName>lr1110_modem_gnss.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\radio\lr1110_modem\src\lr1110_modem_gnss.c</FilePath>
+            </File>
+            <File>
+              <FileName>lr1110_modem_helper.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\radio\lr1110_modem\src\lr1110_modem_helper.c</FilePath>
+            </File>
+            <File>
+              <FileName>lr1110_modem_lorawan.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\radio\lr1110_modem\src\lr1110_modem_lorawan.c</FilePath>
+            </File>
+            <File>
+              <FileName>lr1110_modem_system.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\radio\lr1110_modem\src\lr1110_modem_system.c</FilePath>
+            </File>
+            <File>
+              <FileName>lr1110_modem_wifi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\radio\lr1110_modem\src\lr1110_modem_wifi.c</FilePath>
+            </File>
+            <File>
+              <FileName>wifi_scan.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\radio\wifi\wifi_scan.c</FilePath>
+            </File>
+            <File>
+              <FileName>lr1110.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\radio\lr1110.c</FilePath>
+            </File>
+            <File>
+              <FileName>lr1110_modem_hal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\radio\lr1110_modem_hal.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Application/smtc_hal</GroupName>
+          <Files>
+            <File>
+              <FileName>smtc_hal_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>smtc_hal_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_flash.c</FilePath>
+            </File>
+            <File>
+              <FileName>smtc_hal_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>smtc_hal_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>smtc_hal_mcu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_mcu.c</FilePath>
+            </File>
+            <File>
+              <FileName>smtc_hal_rng.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_rng.c</FilePath>
+            </File>
+            <File>
+              <FileName>smtc_hal_rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_rtc.c</FilePath>
+            </File>
+            <File>
+              <FileName>smtc_hal_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>smtc_hal_tmr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_tmr.c</FilePath>
+            </File>
+            <File>
+              <FileName>smtc_hal_tmr_list.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_tmr_list.c</FilePath>
+            </File>
+            <File>
+              <FileName>smtc_hal_uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>smtc_hal_watchdog.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_watchdog.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Drivers/BSP</GroupName>
+          <Files>
+            <File>
+              <FileName>external_supply.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\BSP\Components\external_supply\external_supply.c</FilePath>
+            </File>
+            <File>
+              <FileName>hall_effect.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\BSP\Components\hall_effect\hall_effect.c</FilePath>
+            </File>
+            <File>
+              <FileName>leds.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\BSP\Components\Leds\leds.c</FilePath>
+            </File>
+            <File>
+              <FileName>lis2de12.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\BSP\Components\lis2de12\lis2de12.c</FilePath>
+            </File>
+            <File>
+              <FileName>pe4259.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\BSP\Components\rf_switch\pe4259.c</FilePath>
+            </File>
+            <File>
+              <FileName>usr_button.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\BSP\Components\usr_button\usr_button.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1982,11 +2087,6 @@
               <FilePath>../Core/Src/standby.c</FilePath>
             </File>
             <File>
-              <FileName>tsc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Core/Src/tsc.c</FilePath>
-            </File>
-            <File>
               <FileName>usart.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/usart.c</FilePath>
@@ -2002,9 +2102,24 @@
               <FilePath>../Core/Src/stm32wbxx_hal_msp.c</FilePath>
             </File>
             <File>
-              <FileName>main_OTA.c</FileName>
+              <FileName>dantag_lr1110.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Core\Src\main_OTA.c</FilePath>
+              <FilePath>..\Core\Src\dantag_lr1110.c</FilePath>
+            </File>
+            <File>
+              <FileName>tracker_utility.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\tracker_utility.c</FilePath>
+            </File>
+            <File>
+              <FileName>apps_utilities.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\apps_utilities.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\main.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -2203,26 +2318,6 @@
               <FileName>hw_ipcc.c</FileName>
               <FileType>1</FileType>
               <FilePath>../STM32_WPAN/Target/hw_ipcc.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Application/User/TOUCHSENSING/App</GroupName>
-          <Files>
-            <File>
-              <FileName>touchsensing.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../TOUCHSENSING/App/touchsensing.c</FilePath>
-            </File>
-            <File>
-              <FileName>tsl_user.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../TOUCHSENSING/App/tsl_user.c</FilePath>
-            </File>
-            <File>
-              <FileName>stmCriticalSection.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../TOUCHSENSING/App/stmCriticalSection.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -2670,11 +2765,6 @@
               <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim_ex.c</FilePath>
             </File>
             <File>
-              <FileName>stm32wbxx_hal_tsc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tsc.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32wbxx_hal_uart.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart.c</FilePath>
@@ -2683,6 +2773,16 @@
               <FileName>stm32wbxx_hal_uart_ex.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32wbxx_hal_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32wbxx_hal_spi_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_spi_ex.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -2899,66 +2999,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Middlewares/TouchSensing</GroupName>
-          <Files>
-            <File>
-              <FileName>tsl.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/ST/STM32_TouchSensing_Library/src/tsl.c</FilePath>
-            </File>
-            <File>
-              <FileName>tsl_acq_tsc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/ST/STM32_TouchSensing_Library/src/tsl_acq_tsc.c</FilePath>
-            </File>
-            <File>
-              <FileName>tsl_globals.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/ST/STM32_TouchSensing_Library/src/tsl_globals.c</FilePath>
-            </File>
-            <File>
-              <FileName>tsl_touchkey.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/ST/STM32_TouchSensing_Library/src/tsl_touchkey.c</FilePath>
-            </File>
-            <File>
-              <FileName>tsl_acq.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/ST/STM32_TouchSensing_Library/src/tsl_acq.c</FilePath>
-            </File>
-            <File>
-              <FileName>tsl_dxs.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/ST/STM32_TouchSensing_Library/src/tsl_dxs.c</FilePath>
-            </File>
-            <File>
-              <FileName>tsl_linrot.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/ST/STM32_TouchSensing_Library/src/tsl_linrot.c</FilePath>
-            </File>
-            <File>
-              <FileName>tsl_ecs.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/ST/STM32_TouchSensing_Library/src/tsl_ecs.c</FilePath>
-            </File>
-            <File>
-              <FileName>tsl_object.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/ST/STM32_TouchSensing_Library/src/tsl_object.c</FilePath>
-            </File>
-            <File>
-              <FileName>tsl_time.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/ST/STM32_TouchSensing_Library/src/tsl_time.c</FilePath>
-            </File>
-            <File>
-              <FileName>tsl_filter.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/ST/STM32_TouchSensing_Library/src/tsl_filter.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>Utilities</GroupName>
           <Files>
             <File>
@@ -2970,6 +3010,176 @@
               <FileName>stm32_seq.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Utilities/sequencer/stm32_seq.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Application/radio</GroupName>
+          <Files>
+            <File>
+              <FileName>lr1110_tracker_board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\boards\lr1110_tracker_board.c</FilePath>
+            </File>
+            <File>
+              <FileName>utilities.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\boards\utilities.c</FilePath>
+            </File>
+            <File>
+              <FileName>gnss_scan.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\radio\gnss\gnss_scan.c</FilePath>
+            </File>
+            <File>
+              <FileName>lr1110_bootloader.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\radio\lr1110_modem\src\lr1110_bootloader.c</FilePath>
+            </File>
+            <File>
+              <FileName>lr1110_modem_driver_version.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\radio\lr1110_modem\src\lr1110_modem_driver_version.c</FilePath>
+            </File>
+            <File>
+              <FileName>lr1110_modem_gnss.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\radio\lr1110_modem\src\lr1110_modem_gnss.c</FilePath>
+            </File>
+            <File>
+              <FileName>lr1110_modem_helper.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\radio\lr1110_modem\src\lr1110_modem_helper.c</FilePath>
+            </File>
+            <File>
+              <FileName>lr1110_modem_lorawan.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\radio\lr1110_modem\src\lr1110_modem_lorawan.c</FilePath>
+            </File>
+            <File>
+              <FileName>lr1110_modem_system.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\radio\lr1110_modem\src\lr1110_modem_system.c</FilePath>
+            </File>
+            <File>
+              <FileName>lr1110_modem_wifi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\radio\lr1110_modem\src\lr1110_modem_wifi.c</FilePath>
+            </File>
+            <File>
+              <FileName>wifi_scan.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\radio\wifi\wifi_scan.c</FilePath>
+            </File>
+            <File>
+              <FileName>lr1110.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\radio\lr1110.c</FilePath>
+            </File>
+            <File>
+              <FileName>lr1110_modem_hal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\radio\lr1110_modem_hal.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Application/smtc_hal</GroupName>
+          <Files>
+            <File>
+              <FileName>smtc_hal_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>smtc_hal_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_flash.c</FilePath>
+            </File>
+            <File>
+              <FileName>smtc_hal_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>smtc_hal_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>smtc_hal_mcu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_mcu.c</FilePath>
+            </File>
+            <File>
+              <FileName>smtc_hal_rng.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_rng.c</FilePath>
+            </File>
+            <File>
+              <FileName>smtc_hal_rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_rtc.c</FilePath>
+            </File>
+            <File>
+              <FileName>smtc_hal_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>smtc_hal_tmr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_tmr.c</FilePath>
+            </File>
+            <File>
+              <FileName>smtc_hal_tmr_list.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_tmr_list.c</FilePath>
+            </File>
+            <File>
+              <FileName>smtc_hal_uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>smtc_hal_watchdog.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\smtc_hal\smtc_hal_watchdog.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Drivers/BSP</GroupName>
+          <Files>
+            <File>
+              <FileName>external_supply.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\BSP\Components\external_supply\external_supply.c</FilePath>
+            </File>
+            <File>
+              <FileName>hall_effect.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\BSP\Components\hall_effect\hall_effect.c</FilePath>
+            </File>
+            <File>
+              <FileName>leds.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\BSP\Components\Leds\leds.c</FilePath>
+            </File>
+            <File>
+              <FileName>lis2de12.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\BSP\Components\lis2de12\lis2de12.c</FilePath>
+            </File>
+            <File>
+              <FileName>pe4259.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\BSP\Components\rf_switch\pe4259.c</FilePath>
+            </File>
+            <File>
+              <FileName>usr_button.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\BSP\Components\usr_button\usr_button.c</FilePath>
             </File>
           </Files>
         </Group>
