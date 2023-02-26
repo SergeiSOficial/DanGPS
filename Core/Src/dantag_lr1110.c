@@ -508,132 +508,132 @@ void lr1110_MainLoop(void)
             break;
         }
         case DEVICE_COLLECT_DATA: {
-            /* Create a movevment history on 8 bits and update this value only if the stream is done */
-            if (tracker_ctx.stream_done == true) {
-                tracker_ctx.accelerometer_move_history =
-                    (tracker_ctx.accelerometer_move_history << 1) + is_accelerometer_detected_moved();
-            }
+//            /* Create a movevment history on 8 bits and update this value only if the stream is done */
+//            if (tracker_ctx.stream_done == true) {
+//                tracker_ctx.accelerometer_move_history =
+//                    (tracker_ctx.accelerometer_move_history << 1) + is_accelerometer_detected_moved();
+//            }
 
-            /* Check if scan can be launched */
-            if (tracker_app_is_next_scan_possible() == true) {
-                lr1110_modem_lorawan_state_t lorawan_state;
-                int32_t duty_cycle;
-                bool send_complete_sensors = false;
+//            /* Check if scan can be launched */
+//            if (tracker_app_is_next_scan_possible() == true) {
+//                lr1110_modem_lorawan_state_t lorawan_state;
+//                int32_t duty_cycle;
+//                bool send_complete_sensors = false;
 
-                /* Reload the software watchdog */
-                hal_mcu_reset_software_watchdog();
+//                /* Reload the software watchdog */
+//                hal_mcu_reset_software_watchdog();
 
-                /* Reset previous scan results */
-                tracker_app_reset_scan_results();
+//                /* Reset previous scan results */
+//                tracker_app_reset_scan_results();
 
-                /* Adapt the ADR following the acceleromer movement */
-                tracker_app_adapt_adr();
+//                /* Adapt the ADR following the acceleromer movement */
+//                tracker_app_adapt_adr();
 
-                /* Reset flag and counter */
-                if (tracker_ctx.send_alive_frame == true) {
-                    send_complete_sensors = true;
-                }
-                tracker_ctx.send_alive_frame = false;
-                tracker_ctx.next_frame_ctn   = 0;
+//                /* Reset flag and counter */
+//                if (tracker_ctx.send_alive_frame == true) {
+//                    send_complete_sensors = true;
+//                }
+//                tracker_ctx.send_alive_frame = false;
+//                tracker_ctx.next_frame_ctn   = 0;
 
-                /* Led start for user notification */
-                leds_on(LED_TX_MASK);
-                timer_start(&led_tx_timer);
+//                /* Led start for user notification */
+//                leds_on(LED_TX_MASK);
+//                timer_start(&led_tx_timer);
 
-                /* Start Hall Effect sensors while the tracker moves */
-                lr1110_tracker_board_hall_effect_enable(true);
+//                /* Start Hall Effect sensors while the tracker moves */
+//                lr1110_tracker_board_hall_effect_enable(true);
 
-                /* Launch the scan according to the scan prioriy */
-                if (tracker_app_start_scan(tracker_ctx.scan_priority) == false) {
-                    HAL_DBG_TRACE_MSG("No scan results good enough, send complete sensors values\r\n");
-                    send_complete_sensors = true;
-                }
+//                /* Launch the scan according to the scan prioriy */
+//                if (tracker_app_start_scan(tracker_ctx.scan_priority) == false) {
+//                    HAL_DBG_TRACE_MSG("No scan results good enough, send complete sensors values\r\n");
+//                    send_complete_sensors = true;
+//                }
 
-                /*  SENSORS DATA */
-                HAL_DBG_TRACE_INFO("*** sensors collect ***\n\r\n\r");
+//                /*  SENSORS DATA */
+//                HAL_DBG_TRACE_INFO("*** sensors collect ***\n\r\n\r");
 
-                /* Acceleration */
-                acc_read_raw_data();
-                tracker_ctx.accelerometer_x = acc_get_raw_x();
-                tracker_ctx.accelerometer_y = acc_get_raw_y();
-                tracker_ctx.accelerometer_z = acc_get_raw_z();
-                HAL_DBG_TRACE_PRINTF("Acceleration [mg]: X=%4.2f mg | Y=%4.2f mg | Z=%4.2f mg \r\n",
-                                     (double)tracker_ctx.accelerometer_x, (double)tracker_ctx.accelerometer_y,
-                                     (double)tracker_ctx.accelerometer_z);
+//                /* Acceleration */
+//                acc_read_raw_data();
+//                tracker_ctx.accelerometer_x = acc_get_raw_x();
+//                tracker_ctx.accelerometer_y = acc_get_raw_y();
+//                tracker_ctx.accelerometer_z = acc_get_raw_z();
+//                HAL_DBG_TRACE_PRINTF("Acceleration [mg]: X=%4.2f mg | Y=%4.2f mg | Z=%4.2f mg \r\n",
+//                                     (double)tracker_ctx.accelerometer_x, (double)tracker_ctx.accelerometer_y,
+//                                     (double)tracker_ctx.accelerometer_z);
 
-                /* Move history */
-                HAL_DBG_TRACE_PRINTF("Move history : %d\r\n", tracker_ctx.accelerometer_move_history);
+//                /* Move history */
+//                HAL_DBG_TRACE_PRINTF("Move history : %d\r\n", tracker_ctx.accelerometer_move_history);
 
-                /* Temperature */
-                tracker_ctx.temperature = hal_mcu_get_temperature() * 100;
-                HAL_DBG_TRACE_PRINTF("Temperature : %d *C\r\n", tracker_ctx.temperature / 100);
+//                /* Temperature */
+//                tracker_ctx.temperature = hal_mcu_get_temperature() * 100;
+//                HAL_DBG_TRACE_PRINTF("Temperature : %d *C\r\n", tracker_ctx.temperature / 100);
 
-                /* Modem charge */
-                lr1110_modem_get_charge(&lr1110, &tracker_ctx.charge);
-                HAL_DBG_TRACE_PRINTF("Charge value : %d mAh\r\n", tracker_ctx.charge);
-                tracker_app_store_new_acculated_charge(tracker_ctx.charge);
-                HAL_DBG_TRACE_PRINTF("Accumulated charge value : %d mAh\r\n", tracker_ctx.accumulated_charge);
+//                /* Modem charge */
+//                lr1110_modem_get_charge(&lr1110, &tracker_ctx.charge);
+//                HAL_DBG_TRACE_PRINTF("Charge value : %d mAh\r\n", tracker_ctx.charge);
+//                tracker_app_store_new_acculated_charge(tracker_ctx.charge);
+//                HAL_DBG_TRACE_PRINTF("Accumulated charge value : %d mAh\r\n", tracker_ctx.accumulated_charge);
 
-                /* Board voltage charge */
-                lr1110_modem_get_lorawan_state(&lr1110, &lorawan_state);
-                if (lorawan_state == LR1110_MODEM_LORAWAN_IDLE) {
-                    tracker_ctx.voltage = hal_mcu_get_vref_level();
-                    HAL_DBG_TRACE_PRINTF("Board voltage : %d mV\r\n", tracker_ctx.voltage);
-                } else {
-                    HAL_DBG_TRACE_WARNING("TX ongoing don't collect the board voltage\r\n");
-                }
+//                /* Board voltage charge */
+//                lr1110_modem_get_lorawan_state(&lr1110, &lorawan_state);
+//                if (lorawan_state == LR1110_MODEM_LORAWAN_IDLE) {
+//                    tracker_ctx.voltage = hal_mcu_get_vref_level();
+//                    HAL_DBG_TRACE_PRINTF("Board voltage : %d mV\r\n", tracker_ctx.voltage);
+//                } else {
+//                    HAL_DBG_TRACE_WARNING("TX ongoing don't collect the board voltage\r\n");
+//                }
 
-                if (tracker_ctx.internal_log_enable) {
-                    HAL_DBG_TRACE_PRINTF("Log results in the Internal Log memory\r\n", tracker_ctx.voltage);
-                    tracker_store_internal_log();
-                    HAL_DBG_TRACE_PRINTF("Internal Log memory space remaining: %d %%\r\n",
-                                         tracker_get_remaining_memory_space());
-                }
+//                if (tracker_ctx.internal_log_enable) {
+//                    HAL_DBG_TRACE_PRINTF("Log results in the Internal Log memory\r\n", tracker_ctx.voltage);
+//                    tracker_store_internal_log();
+//                    HAL_DBG_TRACE_PRINTF("Internal Log memory space remaining: %d %%\r\n",
+//                                         tracker_get_remaining_memory_space());
+//                }
 
-                /* Build the payload and stream it if we have enough time */
-                lr1110_modem_get_duty_cycle_status(&lr1110, &duty_cycle);
+//                /* Build the payload and stream it if we have enough time */
+//                lr1110_modem_get_duty_cycle_status(&lr1110, &duty_cycle);
 
-                if ((tracker_app_is_region_use_duty_cycle(tracker_ctx.lorawan_region) == false) ||
-                    ((duty_cycle >= TRACKER_DUTY_CYCLE_THRESHOLD) &&
-                     ((tracker_app_is_region_use_duty_cycle(tracker_ctx.lorawan_region) == true)))) {
-                    HAL_DBG_TRACE_PRINTF("Remaining time (%d ms) to send data\r\n", duty_cycle);
-                    tracker_app_build_and_stream_payload(send_complete_sensors);
-                } else {
-                    HAL_DBG_TRACE_WARNING(
-                        "Not enough remaining time (%d ms) to send data, results are just logged (if enable)\r\n",
-                        duty_cycle);
-                }
+//                if ((tracker_app_is_region_use_duty_cycle(tracker_ctx.lorawan_region) == false) ||
+//                    ((duty_cycle >= TRACKER_DUTY_CYCLE_THRESHOLD) &&
+//                     ((tracker_app_is_region_use_duty_cycle(tracker_ctx.lorawan_region) == true)))) {
+//                    HAL_DBG_TRACE_PRINTF("Remaining time (%d ms) to send data\r\n", duty_cycle);
+//                    tracker_app_build_and_stream_payload(send_complete_sensors);
+//                } else {
+//                    HAL_DBG_TRACE_WARNING(
+//                        "Not enough remaining time (%d ms) to send data, results are just logged (if enable)\r\n",
+//                        duty_cycle);
+//                }
 
-                /* Send tracker setting if it has been asked by the application server */
-                if (tracker_ctx.tracker_settings_payload_len > 0) {
-                    tracker_app_build_and_stream_tracker_settings(tracker_ctx.tracker_settings_payload,
-                                                                  tracker_ctx.tracker_settings_payload_len);
-                    tracker_ctx.tracker_settings_payload_len = 0;
-                }
+//                /* Send tracker setting if it has been asked by the application server */
+//                if (tracker_ctx.tracker_settings_payload_len > 0) {
+//                    tracker_app_build_and_stream_tracker_settings(tracker_ctx.tracker_settings_payload,
+//                                                                  tracker_ctx.tracker_settings_payload_len);
+//                    tracker_ctx.tracker_settings_payload_len = 0;
+//                }
 
-                device_state = DEVICE_STATE_SEND;
-            } else {
-                if (tracker_ctx.stream_done == true) {
-                    /* Stop Hall Effect sensors while the tracker is static */
-                    lr1110_tracker_board_hall_effect_enable(false);
+//                device_state = DEVICE_STATE_SEND;
+//            } else {
+//                if (tracker_ctx.stream_done == true) {
+//                    /* Stop Hall Effect sensors while the tracker is static */
+//                    lr1110_tracker_board_hall_effect_enable(false);
 
-                    if (tracker_ctx.next_frame_ctn >=
-                        (tracker_ctx.app_keep_alive_frame_interval / tracker_ctx.app_scan_interval)) {
-                        HAL_DBG_TRACE_INFO("Send a keep alive frame next time\r\n");
-                        tracker_ctx.send_alive_frame = true;
-                    } else {
-                        HAL_DBG_TRACE_PRINTF(
-                            "Device is static next keep alive frame in %d sec\r\n",
-                            ((tracker_ctx.app_keep_alive_frame_interval / tracker_ctx.app_scan_interval) -
-                             tracker_ctx.next_frame_ctn) *
-                                (tracker_ctx.app_scan_interval / 1000));
-                        tracker_ctx.next_frame_ctn++;
-                    }
-                    device_state = DEVICE_STATE_CYCLE;
-                } else {
-                    device_state = DEVICE_STATE_SEND;
-                }
-            }
+//                    if (tracker_ctx.next_frame_ctn >=
+//                        (tracker_ctx.app_keep_alive_frame_interval / tracker_ctx.app_scan_interval)) {
+//                        HAL_DBG_TRACE_INFO("Send a keep alive frame next time\r\n");
+//                        tracker_ctx.send_alive_frame = true;
+//                    } else {
+//                        HAL_DBG_TRACE_PRINTF(
+//                            "Device is static next keep alive frame in %d sec\r\n",
+//                            ((tracker_ctx.app_keep_alive_frame_interval / tracker_ctx.app_scan_interval) -
+//                             tracker_ctx.next_frame_ctn) *
+//                                (tracker_ctx.app_scan_interval / 1000));
+//                        tracker_ctx.next_frame_ctn++;
+//                    }
+//                    device_state = DEVICE_STATE_CYCLE;
+//                } else {
+//                    device_state = DEVICE_STATE_SEND;
+//                }
+//            }
 
             break;
         }

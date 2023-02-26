@@ -58,18 +58,18 @@ extern "C" {
 #define FLASH_BYTE_EMPTY_CONTENT ( ( uint8_t ) 0xFF )
 #define FLASH_PAGE_EMPTY_CONTENT ( ( uint64_t ) 0xFFFFFFFFFFFFFFFF )
 
-#define FLASH_USER_START_PAGE ( 7 ) /* Start nb page of user Flash area, 8 because of the bootloader */
+#define FLASH_USER_START_PAGE ( 0 ) /* Start nb page of user Flash area, 8 because of the bootloader */
 
-#define FLASH_USER_END_ADDR ( ADDR_FLASH_PAGE_200 + ADDR_FLASH_PAGE_SIZE - 1 ) /* End @ of user Flash area */
-#define FLASH_USER_END_PAGE ( 194 )                                            /* End nb page of user Flash area */
+#define FLASH_USER_END_ADDR ( ADDR_FLASH_PAGE_48 + ADDR_FLASH_PAGE_SIZE - 1 ) /* End @ of user Flash area */
+#define FLASH_USER_END_PAGE ( 48 )                                            /* End nb page of user Flash area */
 
-#define FLASH_USER_INTERNAL_LOG_CTX_START_ADDR ADDR_FLASH_PAGE_195
+#define FLASH_USER_INTERNAL_LOG_CTX_START_ADDR ADDR_FLASH_PAGE_49
 #define FLASH_USER_INTERNAL_LOG_CTX_END_ADDR \
-    ( ADDR_FLASH_PAGE_195 + ADDR_FLASH_PAGE_SIZE - 1 ) /* End @ of user ctx Flash area */
+    ( ADDR_FLASH_PAGE_49 + ADDR_FLASH_PAGE_SIZE - 1 ) /* End @ of user ctx Flash area */
 
-#define FLASH_USER_TRACKER_CTX_START_ADDR ADDR_FLASH_PAGE_202
+#define FLASH_USER_TRACKER_CTX_START_ADDR ADDR_FLASH_PAGE_56
 #define FLASH_USER_TRACKER_CTX_END_ADDR \
-    ( ADDR_FLASH_PAGE_202 + ADDR_FLASH_PAGE_SIZE - 1 ) /* End @ of user tracker ctx Flash area */
+    ( ADDR_FLASH_PAGE_56 + ADDR_FLASH_PAGE_SIZE - 1 ) /* End @ of user tracker ctx Flash area */
 
 /* Base address of the Flash s */
 #define ADDR_FLASH_PAGE_0 ( ( uint32_t ) 0x08000000 )   /* Base @ of Page 0, 4 Kbytes */
@@ -153,128 +153,6 @@ extern "C" {
 #define ADDR_FLASH_PAGE_78 ( ( uint32_t ) 0x0804E000 )  /* Base @ of Page 78, 4 Kbytes */
 #define ADDR_FLASH_PAGE_79 ( ( uint32_t ) 0x0804F000 )  /* Base @ of Page 79, 4 Kbytes */
 #define ADDR_FLASH_PAGE_80 ( ( uint32_t ) 0x08050000 )  /* Base @ of Page 80, 4 Kbytes */
-#define ADDR_FLASH_PAGE_81 ( ( uint32_t ) 0x08051000 )  /* Base @ of Page 81, 4 Kbytes */
-#define ADDR_FLASH_PAGE_82 ( ( uint32_t ) 0x08052000 )  /* Base @ of Page 82, 4 Kbytes */
-#define ADDR_FLASH_PAGE_83 ( ( uint32_t ) 0x08053000 )  /* Base @ of Page 83, 4 Kbytes */
-#define ADDR_FLASH_PAGE_84 ( ( uint32_t ) 0x08054000 )  /* Base @ of Page 84, 4 Kbytes */
-#define ADDR_FLASH_PAGE_85 ( ( uint32_t ) 0x08055000 )  /* Base @ of Page 85, 4 Kbytes */
-#define ADDR_FLASH_PAGE_86 ( ( uint32_t ) 0x08056000 )  /* Base @ of Page 86, 4 Kbytes */
-#define ADDR_FLASH_PAGE_87 ( ( uint32_t ) 0x08057000 )  /* Base @ of Page 87, 4 Kbytes */
-#define ADDR_FLASH_PAGE_88 ( ( uint32_t ) 0x08058000 )  /* Base @ of Page 88, 4 Kbytes */
-#define ADDR_FLASH_PAGE_89 ( ( uint32_t ) 0x08059000 )  /* Base @ of Page 89, 4 Kbytes */
-#define ADDR_FLASH_PAGE_90 ( ( uint32_t ) 0x0805A000 )  /* Base @ of Page 90, 4 Kbytes */
-#define ADDR_FLASH_PAGE_91 ( ( uint32_t ) 0x0805B000 )  /* Base @ of Page 91, 4 Kbytes */
-#define ADDR_FLASH_PAGE_92 ( ( uint32_t ) 0x0805C000 )  /* Base @ of Page 92, 4 Kbytes */
-#define ADDR_FLASH_PAGE_93 ( ( uint32_t ) 0x0805D000 )  /* Base @ of Page 93, 4 Kbytes */
-#define ADDR_FLASH_PAGE_94 ( ( uint32_t ) 0x0805E000 )  /* Base @ of Page 94, 4 Kbytes */
-#define ADDR_FLASH_PAGE_95 ( ( uint32_t ) 0x0805F000 )  /* Base @ of Page 95, 4 Kbytes */
-#define ADDR_FLASH_PAGE_96 ( ( uint32_t ) 0x08060000 )  /* Base @ of Page 96, 4 Kbytes */
-#define ADDR_FLASH_PAGE_97 ( ( uint32_t ) 0x08061000 )  /* Base @ of Page 97, 4 Kbytes */
-#define ADDR_FLASH_PAGE_98 ( ( uint32_t ) 0x08062000 )  /* Base @ of Page 98, 4 Kbytes */
-#define ADDR_FLASH_PAGE_99 ( ( uint32_t ) 0x08063000 )  /* Base @ of Page 99, 4 Kbytes */
-#define ADDR_FLASH_PAGE_100 ( ( uint32_t ) 0x08064000 ) /* Base @ of Page 100, 4 Kbytes */
-#define ADDR_FLASH_PAGE_101 ( ( uint32_t ) 0x08065000 ) /* Base @ of Page 101, 4 Kbytes */
-#define ADDR_FLASH_PAGE_102 ( ( uint32_t ) 0x08066000 ) /* Base @ of Page 102, 4 Kbytes */
-#define ADDR_FLASH_PAGE_103 ( ( uint32_t ) 0x08067000 ) /* Base @ of Page 103, 4 Kbytes */
-#define ADDR_FLASH_PAGE_104 ( ( uint32_t ) 0x08068000 ) /* Base @ of Page 104, 4 Kbytes */
-#define ADDR_FLASH_PAGE_105 ( ( uint32_t ) 0x08069000 ) /* Base @ of Page 105, 4 Kbytes */
-#define ADDR_FLASH_PAGE_106 ( ( uint32_t ) 0x0806A000 ) /* Base @ of Page 106, 4 Kbytes */
-#define ADDR_FLASH_PAGE_107 ( ( uint32_t ) 0x0806B000 ) /* Base @ of Page 107, 4 Kbytes */
-#define ADDR_FLASH_PAGE_108 ( ( uint32_t ) 0x0806C000 ) /* Base @ of Page 108, 4 Kbytes */
-#define ADDR_FLASH_PAGE_109 ( ( uint32_t ) 0x0806D000 ) /* Base @ of Page 109, 4 Kbytes */
-#define ADDR_FLASH_PAGE_110 ( ( uint32_t ) 0x0806E000 ) /* Base @ of Page 110, 4 Kbytes */
-#define ADDR_FLASH_PAGE_111 ( ( uint32_t ) 0x0806F000 ) /* Base @ of Page 111, 4 Kbytes */
-#define ADDR_FLASH_PAGE_112 ( ( uint32_t ) 0x08070000 ) /* Base @ of Page 112, 4 Kbytes */
-#define ADDR_FLASH_PAGE_113 ( ( uint32_t ) 0x08071000 ) /* Base @ of Page 113, 4 Kbytes */
-#define ADDR_FLASH_PAGE_114 ( ( uint32_t ) 0x08072000 ) /* Base @ of Page 114, 4 Kbytes */
-#define ADDR_FLASH_PAGE_115 ( ( uint32_t ) 0x08073000 ) /* Base @ of Page 115, 4 Kbytes */
-#define ADDR_FLASH_PAGE_116 ( ( uint32_t ) 0x08074000 ) /* Base @ of Page 116, 4 Kbytes */
-#define ADDR_FLASH_PAGE_117 ( ( uint32_t ) 0x08075000 ) /* Base @ of Page 117, 4 Kbytes */
-#define ADDR_FLASH_PAGE_118 ( ( uint32_t ) 0x08076000 ) /* Base @ of Page 118, 4 Kbytes */
-#define ADDR_FLASH_PAGE_119 ( ( uint32_t ) 0x08077000 ) /* Base @ of Page 119, 4 Kbytes */
-#define ADDR_FLASH_PAGE_120 ( ( uint32_t ) 0x08078000 ) /* Base @ of Page 120, 4 Kbytes */
-#define ADDR_FLASH_PAGE_121 ( ( uint32_t ) 0x08079000 ) /* Base @ of Page 121, 4 Kbytes */
-#define ADDR_FLASH_PAGE_122 ( ( uint32_t ) 0x0807A000 ) /* Base @ of Page 122, 4 Kbytes */
-#define ADDR_FLASH_PAGE_123 ( ( uint32_t ) 0x0807B000 ) /* Base @ of Page 123, 4 Kbytes */
-#define ADDR_FLASH_PAGE_124 ( ( uint32_t ) 0x0807C000 ) /* Base @ of Page 124, 4 Kbytes */
-#define ADDR_FLASH_PAGE_125 ( ( uint32_t ) 0x0807D000 ) /* Base @ of Page 125, 4 Kbytes */
-#define ADDR_FLASH_PAGE_126 ( ( uint32_t ) 0x0807E000 ) /* Base @ of Page 126, 4 Kbytes */
-#define ADDR_FLASH_PAGE_127 ( ( uint32_t ) 0x0807F000 ) /* Base @ of Page 127, 4 Kbytes */
-#define ADDR_FLASH_PAGE_128 ( ( uint32_t ) 0x08080000 ) /* Base @ of Page 128, 4 Kbytes */
-#define ADDR_FLASH_PAGE_129 ( ( uint32_t ) 0x08081000 ) /* Base @ of Page 129, 4 Kbytes */
-#define ADDR_FLASH_PAGE_130 ( ( uint32_t ) 0x08082000 ) /* Base @ of Page 130, 4 Kbytes */
-#define ADDR_FLASH_PAGE_131 ( ( uint32_t ) 0x08083000 ) /* Base @ of Page 131, 4 Kbytes */
-#define ADDR_FLASH_PAGE_132 ( ( uint32_t ) 0x08084000 ) /* Base @ of Page 132, 4 Kbytes */
-#define ADDR_FLASH_PAGE_133 ( ( uint32_t ) 0x08085000 ) /* Base @ of Page 133, 4 Kbytes */
-#define ADDR_FLASH_PAGE_134 ( ( uint32_t ) 0x08086000 ) /* Base @ of Page 134, 4 Kbytes */
-#define ADDR_FLASH_PAGE_135 ( ( uint32_t ) 0x08087000 ) /* Base @ of Page 135, 4 Kbytes */
-#define ADDR_FLASH_PAGE_136 ( ( uint32_t ) 0x08088000 ) /* Base @ of Page 136, 4 Kbytes */
-#define ADDR_FLASH_PAGE_137 ( ( uint32_t ) 0x08089000 ) /* Base @ of Page 137, 4 Kbytes */
-#define ADDR_FLASH_PAGE_138 ( ( uint32_t ) 0x0808A000 ) /* Base @ of Page 138, 4 Kbytes */
-#define ADDR_FLASH_PAGE_139 ( ( uint32_t ) 0x0808B000 ) /* Base @ of Page 139, 4 Kbytes */
-#define ADDR_FLASH_PAGE_140 ( ( uint32_t ) 0x0808C000 ) /* Base @ of Page 140, 4 Kbytes */
-#define ADDR_FLASH_PAGE_141 ( ( uint32_t ) 0x0808D000 ) /* Base @ of Page 141, 4 Kbytes */
-#define ADDR_FLASH_PAGE_142 ( ( uint32_t ) 0x0808E000 ) /* Base @ of Page 142, 4 Kbytes */
-#define ADDR_FLASH_PAGE_143 ( ( uint32_t ) 0x0808F000 ) /* Base @ of Page 143, 4 Kbytes */
-#define ADDR_FLASH_PAGE_144 ( ( uint32_t ) 0x08090000 ) /* Base @ of Page 144, 4 Kbytes */
-#define ADDR_FLASH_PAGE_145 ( ( uint32_t ) 0x08091000 ) /* Base @ of Page 145, 4 Kbytes */
-#define ADDR_FLASH_PAGE_146 ( ( uint32_t ) 0x08092000 ) /* Base @ of Page 146, 4 Kbytes */
-#define ADDR_FLASH_PAGE_147 ( ( uint32_t ) 0x08093000 ) /* Base @ of Page 147, 4 Kbytes */
-#define ADDR_FLASH_PAGE_148 ( ( uint32_t ) 0x08094000 ) /* Base @ of Page 148, 4 Kbytes */
-#define ADDR_FLASH_PAGE_149 ( ( uint32_t ) 0x08095000 ) /* Base @ of Page 149, 4 Kbytes */
-#define ADDR_FLASH_PAGE_150 ( ( uint32_t ) 0x08096000 ) /* Base @ of Page 150, 4 Kbytes */
-#define ADDR_FLASH_PAGE_151 ( ( uint32_t ) 0x08097000 ) /* Base @ of Page 151, 4 Kbytes */
-#define ADDR_FLASH_PAGE_152 ( ( uint32_t ) 0x08098000 ) /* Base @ of Page 152, 4 Kbytes */
-#define ADDR_FLASH_PAGE_153 ( ( uint32_t ) 0x08099000 ) /* Base @ of Page 153, 4 Kbytes */
-#define ADDR_FLASH_PAGE_154 ( ( uint32_t ) 0x0809A000 ) /* Base @ of Page 154, 4 Kbytes */
-#define ADDR_FLASH_PAGE_155 ( ( uint32_t ) 0x0809B000 ) /* Base @ of Page 155, 4 Kbytes */
-#define ADDR_FLASH_PAGE_156 ( ( uint32_t ) 0x0809C000 ) /* Base @ of Page 156, 4 Kbytes */
-#define ADDR_FLASH_PAGE_157 ( ( uint32_t ) 0x0809D000 ) /* Base @ of Page 157, 4 Kbytes */
-#define ADDR_FLASH_PAGE_158 ( ( uint32_t ) 0x0809E000 ) /* Base @ of Page 158, 4 Kbytes */
-#define ADDR_FLASH_PAGE_159 ( ( uint32_t ) 0x0809F000 ) /* Base @ of Page 159, 4 Kbytes */
-#define ADDR_FLASH_PAGE_160 ( ( uint32_t ) 0x080A0000 ) /* Base @ of Page 160, 4 Kbytes */
-#define ADDR_FLASH_PAGE_161 ( ( uint32_t ) 0x080A1000 ) /* Base @ of Page 161, 4 Kbytes */
-#define ADDR_FLASH_PAGE_162 ( ( uint32_t ) 0x080A2000 ) /* Base @ of Page 162, 4 Kbytes */
-#define ADDR_FLASH_PAGE_163 ( ( uint32_t ) 0x080A3000 ) /* Base @ of Page 163, 4 Kbytes */
-#define ADDR_FLASH_PAGE_164 ( ( uint32_t ) 0x080A4000 ) /* Base @ of Page 164, 4 Kbytes */
-#define ADDR_FLASH_PAGE_165 ( ( uint32_t ) 0x080A5000 ) /* Base @ of Page 165, 4 Kbytes */
-#define ADDR_FLASH_PAGE_166 ( ( uint32_t ) 0x080A6000 ) /* Base @ of Page 166, 4 Kbytes */
-#define ADDR_FLASH_PAGE_167 ( ( uint32_t ) 0x080A7000 ) /* Base @ of Page 167, 4 Kbytes */
-#define ADDR_FLASH_PAGE_168 ( ( uint32_t ) 0x080A8000 ) /* Base @ of Page 168, 4 Kbytes */
-#define ADDR_FLASH_PAGE_169 ( ( uint32_t ) 0x080A9000 ) /* Base @ of Page 169, 4 Kbytes */
-#define ADDR_FLASH_PAGE_170 ( ( uint32_t ) 0x080AA000 ) /* Base @ of Page 170, 4 Kbytes */
-#define ADDR_FLASH_PAGE_171 ( ( uint32_t ) 0x080AB000 ) /* Base @ of Page 171, 4 Kbytes */
-#define ADDR_FLASH_PAGE_172 ( ( uint32_t ) 0x080AC000 ) /* Base @ of Page 172, 4 Kbytes */
-#define ADDR_FLASH_PAGE_173 ( ( uint32_t ) 0x080AD000 ) /* Base @ of Page 173, 4 Kbytes */
-#define ADDR_FLASH_PAGE_174 ( ( uint32_t ) 0x080AE000 ) /* Base @ of Page 174, 4 Kbytes */
-#define ADDR_FLASH_PAGE_175 ( ( uint32_t ) 0x080AF000 ) /* Base @ of Page 175, 4 Kbytes */
-#define ADDR_FLASH_PAGE_176 ( ( uint32_t ) 0x080B0000 ) /* Base @ of Page 176, 4 Kbytes */
-#define ADDR_FLASH_PAGE_177 ( ( uint32_t ) 0x080B1000 ) /* Base @ of Page 177, 4 Kbytes */
-#define ADDR_FLASH_PAGE_178 ( ( uint32_t ) 0x080B2000 ) /* Base @ of Page 178, 4 Kbytes */
-#define ADDR_FLASH_PAGE_179 ( ( uint32_t ) 0x080B3000 ) /* Base @ of Page 179, 4 Kbytes */
-#define ADDR_FLASH_PAGE_180 ( ( uint32_t ) 0x080B4000 ) /* Base @ of Page 180, 4 Kbytes */
-#define ADDR_FLASH_PAGE_181 ( ( uint32_t ) 0x080B5000 ) /* Base @ of Page 181, 4 Kbytes */
-#define ADDR_FLASH_PAGE_182 ( ( uint32_t ) 0x080B6000 ) /* Base @ of Page 182, 4 Kbytes */
-#define ADDR_FLASH_PAGE_183 ( ( uint32_t ) 0x080B7000 ) /* Base @ of Page 183, 4 Kbytes */
-#define ADDR_FLASH_PAGE_184 ( ( uint32_t ) 0x080B8000 ) /* Base @ of Page 184, 4 Kbytes */
-#define ADDR_FLASH_PAGE_185 ( ( uint32_t ) 0x080B9000 ) /* Base @ of Page 185, 4 Kbytes */
-#define ADDR_FLASH_PAGE_186 ( ( uint32_t ) 0x080BA000 ) /* Base @ of Page 186, 4 Kbytes */
-#define ADDR_FLASH_PAGE_187 ( ( uint32_t ) 0x080BB000 ) /* Base @ of Page 187, 4 Kbytes */
-#define ADDR_FLASH_PAGE_188 ( ( uint32_t ) 0x080BC000 ) /* Base @ of Page 188, 4 Kbytes */
-#define ADDR_FLASH_PAGE_189 ( ( uint32_t ) 0x080BD000 ) /* Base @ of Page 189, 4 Kbytes */
-#define ADDR_FLASH_PAGE_190 ( ( uint32_t ) 0x080BE000 ) /* Base @ of Page 190, 4 Kbytes */
-#define ADDR_FLASH_PAGE_191 ( ( uint32_t ) 0x080BF000 ) /* Base @ of Page 191, 4 Kbytes */
-#define ADDR_FLASH_PAGE_192 ( ( uint32_t ) 0x080C0000 ) /* Base @ of Page 192, 4 Kbytes */
-#define ADDR_FLASH_PAGE_193 ( ( uint32_t ) 0x080C1000 ) /* Base @ of Page 193, 4 Kbytes */
-#define ADDR_FLASH_PAGE_194 ( ( uint32_t ) 0x080C2000 ) /* Base @ of Page 194, 4 Kbytes */
-#define ADDR_FLASH_PAGE_195 ( ( uint32_t ) 0x080C3000 ) /* Base @ of Page 195, 4 Kbytes */
-#define ADDR_FLASH_PAGE_196 ( ( uint32_t ) 0x080C4000 ) /* Base @ of Page 196, 4 Kbytes */
-#define ADDR_FLASH_PAGE_197 ( ( uint32_t ) 0x080C5000 ) /* Base @ of Page 197, 4 Kbytes */
-#define ADDR_FLASH_PAGE_198 ( ( uint32_t ) 0x080C6000 ) /* Base @ of Page 198, 4 Kbytes */
-#define ADDR_FLASH_PAGE_199 ( ( uint32_t ) 0x080C7000 ) /* Base @ of Page 199, 4 Kbytes */
-#define ADDR_FLASH_PAGE_200 ( ( uint32_t ) 0x080C8000 ) /* Base @ of Page 200, 4 Kbytes */
-#define ADDR_FLASH_PAGE_201 ( ( uint32_t ) 0x080C9000 ) /* Base @ of Page 201, 4 Kbytes */
-#define ADDR_FLASH_PAGE_202 ( ( uint32_t ) 0x080CA000 ) /* Base @ of Page 202, 4 Kbytes */
 
 #define FLASH_OPERATION_MAX_RETRY 4
 

@@ -88,3 +88,4 @@ cmake-build-debug/
 /EWARM/DanGPS/
 /MDK-ARM/DanGPS/
 /EWARM/DanGPS_OTA/
+/EWARM/settings/DanGPS.reggroups

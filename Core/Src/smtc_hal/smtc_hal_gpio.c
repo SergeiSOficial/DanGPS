@@ -333,84 +333,80 @@ static void hal_gpio_init( const hal_gpio_t* gpio, const uint32_t value, const h
 {
     //main config via CubeMX
 
-    
-    // GPIO_InitTypeDef gpio_local;
-    // GPIO_TypeDef*    gpio_port = ( GPIO_TypeDef* ) ( AHB2PERIPH_BASE + ( ( gpio->pin & 0xF0 ) << 6 ) );
 
-    // gpio_local.Pin       = ( 1 << ( gpio->pin & 0x0F ) );
-    // gpio_local.Mode      = gpio->mode;
-    // gpio_local.Pull      = gpio->pull;
-    // gpio_local.Speed     = gpio->speed;
-    // gpio_local.Alternate = gpio->alternate;
+     GPIO_InitTypeDef gpio_local;
+     GPIO_TypeDef*    gpio_port = ( GPIO_TypeDef* ) ( AHB2PERIPH_BASE + ( ( gpio->pin & 0xF0 ) << 6 ) );
 
-    // if( gpio_port == GPIOA )
-    // {
-    //     __HAL_RCC_GPIOA_CLK_ENABLE( );
-    // }
-    // else if( gpio_port == GPIOB )
-    // {
-    //     __HAL_RCC_GPIOB_CLK_ENABLE( );
-    // }
-    // else if( gpio_port == GPIOC )
-    // {
-    //     __HAL_RCC_GPIOC_CLK_ENABLE( );
-    // }
-    // else if( gpio_port == GPIOD )
-    // {
-    //     __HAL_RCC_GPIOD_CLK_ENABLE( );
-    // }
-    // else if( gpio_port == GPIOE )
-    // {
-    //     __HAL_RCC_GPIOE_CLK_ENABLE( );
-    // }
-    // else if( gpio_port == GPIOH )
-    // {
-    //     __HAL_RCC_GPIOH_CLK_ENABLE( );
-    // }
+     gpio_local.Pin       = ( 1 << ( gpio->pin & 0x0F ) );
+     gpio_local.Mode      = gpio->mode;
+     gpio_local.Pull      = gpio->pull;
+     gpio_local.Speed     = gpio->speed;
+     gpio_local.Alternate = gpio->alternate;
 
-    // HAL_GPIO_WritePin( gpio_port, gpio_local.Pin, ( GPIO_PinState ) value );
-    // HAL_GPIO_Init( gpio_port, &gpio_local );
+     if( gpio_port == GPIOA )
+     {
+         __HAL_RCC_GPIOA_CLK_ENABLE( );
+     }
+     else if( gpio_port == GPIOB )
+     {
+         __HAL_RCC_GPIOB_CLK_ENABLE( );
+     }
+     else if( gpio_port == GPIOC )
+     {
+         __HAL_RCC_GPIOC_CLK_ENABLE( );
+     }
+     else if( gpio_port == GPIOE )
+     {
+         __HAL_RCC_GPIOE_CLK_ENABLE( );
+     }
+     else if( gpio_port == GPIOH )
+     {
+         __HAL_RCC_GPIOH_CLK_ENABLE( );
+     }
 
-    // if( ( gpio->mode == GPIO_MODE_IT_RISING ) || ( gpio->mode == GPIO_MODE_IT_FALLING ) ||
-    //     ( gpio->mode == GPIO_MODE_IT_RISING_FALLING ) )
-    // {
-    //     hal_gpio_irq_attach( irq );
-    //     switch( gpio->pin & 0x0F )
-    //     {
-    //     case 0:
-    //         HAL_NVIC_SetPriority( EXTI0_IRQn, 0, 0 );
-    //         HAL_NVIC_EnableIRQ( EXTI0_IRQn );
-    //         break;
-    //     case 1:
-    //         HAL_NVIC_SetPriority( EXTI1_IRQn, 0, 0 );
-    //         HAL_NVIC_EnableIRQ( EXTI1_IRQn );
-    //         break;
-    //     case 2:
-    //         HAL_NVIC_SetPriority( EXTI2_IRQn, 0, 0 );
-    //         HAL_NVIC_EnableIRQ( EXTI2_IRQn );
-    //         break;
-    //     case 3:
-    //         HAL_NVIC_SetPriority( EXTI3_IRQn, 0, 0 );
-    //         HAL_NVIC_EnableIRQ( EXTI3_IRQn );
-    //         break;
-    //     case 4:
-    //         HAL_NVIC_SetPriority( EXTI4_IRQn, 0, 0 );
-    //         HAL_NVIC_EnableIRQ( EXTI4_IRQn );
-    //         break;
-    //     case 5:
-    //     case 6:
-    //     case 7:
-    //     case 8:
-    //     case 9:
-    //         HAL_NVIC_SetPriority( EXTI9_5_IRQn, 0, 0 );
-    //         HAL_NVIC_EnableIRQ( EXTI9_5_IRQn );
-    //         break;
-    //     default:
-    //         HAL_NVIC_SetPriority( EXTI15_10_IRQn, 0, 0 );
-    //         HAL_NVIC_EnableIRQ( EXTI15_10_IRQn );
-    //         break;
-    //     }
-    // }
+     HAL_GPIO_WritePin( gpio_port, gpio_local.Pin, ( GPIO_PinState ) value );
+     HAL_GPIO_Init( gpio_port, &gpio_local );
+
+     if( ( gpio->mode == GPIO_MODE_IT_RISING ) || ( gpio->mode == GPIO_MODE_IT_FALLING ) ||
+         ( gpio->mode == GPIO_MODE_IT_RISING_FALLING ) )
+     {
+         hal_gpio_irq_attach( irq );
+         switch( gpio->pin & 0x0F )
+         {
+         case 0:
+             HAL_NVIC_SetPriority( EXTI0_IRQn, 0, 0 );
+             HAL_NVIC_EnableIRQ( EXTI0_IRQn );
+             break;
+         case 1:
+             HAL_NVIC_SetPriority( EXTI1_IRQn, 0, 0 );
+             HAL_NVIC_EnableIRQ( EXTI1_IRQn );
+             break;
+         case 2:
+             HAL_NVIC_SetPriority( EXTI2_IRQn, 0, 0 );
+             HAL_NVIC_EnableIRQ( EXTI2_IRQn );
+             break;
+         case 3:
+             HAL_NVIC_SetPriority( EXTI3_IRQn, 0, 0 );
+             HAL_NVIC_EnableIRQ( EXTI3_IRQn );
+             break;
+         case 4:
+             HAL_NVIC_SetPriority( EXTI4_IRQn, 0, 0 );
+             HAL_NVIC_EnableIRQ( EXTI4_IRQn );
+             break;
+         case 5:
+         case 6:
+         case 7:
+         case 8:
+         case 9:
+             HAL_NVIC_SetPriority( EXTI9_5_IRQn, 0, 0 );
+             HAL_NVIC_EnableIRQ( EXTI9_5_IRQn );
+             break;
+         default:
+             HAL_NVIC_SetPriority( EXTI15_10_IRQn, 0, 0 );
+             HAL_NVIC_EnableIRQ( EXTI15_10_IRQn );
+             break;
+         }
+     }
 }
 
 /* --- EOF ------------------------------------------------------------------ */

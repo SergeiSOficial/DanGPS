@@ -53,7 +53,7 @@ extern "C" {
  * --- PUBLIC CONSTANTS --------------------------------------------------------
  */
 
-#define HAL_FEATURE_OFF 0
+#define HAL_FEATURE_OFF 1
 #define HAL_FEATURE_ON !HAL_FEATURE_OFF
 
 #define HAL_DBG_TRACE HAL_FEATURE_ON

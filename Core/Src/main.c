@@ -78,7 +78,9 @@ void PeriphCommonClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+  CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;
+  DWT->CYCCNT = 0;
+  DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -109,16 +111,16 @@ int main(void)
   MX_GPIO_Init();
   MX_ADC1_Init();
   MX_CRC_Init();
-  MX_IWDG_Init();
+  //MX_IWDG_Init();
   MX_RF_Init();
-  MX_RTC_Init();
+  //MX_RTC_Init();
   MX_SPI1_Init();
   MX_I2C1_Init();
   MX_LPTIM1_Init();
   MX_USART1_UART_Init();
   MX_AES2_Init();
   MX_PKA_Init();
-  MX_RNG_Init();
+  //MX_RNG_Init();
   /* USER CODE BEGIN 2 */
   lr1110_Init();
   /* USER CODE END 2 */
@@ -208,7 +210,7 @@ void PeriphCommonClock_Config(void)
   /** Initializes the peripherals clock
   */
   PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_RFWAKEUP;
-  PeriphClkInitStruct.RFWakeUpClockSelection = RCC_RFWKPCLKSOURCE_LSI;
+  PeriphClkInitStruct.RFWakeUpClockSelection = RCC_RFWKPCLKSOURCE_LSE;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -245,6 +247,7 @@ void Error_Handler(void)
 void assert_failed(uint8_t *file, uint32_t line)
 {
   /* USER CODE BEGIN 6 */
+  asm("BKPT #0");
   /* User can add his own implementation to report the file name and line number,
      ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
   /* USER CODE END 6 */

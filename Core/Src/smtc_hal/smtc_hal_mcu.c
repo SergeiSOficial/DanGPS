@@ -188,7 +188,7 @@ void hal_mcu_init_periph( void )
     pe4259_wifi_ble_init( );
 
     /* LIS2DE12 accelerometer */
-    accelerometer_init( );
+    //accelerometer_init( );
 
     /* Effect Hall sensor */
     lr1110_tracker_board_hall_effect_enable( true );
@@ -229,7 +229,7 @@ void hal_mcu_deinit_periph( void )
 void hal_mcu_init( void )
 {
     /* Initialize MCU HAL library */
-    HAL_Init( );
+    //HAL_Init( );
 
     /* Initialize clocks */
     hal_mcu_system_clock_config( );
@@ -512,7 +512,7 @@ static void hal_mcu_smps_config( void )
     *   1.4 V + 15 mV (load impact) + 10 mV (trimming accuracy), that is VFBSMPS > 1.425 V, which
     *   gives 1.450 V
     *
-    *   SMPSVOS = (VFBSMPS – 1.5 V) / 50 mV + SMPS_coarse_engi_trim
+    *   SMPSVOS = (VFBSMPS ï¿½ 1.5 V) / 50 mV + SMPS_coarse_engi_trim
     *
     *   uint8_t smps_coarse_engi_trim = (*( __IO uint32_t* ) 0x1FFF7559) & 0x0F;
     *   uint8_t smps_fine_engi_trim = (*( __IO uint32_t* ) 0x1FFF7549) & 0x0F;
