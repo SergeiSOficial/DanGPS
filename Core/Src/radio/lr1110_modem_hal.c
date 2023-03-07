@@ -312,9 +312,9 @@ lr1110_modem_hal_status_t lr1110_modem_hal_reset( const void* context )
     lr1110_tracker_board_set_ready( false );
 
     /* Start a reset timeout timer */
-    timer_init( &lr1110_modem_reset_timeout_timer, on_lr1110_modem_reset_timeout_event );
-    timer_set_value( &lr1110_modem_reset_timeout_timer, LR1110_MODEM_RESET_TIMEOUT );
-    timer_start( &lr1110_modem_reset_timeout_timer );
+    //timer_init( &lr1110_modem_reset_timeout_timer, on_lr1110_modem_reset_timeout_event );
+    //timer_set_value( &lr1110_modem_reset_timeout_timer, LR1110_MODEM_RESET_TIMEOUT );
+    //timer_start( &lr1110_modem_reset_timeout_timer );
     lr1110_modem_reset_timeout = false;
 
     hal_gpio_set_value( ( ( lr1110_t* ) context )->reset.pin, 0 );

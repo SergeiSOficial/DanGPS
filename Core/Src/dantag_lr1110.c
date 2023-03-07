@@ -340,7 +340,7 @@ void lr1110_Init(void)
 
     /* Init board */
     hal_mcu_init();
-    hal_mcu_init_periph();
+    //hal_mcu_init_periph();
 
     /* Board is initialized */
     leds_blink(LED_ALL_MASK, 100, 2, true);

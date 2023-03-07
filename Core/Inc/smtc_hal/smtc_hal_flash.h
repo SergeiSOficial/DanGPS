@@ -60,16 +60,16 @@ extern "C" {
 
 #define FLASH_USER_START_PAGE ( 0 ) /* Start nb page of user Flash area, 8 because of the bootloader */
 
-#define FLASH_USER_END_ADDR ( ADDR_FLASH_PAGE_48 + ADDR_FLASH_PAGE_SIZE - 1 ) /* End @ of user Flash area */
-#define FLASH_USER_END_PAGE ( 48 )                                            /* End nb page of user Flash area */
+#define FLASH_USER_END_ADDR ( ADDR_FLASH_PAGE_30 + ADDR_FLASH_PAGE_SIZE - 1 ) /* End @ of user Flash area */
+#define FLASH_USER_END_PAGE ( 30 )                                            /* End nb page of user Flash area */
 
-#define FLASH_USER_INTERNAL_LOG_CTX_START_ADDR ADDR_FLASH_PAGE_49
+#define FLASH_USER_INTERNAL_LOG_CTX_START_ADDR ADDR_FLASH_PAGE_25
 #define FLASH_USER_INTERNAL_LOG_CTX_END_ADDR \
-    ( ADDR_FLASH_PAGE_49 + ADDR_FLASH_PAGE_SIZE - 1 ) /* End @ of user ctx Flash area */
+    ( ADDR_FLASH_PAGE_25 + ADDR_FLASH_PAGE_SIZE - 1 ) /* End @ of user ctx Flash area */
 
-#define FLASH_USER_TRACKER_CTX_START_ADDR ADDR_FLASH_PAGE_56
+#define FLASH_USER_TRACKER_CTX_START_ADDR ADDR_FLASH_PAGE_27
 #define FLASH_USER_TRACKER_CTX_END_ADDR \
-    ( ADDR_FLASH_PAGE_56 + ADDR_FLASH_PAGE_SIZE - 1 ) /* End @ of user tracker ctx Flash area */
+    ( ADDR_FLASH_PAGE_27 + ADDR_FLASH_PAGE_SIZE - 1 ) /* End @ of user tracker ctx Flash area */
 
 /* Base address of the Flash s */
 #define ADDR_FLASH_PAGE_0 ( ( uint32_t ) 0x08000000 )   /* Base @ of Page 0, 4 Kbytes */
@@ -152,7 +152,6 @@ extern "C" {
 #define ADDR_FLASH_PAGE_77 ( ( uint32_t ) 0x0804D000 )  /* Base @ of Page 77, 4 Kbytes */
 #define ADDR_FLASH_PAGE_78 ( ( uint32_t ) 0x0804E000 )  /* Base @ of Page 78, 4 Kbytes */
 #define ADDR_FLASH_PAGE_79 ( ( uint32_t ) 0x0804F000 )  /* Base @ of Page 79, 4 Kbytes */
-#define ADDR_FLASH_PAGE_80 ( ( uint32_t ) 0x08050000 )  /* Base @ of Page 80, 4 Kbytes */
 
 #define FLASH_OPERATION_MAX_RETRY 4
 

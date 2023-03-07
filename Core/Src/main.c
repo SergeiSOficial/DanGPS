@@ -81,6 +81,9 @@ int main(void)
   CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;
   DWT->CYCCNT = 0;
   DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk;
+  LL_DBGMCU_DisableDBGSleepMode();
+  LL_DBGMCU_DisableDBGStopMode();
+  LL_DBGMCU_DisableDBGStandbyMode();
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -88,7 +91,7 @@ int main(void)
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
   /* Config code for STM32_WPAN (HSE Tuning must be done before system clock configuration) */
-  MX_APPE_Config();
+  //MX_APPE_Config();
 
   /* USER CODE BEGIN Init */
 
@@ -109,33 +112,32 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_ADC1_Init();
-  MX_CRC_Init();
+  //MX_ADC1_Init();
+  //MX_CRC_Init();
   //MX_IWDG_Init();
-  MX_RF_Init();
+  //MX_RF_Init();
   //MX_RTC_Init();
   MX_SPI1_Init();
-  MX_I2C1_Init();
+  //MX_I2C1_Init();
   MX_LPTIM1_Init();
-  MX_USART1_UART_Init();
-  MX_AES2_Init();
-  MX_PKA_Init();
+  //MX_USART1_UART_Init();
+  //MX_AES2_Init();
+  //MX_PKA_Init();
   //MX_RNG_Init();
   /* USER CODE BEGIN 2 */
   lr1110_Init();
   /* USER CODE END 2 */
-
+  printf("hello world");
   /* Init code for STM32_WPAN */
-  MX_APPE_Init();
+  //MX_APPE_Init();
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    lr1110_MainLoop();
+    //lr1110_MainLoop();
     /* USER CODE END WHILE */
-    MX_APPE_Process();
-
+    //MX_APPE_Process();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -230,6 +232,7 @@ void Error_Handler(void)
   /* USER CODE BEGIN Error_Handler_Debug */
   /* User can add his own implementation to report the HAL error return state */
   __disable_irq();
+  asm("BKPT #0");
   while (1)
   {
   }
