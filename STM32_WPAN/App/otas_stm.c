@@ -130,80 +130,80 @@ static SVCCTL_EvtAckStatus_t OTAS_Event_Handler(void *pckt);
 static SVCCTL_EvtAckStatus_t OTAS_Event_Handler(void *Event)
 {
   SVCCTL_EvtAckStatus_t return_value;
-  hci_event_pckt *event_pckt;
-  evt_blue_aci *blue_evt;
-  aci_gatt_attribute_modified_event_rp0    * attribute_modified;
-  OTA_STM_Notification_t notification;
+  // hci_event_pckt *event_pckt;
+  // evt_blue_aci *blue_evt;
+  // aci_gatt_attribute_modified_event_rp0    * attribute_modified;
+  // OTA_STM_Notification_t notification;
 
-  return_value = SVCCTL_EvtNotAck;
+  // return_value = SVCCTL_EvtNotAck;
 
-  event_pckt = (hci_event_pckt *)(((hci_uart_pckt*)Event)->data);
+  // event_pckt = (hci_event_pckt *)(((hci_uart_pckt*)Event)->data);
 
-  switch(event_pckt->evt)
-  {
-    case EVT_VENDOR:
-    {
-      blue_evt = (evt_blue_aci*)event_pckt->data;
-      attribute_modified = (aci_gatt_attribute_modified_event_rp0*)blue_evt->data;
-      switch(blue_evt->ecode)
-      {
-        case EVT_BLUE_GATT_ATTRIBUTE_MODIFIED:
-        {
-          if(attribute_modified->Attr_Handle == (OTAS_Context.OTAS_Base_Addr_CharHdle + 1))
-          {
-            /**
-             * Base Address
-             */
-            return_value = SVCCTL_EvtAckFlowEnable;
+  // switch(event_pckt->evt)
+  // {
+  //   case EVT_VENDOR:
+  //   {
+  //     blue_evt = (evt_blue_aci*)event_pckt->data;
+  //     attribute_modified = (aci_gatt_attribute_modified_event_rp0*)blue_evt->data;
+  //     switch(blue_evt->ecode)
+  //     {
+  //       case EVT_BLUE_GATT_ATTRIBUTE_MODIFIED:
+  //       {
+  //         if(attribute_modified->Attr_Handle == (OTAS_Context.OTAS_Base_Addr_CharHdle + 1))
+  //         {
+  //           /**
+  //            * Base Address
+  //            */
+  //           return_value = SVCCTL_EvtAckFlowEnable;
 
-            notification.ChardId = OTAS_STM_BASE_ADDR_ID;
-            notification.pPayload = (uint8_t*)&attribute_modified->Attr_Data[0];
-            notification.ValueLength = attribute_modified->Attr_Data_Length;
-            OTAS_STM_Notification( &notification );
-          }
-          else if(attribute_modified->Attr_Handle == (OTAS_Context.OTAS_Raw_Data_CharHdle  + 1))
-          {
-            /**
-             * Raw Data
-             */
-            return_value = SVCCTL_EvtAckFlowEnable;
+  //           notification.ChardId = OTAS_STM_BASE_ADDR_ID;
+  //           notification.pPayload = (uint8_t*)&attribute_modified->Attr_Data[0];
+  //           notification.ValueLength = attribute_modified->Attr_Data_Length;
+  //           OTAS_STM_Notification( &notification );
+  //         }
+  //         else if(attribute_modified->Attr_Handle == (OTAS_Context.OTAS_Raw_Data_CharHdle  + 1))
+  //         {
+  //           /**
+  //            * Raw Data
+  //            */
+  //           return_value = SVCCTL_EvtAckFlowEnable;
 
-            notification.ChardId = OTAS_STM_RAW_DATA_ID;
-            notification.pPayload = (uint8_t*)&attribute_modified->Attr_Data[0];
-            notification.ValueLength = attribute_modified->Attr_Data_Length;
-            OTAS_STM_Notification( &notification );
-          }
-        }
-        break;
+  //           notification.ChardId = OTAS_STM_RAW_DATA_ID;
+  //           notification.pPayload = (uint8_t*)&attribute_modified->Attr_Data[0];
+  //           notification.ValueLength = attribute_modified->Attr_Data_Length;
+  //           OTAS_STM_Notification( &notification );
+  //         }
+  //       }
+  //       break;
 
-        case EVT_BLUE_GATT_SERVER_CONFIRMATION_EVENT:
-        {
-          if( OTAS_Context.OTAS_Conf_Status != OTAS_Conf_Not_Pending)
-          {
-            /**
-             * Confirmation Event
-             */
-            OTAS_Context.OTAS_Conf_Status = OTAS_Conf_Not_Pending;
+  //       case EVT_BLUE_GATT_SERVER_CONFIRMATION_EVENT:
+  //       {
+  //         if( OTAS_Context.OTAS_Conf_Status != OTAS_Conf_Not_Pending)
+  //         {
+  //           /**
+  //            * Confirmation Event
+  //            */
+  //           OTAS_Context.OTAS_Conf_Status = OTAS_Conf_Not_Pending;
 
-            return_value = SVCCTL_EvtAckFlowEnable;
+  //           return_value = SVCCTL_EvtAckFlowEnable;
 
-            notification.ChardId = OTAS_STM_CONF_EVENT_ID;
-            notification.pPayload = (uint8_t*)&attribute_modified->Attr_Data[0];
-            notification.ValueLength = attribute_modified->Attr_Data_Length;
-            OTAS_STM_Notification( &notification );
-          }
-        }
-        break;
+  //           notification.ChardId = OTAS_STM_CONF_EVENT_ID;
+  //           notification.pPayload = (uint8_t*)&attribute_modified->Attr_Data[0];
+  //           notification.ValueLength = attribute_modified->Attr_Data_Length;
+  //           OTAS_STM_Notification( &notification );
+  //         }
+  //       }
+  //       break;
 
-        default:
-          break;
-      }
-    }
-    break;
+  //       default:
+  //         break;
+  //     }
+  //   }
+  //   break;
 
-    default:
-      break;
-  }
+  //   default:
+  //     break;
+  // }
 
   return(return_value);
 }

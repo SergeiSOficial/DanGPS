@@ -353,7 +353,7 @@ void lr1110_Init(void)
                          TRACKER_SUB_MINOR_APP_VERSION);
 
     /* Init LR1110 modem-e event */
-    memset(&lr1110_modem_event_callback, 0, sizeof(lr1110_modem_event_callback));
+    // memset(&lr1110_modem_event_callback, 0, sizeof(lr1110_modem_event_callback));
     lr1110_modem_event_callback.reset                 = lr1110_modem_reset_event;
     lr1110_modem_event_callback.alarm                 = lr1110_modem_alarm;
     lr1110_modem_event_callback.joined                = lr1110_modem_network_joined;
@@ -380,86 +380,86 @@ void lr1110_Init(void)
         tracker_ctx.has_lr1110_firmware = true;
     }
 
-    /* LR1110 modem-e version */
-    lr1110_modem_get_version(&lr1110, &tracker_ctx.modem_version);
-    HAL_DBG_TRACE_INFO("###### ===== LR1110 MODEM-E VERSION ==== ######\r\n\r\n");
-    HAL_DBG_TRACE_PRINTF("LORAWAN     : %#04X\r\n", tracker_ctx.modem_version.lorawan);
-    HAL_DBG_TRACE_PRINTF("FIRMWARE    : %#02X\r\n", tracker_ctx.modem_version.firmware);
-    HAL_DBG_TRACE_PRINTF("BOOTLOADER  : %#02X\r\n", tracker_ctx.modem_version.bootloader);
+//     /* LR1110 modem-e version */
+//     lr1110_modem_get_version(&lr1110, &tracker_ctx.modem_version);
+//     HAL_DBG_TRACE_INFO("###### ===== LR1110 MODEM-E VERSION ==== ######\r\n\r\n");
+//     HAL_DBG_TRACE_PRINTF("LORAWAN     : %#04X\r\n", tracker_ctx.modem_version.lorawan);
+//     HAL_DBG_TRACE_PRINTF("FIRMWARE    : %#02X\r\n", tracker_ctx.modem_version.firmware);
+//     HAL_DBG_TRACE_PRINTF("BOOTLOADER  : %#02X\r\n", tracker_ctx.modem_version.bootloader);
 
-    /* Store or restore the Tracker context */
-    if ((tracker_restore_app_ctx() != SUCCESS) || (FORCE_NEW_TRACKER_CONTEXT == 1)) {
-#if (USE_PRODUCTION_KEYS == 1)
-        /* When the production keys are used, DevEUI = ChipEUI and JoinEUI is the one defined in lorawan_comissioning.h
-         */
-        modem_response_code = lr1110_modem_get_chip_eui(&lr1110, dev_eui);
-#endif
-        /* Init the LoRaWAN keys set in Commissioning_tracker_ctx.h or using the production keys and init the global
-         * context */
-        tracker_init_app_ctx(dev_eui, join_eui, app_key, true);
+//     /* Store or restore the Tracker context */
+//     if ((tracker_restore_app_ctx() != SUCCESS) || (FORCE_NEW_TRACKER_CONTEXT == 1)) {
+// #if (USE_PRODUCTION_KEYS == 1)
+//         /* When the production keys are used, DevEUI = ChipEUI and JoinEUI is the one defined in lorawan_comissioning.h
+//          */
+//         modem_response_code = lr1110_modem_get_chip_eui(&lr1110, dev_eui);
+// #endif
+//         /* Init the LoRaWAN keys set in Commissioning_tracker_ctx.h or using the production keys and init the global
+//          * context */
+//         tracker_init_app_ctx(dev_eui, join_eui, app_key, true);
 
-        /* Init the tracker internal log context */
-        tracker_init_internal_log_ctx();
-    } else {
-        /* Restore the tracker internal log context */
-        if (tracker_restore_internal_log_ctx() != SUCCESS) {
-            tracker_init_internal_log_ctx();
-        }
+//         /* Init the tracker internal log context */
+//         tracker_init_internal_log_ctx();
+//     } else {
+//         /* Restore the tracker internal log context */
+//         if (tracker_restore_internal_log_ctx() != SUCCESS) {
+//             tracker_init_internal_log_ctx();
+//         }
 
-        /* Set the restored LoRaWAN Keys */
-        memcpy(dev_eui, tracker_ctx.dev_eui, LORAWAN_DEVICE_EUI_LEN);
-        memcpy(join_eui, tracker_ctx.join_eui, LORAWAN_JOIN_EUI_LEN);
-        memcpy(app_key, tracker_ctx.app_key, LORAWAN_APP_KEY_LEN);
-    }
+//         /* Set the restored LoRaWAN Keys */
+//         memcpy(dev_eui, tracker_ctx.dev_eui, LORAWAN_DEVICE_EUI_LEN);
+//         memcpy(join_eui, tracker_ctx.join_eui, LORAWAN_JOIN_EUI_LEN);
+//         memcpy(app_key, tracker_ctx.app_key, LORAWAN_APP_KEY_LEN);
+//     }
 
-    /* LoRaWAN configuration */
-    if (lorawan_init(tracker_ctx.lorawan_region, LORAWAN_CLASS_USED) != LR1110_MODEM_RESPONSE_CODE_OK) {
-        HAL_DBG_TRACE_ERROR("###### ===== LORAWAN INIT ERROR ==== ######\r\n\r\n");
-    }
+//     /* LoRaWAN configuration */
+//     if (lorawan_init(tracker_ctx.lorawan_region, LORAWAN_CLASS_USED) != LR1110_MODEM_RESPONSE_CODE_OK) {
+//         HAL_DBG_TRACE_ERROR("###### ===== LORAWAN INIT ERROR ==== ######\r\n\r\n");
+//     }
 
-    if (tracker_gnss_init(&tracker_ctx.gnss_settings) != LR1110_MODEM_RESPONSE_CODE_OK) {
-        HAL_DBG_TRACE_ERROR("###### ===== GNSS INIT ERROR ==== ######\r\n\r\n");
-    }
+//     if (tracker_gnss_init(&tracker_ctx.gnss_settings) != LR1110_MODEM_RESPONSE_CODE_OK) {
+//         HAL_DBG_TRACE_ERROR("###### ===== GNSS INIT ERROR ==== ######\r\n\r\n");
+//     }
 
-    /* Set Keys */
-    modem_response_code = lr1110_modem_set_dev_eui(&lr1110, dev_eui);
-    modem_response_code = lr1110_modem_set_join_eui(&lr1110, join_eui);
-    /* do a derive keys to get the pin code */
-    lr1110_modem_derive_keys(&lr1110);
-    lr1110_modem_get_pin(&lr1110, &tracker_ctx.lorawan_pin);
-    lr1110_modem_get_chip_eui(&lr1110, tracker_ctx.chip_eui);
+//     /* Set Keys */
+//     modem_response_code = lr1110_modem_set_dev_eui(&lr1110, dev_eui);
+//     modem_response_code = lr1110_modem_set_join_eui(&lr1110, join_eui);
+//     /* do a derive keys to get the pin code */
+//     lr1110_modem_derive_keys(&lr1110);
+//     lr1110_modem_get_pin(&lr1110, &tracker_ctx.lorawan_pin);
+//     lr1110_modem_get_chip_eui(&lr1110, tracker_ctx.chip_eui);
 
-    /* Init the software watchdog */
-    hal_mcu_init_software_watchdog(tracker_ctx.app_scan_interval * 3);
+//     /* Init the software watchdog */
+//     hal_mcu_init_software_watchdog(tracker_ctx.app_scan_interval * 3);
 
-    /* Init Leds timer */
-    timer_init(&led_tx_timer, on_led_tx_timer_event);
-    timer_set_value(&led_tx_timer, LED_PERIOD_MS);
-    timer_init(&led_rx_timer, on_led_rx_timer_event);
-    timer_set_value(&led_rx_timer, LED_PERIOD_MS);
+//     /* Init Leds timer */
+//     timer_init(&led_tx_timer, on_led_tx_timer_event);
+//     timer_set_value(&led_tx_timer, LED_PERIOD_MS);
+//     timer_init(&led_rx_timer, on_led_rx_timer_event);
+//     timer_set_value(&led_rx_timer, LED_PERIOD_MS);
 
-    /* Start BLE advertisement for 30s */
-    // start_ble_thread(TRACKER_ADV_TIMEOUT_MS);
+//     /* Start BLE advertisement for 30s */
+//     // start_ble_thread(TRACKER_ADV_TIMEOUT_MS);
 
-    /* Init tracker context volatile parameters */
-    tracker_ctx.has_date                   = false;
-    tracker_ctx.accelerometer_move_history = 1;
-    tracker_ctx.stream_done                = true;
-    tracker_ctx.voltage                    = hal_mcu_get_vref_level();
-    tracker_ctx.reset_cnt_sent             = false;
-    tracker_ctx.system_sanity_check        = (tracker_system_sanity_check_mask_t)0;
+//     /* Init tracker context volatile parameters */
+//     tracker_ctx.has_date                   = false;
+//     tracker_ctx.accelerometer_move_history = 1;
+//     tracker_ctx.stream_done                = true;
+//     tracker_ctx.voltage                    = hal_mcu_get_vref_level();
+//     tracker_ctx.reset_cnt_sent             = false;
+//     tracker_ctx.system_sanity_check        = (tracker_system_sanity_check_mask_t)0;
 
-    /* Check if the batteries are too low, if yes switch the tracker in airplane mode, \note if this test is moved
-     * elsewhere in this app the TRACKER_BOARD_MAX_VOLTAGE_RECOVERY_TIME value should be evaluate again  */
-    modem_response_code = lr1110_tracker_board_measure_battery_drop(&lr1110, &voltage_drop, &voltage_recovery_time);
-    if ((voltage_recovery_time > TRACKER_BOARD_MAX_VOLTAGE_RECOVERY_TIME) &&
-        (modem_response_code == LR1110_MODEM_RESPONSE_CODE_OK) &&
-        (tracker_ctx.accumulated_charge > TRACKER_BOARD_BATTERY_CAPACITY_80_PERCENT)) {
-        HAL_DBG_TRACE_ERROR("###### ===== BATTERIES LOW, STAY IN AIRPLANE MODE ==== ######\r\n\r\n");
-        tracker_ctx.airplane_mode = true;
+//     /* Check if the batteries are too low, if yes switch the tracker in airplane mode, \note if this test is moved
+//      * elsewhere in this app the TRACKER_BOARD_MAX_VOLTAGE_RECOVERY_TIME value should be evaluate again  */
+//     modem_response_code = lr1110_tracker_board_measure_battery_drop(&lr1110, &voltage_drop, &voltage_recovery_time);
+//     if ((voltage_recovery_time > TRACKER_BOARD_MAX_VOLTAGE_RECOVERY_TIME) &&
+//         (modem_response_code == LR1110_MODEM_RESPONSE_CODE_OK) &&
+//         (tracker_ctx.accumulated_charge > TRACKER_BOARD_BATTERY_CAPACITY_80_PERCENT)) {
+//         HAL_DBG_TRACE_ERROR("###### ===== BATTERIES LOW, STAY IN AIRPLANE MODE ==== ######\r\n\r\n");
+//         tracker_ctx.airplane_mode = true;
 
-        leds_blink(LED_ALL_MASK, 500, 5, true);
-    }
+//         leds_blink(LED_ALL_MASK, 500, 5, true);
+//     }
 }
 
 void lr1110_MainLoop(void)

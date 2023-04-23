@@ -243,7 +243,7 @@
  * Maximum number of Services that can be stored in the GATT database.
  * Note that the GAP and GATT services are automatically added so this parameter should be 2 plus the number of user services
  */
-#define CFG_BLE_NUM_GATT_SERVICES   8
+#define CFG_BLE_NUM_GATT_SERVICES   4
 
 /**
  * Maximum number of Attributes
@@ -252,7 +252,7 @@
  * Note that certain characteristics and relative descriptors are added automatically during device initialization
  * so this parameters should be 9 plus the number of user Attributes
  */
-#define CFG_BLE_NUM_GATT_ATTRIBUTES 68
+#define CFG_BLE_NUM_GATT_ATTRIBUTES 30
 
 /**
  * Maximum supported ATT_MTU size
@@ -271,7 +271,7 @@
  *  The total amount of memory needed is the sum of the above quantities for each attribute.
  * This parameter is ignored by the CPU2 when CFG_BLE_OPTIONS has SHCI_C2_BLE_INIT_OPTIONS_LL_ONLY flag set
  */
-#define CFG_BLE_ATT_VALUE_ARRAY_SIZE    (1344)
+#define CFG_BLE_ATT_VALUE_ARRAY_SIZE    (1290)
 
 /**
  * Prepare Write List size in terms of number of packet
@@ -317,9 +317,9 @@
  * Note: Enable Calibration when LSI selected as RF system wakeup clock and "bit 2" is meaningless with LSI
  */
 #if defined(STM32WB5Mxx)
-  #define CFG_BLE_LS_SOURCE  (SHCI_C2_BLE_INIT_CFG_BLE_LS_CALIB | SHCI_C2_BLE_INIT_CFG_BLE_LS_MOD5MM_DEV | SHCI_C2_BLE_INIT_CFG_BLE_LS_CLK_LSE)
+  #define CFG_BLE_LS_SOURCE  (SHCI_C2_BLE_INIT_CFG_BLE_LS_NOCALIB | SHCI_C2_BLE_INIT_CFG_BLE_LS_MOD5MM_DEV | SHCI_C2_BLE_INIT_CFG_BLE_LS_CLK_LSE)
 #else
-  #define CFG_BLE_LS_SOURCE  (SHCI_C2_BLE_INIT_CFG_BLE_LS_CALIB | SHCI_C2_BLE_INIT_CFG_BLE_LS_OTHER_DEV | SHCI_C2_BLE_INIT_CFG_BLE_LS_CLK_LSE)
+  #define CFG_BLE_LS_SOURCE  (SHCI_C2_BLE_INIT_CFG_BLE_LS_NOCALIB | SHCI_C2_BLE_INIT_CFG_BLE_LS_OTHER_DEV | SHCI_C2_BLE_INIT_CFG_BLE_LS_CLK_LSE)
 #endif
 
 /**
@@ -357,10 +357,6 @@
  * - SHCI_C2_BLE_INIT_OPTIONS_GATT_CACHING_NOTUSED
  * - SHCI_C2_BLE_INIT_OPTIONS_POWER_CLASS_1
  * - SHCI_C2_BLE_INIT_OPTIONS_POWER_CLASS_2_3
- * - SHCI_C2_BLE_INIT_OPTIONS_APPEARANCE_WRITABLE
- * - SHCI_C2_BLE_INIT_OPTIONS_APPEARANCE_READONLY
- * - SHCI_C2_BLE_INIT_OPTIONS_ENHANCED_ATT_SUPPORTED
- * - SHCI_C2_BLE_INIT_OPTIONS_ENHANCED_ATT_NOTSUPPORTED
  * which are used to set following configuration bits:
  * (bit 0): 1: LL only
  *          0: LL + host
@@ -378,13 +374,24 @@
  *          0: GATT caching is not used
  * (bit 7): 1: LE Power Class 1
  *          0: LE Power Class 2-3
- * (bit 8): 1: appearance Writable
+ * other bits: complete with Options_extension flag
+ */
+#define CFG_BLE_OPTIONS  (SHCI_C2_BLE_INIT_OPTIONS_LL_HOST | SHCI_C2_BLE_INIT_OPTIONS_WITH_SVC_CHANGE_DESC | SHCI_C2_BLE_INIT_OPTIONS_DEVICE_NAME_RW | SHCI_C2_BLE_INIT_OPTIONS_NO_EXT_ADV | SHCI_C2_BLE_INIT_OPTIONS_NO_CS_ALGO2 | SHCI_C2_BLE_INIT_OPTIONS_FULL_GATTDB_NVM | SHCI_C2_BLE_INIT_OPTIONS_GATT_CACHING_NOTUSED | SHCI_C2_BLE_INIT_OPTIONS_POWER_CLASS_2_3)
+
+/**
+ * BLE stack Options_extension flags to be configured with:
+ * - SHCI_C2_BLE_INIT_OPTIONS_APPEARANCE_WRITABLE
+ * - SHCI_C2_BLE_INIT_OPTIONS_APPEARANCE_READONLY
+ * - SHCI_C2_BLE_INIT_OPTIONS_ENHANCED_ATT_SUPPORTED
+ * - SHCI_C2_BLE_INIT_OPTIONS_ENHANCED_ATT_NOTSUPPORTED
+ * which are used to set following configuration bits:
+ * (bit 0): 1: appearance Writable
  *          0: appearance Read-Only
- * (bit 9): 1: Enhanced ATT supported
+ * (bit 1): 1: Enhanced ATT supported
  *          0: Enhanced ATT not supported
  * other bits: reserved (shall be set to 0)
  */
-#define CFG_BLE_OPTIONS  (SHCI_C2_BLE_INIT_OPTIONS_LL_HOST | SHCI_C2_BLE_INIT_OPTIONS_WITH_SVC_CHANGE_DESC | SHCI_C2_BLE_INIT_OPTIONS_DEVICE_NAME_RW | SHCI_C2_BLE_INIT_OPTIONS_NO_EXT_ADV | SHCI_C2_BLE_INIT_OPTIONS_NO_CS_ALGO2 | SHCI_C2_BLE_INIT_OPTIONS_FULL_GATTDB_NVM | SHCI_C2_BLE_INIT_OPTIONS_GATT_CACHING_NOTUSED | SHCI_C2_BLE_INIT_OPTIONS_POWER_CLASS_2_3 | SHCI_C2_BLE_INIT_OPTIONS_APPEARANCE_READONLY | SHCI_C2_BLE_INIT_OPTIONS_ENHANCED_ATT_NOTSUPPORTED)
+#define CFG_BLE_OPTIONS_EXT  (SHCI_C2_BLE_INIT_OPTIONS_APPEARANCE_READONLY | SHCI_C2_BLE_INIT_OPTIONS_ENHANCED_ATT_NOTSUPPORTED)
 
 #define CFG_BLE_MAX_COC_INITIATOR_NBR   (32)
 
@@ -631,12 +638,12 @@ typedef enum
 /**
  * When set to 1, the traces are enabled in the BLE services
  */
-#define CFG_DEBUG_BLE_TRACE     1
+#define CFG_DEBUG_BLE_TRACE     0
 
 /**
  * Enable or Disable traces in application
  */
-#define CFG_DEBUG_APP_TRACE     1
+#define CFG_DEBUG_APP_TRACE     0
 
 #if (CFG_DEBUG_APP_TRACE != 0)
 #define APP_DBG_MSG                 PRINT_MESG_DBG
@@ -663,7 +670,7 @@ typedef enum
  * When both are set to 1,  CFG_DEBUG_TRACE_FULL is selected
  */
 #define CFG_DEBUG_TRACE_LIGHT     0
-#define CFG_DEBUG_TRACE_FULL      1
+#define CFG_DEBUG_TRACE_FULL      0
 
 #if (( CFG_DEBUG_TRACE != 0 ) && ( CFG_DEBUG_TRACE_LIGHT == 0 ) && (CFG_DEBUG_TRACE_FULL == 0))
 #undef CFG_DEBUG_TRACE_FULL

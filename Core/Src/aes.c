@@ -28,7 +28,7 @@ CRYP_HandleTypeDef hcryp2;
 __ALIGN_BEGIN static const uint32_t pKeyAES2[4] __ALIGN_END = {
                             0x00000000,0x00000000,0x00000000,0x00000000};
 __ALIGN_BEGIN static const uint32_t HeaderAES2[4] __ALIGN_END = {
-                            0x00000000,0x00000000,0x00000000,0x00000000};
+                            0x00000000000000000000000000000000};
 __ALIGN_BEGIN static const uint32_t B0AES2[4] __ALIGN_END = {
                             0x00000000,0x00000000,0x00000000,0x00000000};
 

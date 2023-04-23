@@ -39,6 +39,7 @@ void HAL_MspInit(void)
 {
   /* USER CODE BEGIN MspInit 0 */
   /* USER CODE END MspInit 0 */
+  PWR_PVDTypeDef sConfigPVD = {0};
 
   __HAL_RCC_HSEM_CLK_ENABLE();
 
@@ -48,6 +49,16 @@ void HAL_MspInit(void)
   /* HSEM_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(HSEM_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(HSEM_IRQn);
+
+  /** PVD Configuration
+  */
+  sConfigPVD.PVDLevel = PWR_PVDLEVEL_0;
+  sConfigPVD.Mode = PWR_PVD_MODE_NORMAL;
+  HAL_PWR_ConfigPVD(&sConfigPVD);
+
+  /** Enable the PVD Output
+  */
+  HAL_PWR_EnablePVD();
 
   /* USER CODE BEGIN MspInit 1 */
   /* USER CODE END MspInit 1 */

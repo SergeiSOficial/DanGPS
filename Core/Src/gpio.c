@@ -56,11 +56,13 @@ void MX_GPIO_Init(void)
   __HAL_RCC_GPIOE_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, VCC_2_4GHz_SW_Pin|GHz2_4_SWITCH_Pin|LR_NRESET_Pin|TX1_Pin
-                          |RX1_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, VCC_2_4GHz_SW_Pin|GHz2_4_SWITCH_Pin|LR_NRESET_Pin|RX1_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(LNA_PON_MCU_GPIO_Port, LNA_PON_MCU_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(TX1_GPIO_Port, TX1_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin : PH3 */
   GPIO_InitStruct.Pin = GPIO_PIN_3;
