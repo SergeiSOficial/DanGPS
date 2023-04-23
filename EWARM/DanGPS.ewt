@@ -1358,7 +1358,7 @@
                 </option>
                 <option>
                     <name>GenRtcEnableBoundsChecking</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>GenRtcCheckPtrsNonInstrMem</name>
@@ -1366,15 +1366,15 @@
                 </option>
                 <option>
                     <name>GenRtcTrackPointerBounds</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>GenRtcCheckAccesses</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>GenRtcGenerateEntries</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>GenRtcNrTrackedPointers</name>
@@ -1390,7 +1390,7 @@
                 </option>
                 <option>
                     <name>GenRtcIntConversion</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>GenRtcInclExplicit</name>
@@ -1406,19 +1406,19 @@
                 </option>
                 <option>
                     <name>GenRtcUnhandledCase</name>
-                    <state>1</state>
-                </option>
-                <option>
-                    <name>GenRtcDivByZero</name>
-                    <state>1</state>
-                </option>
-                <option>
-                    <name>GenRtcEnable</name>
                     <state>0</state>
                 </option>
                 <option>
-                    <name>GenRtcCheckPtrsNonInstrFunc</name>
+                    <name>GenRtcDivByZero</name>
+                    <state>0</state>
+                </option>
+                <option>
+                    <name>GenRtcEnable</name>
                     <state>1</state>
+                </option>
+                <option>
+                    <name>GenRtcCheckPtrsNonInstrFunc</name>
+                    <state>0</state>
                 </option>
             </data>
         </settings>

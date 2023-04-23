@@ -90,3 +90,9 @@ cmake-build-debug/
 /EWARM/DanGPS_OTA/
 /EWARM/settings/DanGPS.reggroups
 *.log
+EWARM/settings/DanGPS.dbgdt
+*.dbgdt
+*.dnx
+*.wsdt
+EWARM/settings/DanGPS.DanGPS.general.xcl
+*.crun

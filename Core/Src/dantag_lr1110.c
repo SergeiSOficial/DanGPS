@@ -9,7 +9,9 @@
  *
  */
 #include "dantag_lr1110.h"
-
+#include "smtc_hal_options.h"
+#include "gnss_scan.h"
+#include "lr1110_tracker_board.h"
 /*!
  * @addtogroup apps_tracker
  * LR1110 Modem-E Tracker Application
