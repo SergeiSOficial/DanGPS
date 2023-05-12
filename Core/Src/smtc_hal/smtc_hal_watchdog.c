@@ -60,7 +60,7 @@
  * --- PRIVATE VARIABLES -------------------------------------------------------
  */
 
-static IWDG_HandleTypeDef iwdg_handle;
+// static IWDG_HandleTypeDef iwdg_handle;
 
 /*
  * -----------------------------------------------------------------------------
@@ -74,43 +74,45 @@ static IWDG_HandleTypeDef iwdg_handle;
 
 void hal_watchdog_init( void )
 {
-    iwdg_handle.Instance       = IWDG;
-    iwdg_handle.Init.Prescaler = IWDG_PRESCALER_256;
-    iwdg_handle.Init.Window    = IWDG_WINDOW_DISABLE;
-    iwdg_handle.Init.Reload    = 0xFFF;
+    // iwdg_handle.Instance       = IWDG;
+    // iwdg_handle.Init.Prescaler = IWDG_PRESCALER_256;
+    // iwdg_handle.Init.Window    = IWDG_WINDOW_DISABLE;
+    // iwdg_handle.Init.Reload    = 0xFFF;
 
-    /* Enable IWDG. LSI is turned on automaticaly. */
-    __HAL_IWDG_START( &iwdg_handle );
+    // /* Enable IWDG. LSI is turned on automaticaly. */
+    // __HAL_IWDG_START( &iwdg_handle );
 
-    /* Enable write access to IWDG_PR, IWDG_RLR and IWDG_WINR registers by
-       writing 0x5555 in KR */
-    IWDG_ENABLE_WRITE_ACCESS( &iwdg_handle );
-    /* Write to IWDG registers the Prescaler & Reload values to work with. */
-    iwdg_handle.Instance->PR  = iwdg_handle.Init.Prescaler;
-    iwdg_handle.Instance->RLR = iwdg_handle.Init.Reload;
+    // /* Enable write access to IWDG_PR, IWDG_RLR and IWDG_WINR registers by
+    //    writing 0x5555 in KR */
+    // IWDG_ENABLE_WRITE_ACCESS( &iwdg_handle );
+    // /* Write to IWDG registers the Prescaler & Reload values to work with. */
+    // iwdg_handle.Instance->PR  = iwdg_handle.Init.Prescaler;
+    // iwdg_handle.Instance->RLR = iwdg_handle.Init.Reload;
 
-    /* Wait for register to be updated. */
-    while( iwdg_handle.Instance->SR != RESET )
-    {
-    }
+    // /* Wait for register to be updated. */
+    // while( iwdg_handle.Instance->SR != RESET )
+    // {
+    // }
 
-    /* If window parameter is different than current value, modify window
-       register. */
-    if( iwdg_handle.Instance->WINR != iwdg_handle.Init.Window )
-    {
-        // Write to IWDG WINR the IWDG_Window value to compare with. In any
-        // case, even if window feature is disabled, Watchdog will be reloaded
-        // by writing windows register. */
-        iwdg_handle.Instance->WINR = iwdg_handle.Init.Window;
-    }
-    else
-    {
-        /* Reload IWDG counter with value defined in the reload register. */
-        __HAL_IWDG_RELOAD_COUNTER( &iwdg_handle );
-    }
+    // /* If window parameter is different than current value, modify window
+    //    register. */
+    // if( iwdg_handle.Instance->WINR != iwdg_handle.Init.Window )
+    // {
+    //     // Write to IWDG WINR the IWDG_Window value to compare with. In any
+    //     // case, even if window feature is disabled, Watchdog will be reloaded
+    //     // by writing windows register. */
+    //     iwdg_handle.Instance->WINR = iwdg_handle.Init.Window;
+    // }
+    // else
+    // {
+    //     /* Reload IWDG counter with value defined in the reload register. */
+    //     __HAL_IWDG_RELOAD_COUNTER( &iwdg_handle );
+    // }
 }
 
-void hal_watchdog_reload( void ) { __HAL_IWDG_RELOAD_COUNTER( &iwdg_handle ); }
+void hal_watchdog_reload( void ) { 
+    //__HAL_IWDG_RELOAD_COUNTER( &iwdg_handle ); 
+    }
 
 /*
  * -----------------------------------------------------------------------------

@@ -41,7 +41,7 @@
 #include "stm32wbxx_ll_utils.h"
 #include "lr1110_tracker_board.h"
 #include "smtc_hal.h"
-#include "tracker_utility.h"
+//#include "tracker_utility.h"
 
 #if( HAL_DBG_TRACE == HAL_FEATURE_ON )
 #include <stdarg.h>
@@ -232,7 +232,7 @@ void hal_mcu_init( void )
     //HAL_Init( );
 
     /* Initialize clocks */
-    hal_mcu_system_clock_config( );
+    //hal_mcu_system_clock_config( );
 
     /* Initialize GPIOs */
     hal_mcu_gpio_init( );
@@ -753,7 +753,7 @@ static void on_soft_watchdog_event( void* context )
     HAL_DBG_TRACE_INFO( "###### ===== WATCHDOG RESET ==== ######\r\n\r\n" );
 
     /* System reset */
-    tracker_store_and_reset( 1 + lr1110_tracker_board_read_event_line( &lr1110 ) );
+    //tracker_store_and_reset( 1 + lr1110_tracker_board_read_event_line( &lr1110 ) );
 }
 
 /**

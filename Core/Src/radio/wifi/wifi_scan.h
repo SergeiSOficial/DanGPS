@@ -63,7 +63,7 @@ extern "C" {
 #define WIFI_SCAN_SUCCESS 1
 #define WIFI_SCAN_FAIL 0
 
-#define WIFI_BUFFER_MAX_SIZE 948  // 12 results * LR1110_WIFI_EXTENDED_FULL_RESULT_SIZE
+#define WIFI_BUFFER_MAX_SIZE 158  // 2 results * LR1110_WIFI_EXTENDED_FULL_RESULT_SIZE
 
 /*
  * -----------------------------------------------------------------------------

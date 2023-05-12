@@ -12,6 +12,7 @@
 #include "smtc_hal_options.h"
 #include "gnss_scan.h"
 #include "lr1110_tracker_board.h"
+#include "wifi_scan.h"
 /*!
  * @addtogroup apps_tracker
  * LR1110 Modem-E Tracker Application
@@ -353,7 +354,7 @@ void lr1110_Init(void)
                          TRACKER_SUB_MINOR_APP_VERSION);
 
     /* Init LR1110 modem-e event */
-    // memset(&lr1110_modem_event_callback, 0, sizeof(lr1110_modem_event_callback));
+    memset(&lr1110_modem_event_callback, 0, sizeof(lr1110_modem_event_callback));
     lr1110_modem_event_callback.reset                 = lr1110_modem_reset_event;
     lr1110_modem_event_callback.alarm                 = lr1110_modem_alarm;
     lr1110_modem_event_callback.joined                = lr1110_modem_network_joined;

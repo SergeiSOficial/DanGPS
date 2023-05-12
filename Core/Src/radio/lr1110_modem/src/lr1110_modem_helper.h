@@ -100,7 +100,7 @@ extern "C" {
 /*!
  * @brief Maximum payload size in byte of a Wi-Fi result
  */
-#define LR1110_MODEM_HELPER_WIFI_MAX_BUFFER_LENGTH 948  // 12 results * LR1110_WIFI_EXTENDED_FULL_RESULT_SIZE
+#define LR1110_MODEM_HELPER_WIFI_MAX_BUFFER_LENGTH 158  // 12 results * LR1110_WIFI_EXTENDED_FULL_RESULT_SIZE
 
 /*
  * -----------------------------------------------------------------------------

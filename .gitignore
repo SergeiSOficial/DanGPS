@@ -96,3 +96,12 @@ EWARM/settings/DanGPS.dbgdt
 *.wsdt
 EWARM/settings/DanGPS.DanGPS.general.xcl
 *.crun
+EWARM/settings/DanGPS.crun
+*.wsdt
+*.dnx
+*.wsdt
+*.dbgdt
+*.xcl
+*.xcl
+*.ps1
+*.bat

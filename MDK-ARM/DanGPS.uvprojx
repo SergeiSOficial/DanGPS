@@ -10,8 +10,8 @@
       <TargetName>DanGPS</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>6190000::V6.19::ARMCLANG</pCCUsed>
-      <uAC6>1</uAC6>
+      <pCCUsed>5060960::V5.06 update 7 (build 960)::.\ARMCC</pCCUsed>
+      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32WB10CCUx</Device>
@@ -314,7 +314,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>7</Optim>
+            <Optim>2</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -323,7 +323,7 @@
             <PlainCh>0</PlainCh>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
-            <wLevel>3</wLevel>
+            <wLevel>2</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>1</uC99>
@@ -338,9 +338,9 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>USE_HAL_DRIVER,STM32WB10xx,STM32_THREAD_SAFE_STRATEGY=3,USE_FULL_LL_DRIVER,LR1110_TRACKER</Define>
+              <Define>USE_HAL_DRIVER,STM32WB10xx,STM32_THREAD_SAFE_STRATEGY,LR1110_TRACKER</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../STM32_WPAN/App;../TOUCHSENSING/App;../Drivers/STM32WBxx_HAL_Driver/Inc;../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy;../Utilities/lpm/tiny_lpm;../Middlewares/ST/STM32_WPAN;../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread;../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl;../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci;../Middlewares/ST/STM32_WPAN/utilities;../Middlewares/ST/STM32_WPAN/ble/core;../Middlewares/ST/STM32_WPAN/ble/core/auto;../Middlewares/ST/STM32_WPAN/ble/core/template;../Middlewares/ST/STM32_WPAN/ble/svc/Inc;../Middlewares/ST/STM32_WPAN/ble/svc/Src;../Middlewares/ST/STM32_TouchSensing_Library/inc;../Drivers/CMSIS/Device/ST/STM32WBxx/Include;../Utilities/sequencer;../Middlewares/ST/STM32_WPAN/ble;../Drivers/CMSIS/Include;..\Core\Src;..\Core\Src\radio\lr1110_modem\src;..\Core\Src\apps\Tracker;..\Core\Src\radio;..\Core\Src\radio\wifi;..\Core\Src\radio\gnss;..\Drivers\BSP\Components\external_supply;..\Drivers\BSP\Components\hall_effect;..\Drivers\BSP\Components\Leds;..\Drivers\BSP\Components\rf_switch;..\Drivers\BSP\Components\lis2de12;..\Drivers\BSP\Components\usr_button;..\Core\Inc\boards;..\Core\Inc\smtc_hal</IncludePath>
+              <IncludePath>../Core/Inc;../STM32_WPAN/App;../Drivers/STM32WBxx_HAL_Driver/Inc;../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy;../Utilities/lpm/tiny_lpm;../Middlewares/ST/STM32_WPAN;../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread;../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl;../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci;../Middlewares/ST/STM32_WPAN/utilities;../Middlewares/ST/STM32_WPAN/ble/core;../Middlewares/ST/STM32_WPAN/ble/core/auto;../Middlewares/ST/STM32_WPAN/ble/core/template;../Middlewares/ST/STM32_WPAN/ble/svc/Inc;../Middlewares/ST/STM32_WPAN/ble/svc/Src;../Drivers/CMSIS/Device/ST/STM32WBxx/Include;../Utilities/sequencer;../Middlewares/ST/STM32_WPAN/ble;../Drivers/CMSIS/Include;../Core/Src;../Core/Src/radio/lr1110_modem/src;../Core/Src/apps/Tracker;../Core/Src/radio;../Core/Src/radio/wifi;../Core/Src/radio/gnss;../Drivers/BSP/Components/external_supply;../Drivers/BSP/Components/hall_effect;../Drivers/BSP/Components/Leds;../Drivers/BSP/Components/rf_switch;../Drivers/BSP/Components/lis2de12;../Drivers/BSP/Components/usr_button;../Core/Inc/boards;../Core/Inc/smtc_hal</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -390,11 +390,6 @@
               <FileType>2</FileType>
               <FilePath>startup_stm32wb10xx_cm4.s</FilePath>
             </File>
-            <File>
-              <FileName>armlib_lock_glue.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>armlib_lock_glue.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -404,6 +399,26 @@
               <FileName>flash_driver.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Core\Src\flash_driver.c</FilePath>
+            </File>
+            <File>
+              <FileName>dantag_lr1110.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\dantag_lr1110.c</FilePath>
+            </File>
+            <File>
+              <FileName>tracker_utility.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\tracker_utility.c</FilePath>
+            </File>
+            <File>
+              <FileName>apps_utilities.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\apps_utilities.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\main.c</FilePath>
             </File>
             <File>
               <FileName>gpio.c</FileName>
@@ -436,11 +451,6 @@
               <FilePath>../Core/Src/ipcc.c</FilePath>
             </File>
             <File>
-              <FileName>iwdg.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Core/Src/iwdg.c</FilePath>
-            </File>
-            <File>
               <FileName>lptim.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/lptim.c</FilePath>
@@ -454,11 +464,6 @@
               <FileName>rf.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/rf.c</FilePath>
-            </File>
-            <File>
-              <FileName>rng.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Core/Src/rng.c</FilePath>
             </File>
             <File>
               <FileName>rtc.c</FileName>
@@ -509,26 +514,6 @@
               <FileName>stm32wbxx_hal_msp.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/stm32wbxx_hal_msp.c</FilePath>
-            </File>
-            <File>
-              <FileName>dantag_lr1110.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Core\Src\dantag_lr1110.c</FilePath>
-            </File>
-            <File>
-              <FileName>tracker_utility.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Core\Src\tracker_utility.c</FilePath>
-            </File>
-            <File>
-              <FileName>apps_utilities.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Core\Src\apps_utilities.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Core\Src\main.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -734,118 +719,6 @@
           <GroupName>Drivers/STM32WBxx_HAL_Driver</GroupName>
           <Files>
             <File>
-              <FileName>stm32wbxx_ll_utils.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_utils.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>1</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <uC99>2</uC99>
-                    <uGnu>2</uGnu>
-                    <useXO>2</useXO>
-                    <v6Lang>0</v6Lang>
-                    <v6LangP>0</v6LangP>
-                    <vShortEn>2</vShortEn>
-                    <vShortWch>2</vShortWch>
-                    <v6Lto>2</v6Lto>
-                    <v6WtE>2</v6WtE>
-                    <v6Rtti>2</v6Rtti>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>stm32wbxx_ll_exti.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_exti.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>1</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <uC99>2</uC99>
-                    <uGnu>2</uGnu>
-                    <useXO>2</useXO>
-                    <v6Lang>0</v6Lang>
-                    <v6LangP>0</v6LangP>
-                    <vShortEn>2</vShortEn>
-                    <vShortWch>2</vShortWch>
-                    <v6Lto>2</v6Lto>
-                    <v6WtE>2</v6WtE>
-                    <v6Rtti>2</v6Rtti>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
               <FileName>stm32wbxx_hal_adc.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_adc.c</FilePath>
@@ -966,11 +839,6 @@
               <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_ipcc.c</FilePath>
             </File>
             <File>
-              <FileName>stm32wbxx_hal_iwdg.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_iwdg.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32wbxx_hal_lptim.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_lptim.c</FilePath>
@@ -979,11 +847,6 @@
               <FileName>stm32wbxx_hal_pka.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pka.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32wbxx_hal_rng.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rng.c</FilePath>
             </File>
             <File>
               <FileName>stm32wbxx_hal_rtc.c</FileName>
@@ -996,172 +859,14 @@
               <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc_ex.c</FilePath>
             </File>
             <File>
-              <FileName>stm32wbxx_ll_spi.c</FileName>
+              <FileName>stm32wbxx_hal_spi.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_spi.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>1</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <uC99>2</uC99>
-                    <uGnu>2</uGnu>
-                    <useXO>2</useXO>
-                    <v6Lang>0</v6Lang>
-                    <v6LangP>0</v6LangP>
-                    <vShortEn>2</vShortEn>
-                    <vShortWch>2</vShortWch>
-                    <v6Lto>2</v6Lto>
-                    <v6WtE>2</v6WtE>
-                    <v6Rtti>2</v6Rtti>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
+              <FilePath>..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_spi.c</FilePath>
             </File>
             <File>
-              <FileName>stm32wbxx_ll_gpio.c</FileName>
+              <FileName>stm32wbxx_hal_spi_ex.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_gpio.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>1</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <uC99>2</uC99>
-                    <uGnu>2</uGnu>
-                    <useXO>2</useXO>
-                    <v6Lang>0</v6Lang>
-                    <v6LangP>0</v6LangP>
-                    <vShortEn>2</vShortEn>
-                    <vShortWch>2</vShortWch>
-                    <v6Lto>2</v6Lto>
-                    <v6WtE>2</v6WtE>
-                    <v6Rtti>2</v6Rtti>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>stm32wbxx_ll_dma.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_dma.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>1</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <uC99>2</uC99>
-                    <uGnu>2</uGnu>
-                    <useXO>2</useXO>
-                    <v6Lang>0</v6Lang>
-                    <v6LangP>0</v6LangP>
-                    <vShortEn>2</vShortEn>
-                    <vShortWch>2</vShortWch>
-                    <v6Lto>2</v6Lto>
-                    <v6WtE>2</v6WtE>
-                    <v6Rtti>2</v6Rtti>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
+              <FilePath>..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_spi_ex.c</FilePath>
             </File>
             <File>
               <FileName>stm32wbxx_hal_tim.c</FileName>
@@ -1182,16 +887,6 @@
               <FileName>stm32wbxx_hal_uart_ex.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart_ex.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32wbxx_hal_spi.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_spi.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32wbxx_hal_spi_ex.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_spi_ex.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1981,11 +1676,6 @@
               <FileType>2</FileType>
               <FilePath>startup_stm32wb10xx_cm4.s</FilePath>
             </File>
-            <File>
-              <FileName>armlib_lock_glue.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>armlib_lock_glue.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -1995,6 +1685,26 @@
               <FileName>flash_driver.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Core\Src\flash_driver.c</FilePath>
+            </File>
+            <File>
+              <FileName>dantag_lr1110.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\dantag_lr1110.c</FilePath>
+            </File>
+            <File>
+              <FileName>tracker_utility.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\tracker_utility.c</FilePath>
+            </File>
+            <File>
+              <FileName>apps_utilities.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\apps_utilities.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\main.c</FilePath>
             </File>
             <File>
               <FileName>gpio.c</FileName>
@@ -2027,11 +1737,6 @@
               <FilePath>../Core/Src/ipcc.c</FilePath>
             </File>
             <File>
-              <FileName>iwdg.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Core/Src/iwdg.c</FilePath>
-            </File>
-            <File>
               <FileName>lptim.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/lptim.c</FilePath>
@@ -2045,11 +1750,6 @@
               <FileName>rf.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/rf.c</FilePath>
-            </File>
-            <File>
-              <FileName>rng.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Core/Src/rng.c</FilePath>
             </File>
             <File>
               <FileName>rtc.c</FileName>
@@ -2100,26 +1800,6 @@
               <FileName>stm32wbxx_hal_msp.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/stm32wbxx_hal_msp.c</FilePath>
-            </File>
-            <File>
-              <FileName>dantag_lr1110.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Core\Src\dantag_lr1110.c</FilePath>
-            </File>
-            <File>
-              <FileName>tracker_utility.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Core\Src\tracker_utility.c</FilePath>
-            </File>
-            <File>
-              <FileName>apps_utilities.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Core\Src\apps_utilities.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Core\Src\main.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -2325,118 +2005,6 @@
           <GroupName>Drivers/STM32WBxx_HAL_Driver</GroupName>
           <Files>
             <File>
-              <FileName>stm32wbxx_ll_utils.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_utils.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>1</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <uC99>2</uC99>
-                    <uGnu>2</uGnu>
-                    <useXO>2</useXO>
-                    <v6Lang>0</v6Lang>
-                    <v6LangP>0</v6LangP>
-                    <vShortEn>2</vShortEn>
-                    <vShortWch>2</vShortWch>
-                    <v6Lto>2</v6Lto>
-                    <v6WtE>2</v6WtE>
-                    <v6Rtti>2</v6Rtti>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>stm32wbxx_ll_exti.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_exti.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>1</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <uC99>2</uC99>
-                    <uGnu>2</uGnu>
-                    <useXO>2</useXO>
-                    <v6Lang>0</v6Lang>
-                    <v6LangP>0</v6LangP>
-                    <vShortEn>2</vShortEn>
-                    <vShortWch>2</vShortWch>
-                    <v6Lto>2</v6Lto>
-                    <v6WtE>2</v6WtE>
-                    <v6Rtti>2</v6Rtti>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
               <FileName>stm32wbxx_hal_adc.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_adc.c</FilePath>
@@ -2557,11 +2125,6 @@
               <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_ipcc.c</FilePath>
             </File>
             <File>
-              <FileName>stm32wbxx_hal_iwdg.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_iwdg.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32wbxx_hal_lptim.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_lptim.c</FilePath>
@@ -2570,11 +2133,6 @@
               <FileName>stm32wbxx_hal_pka.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pka.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32wbxx_hal_rng.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rng.c</FilePath>
             </File>
             <File>
               <FileName>stm32wbxx_hal_rtc.c</FileName>
@@ -2587,172 +2145,14 @@
               <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc_ex.c</FilePath>
             </File>
             <File>
-              <FileName>stm32wbxx_ll_spi.c</FileName>
+              <FileName>stm32wbxx_hal_spi.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_spi.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>1</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <uC99>2</uC99>
-                    <uGnu>2</uGnu>
-                    <useXO>2</useXO>
-                    <v6Lang>0</v6Lang>
-                    <v6LangP>0</v6LangP>
-                    <vShortEn>2</vShortEn>
-                    <vShortWch>2</vShortWch>
-                    <v6Lto>2</v6Lto>
-                    <v6WtE>2</v6WtE>
-                    <v6Rtti>2</v6Rtti>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
+              <FilePath>..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_spi.c</FilePath>
             </File>
             <File>
-              <FileName>stm32wbxx_ll_gpio.c</FileName>
+              <FileName>stm32wbxx_hal_spi_ex.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_gpio.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>1</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <uC99>2</uC99>
-                    <uGnu>2</uGnu>
-                    <useXO>2</useXO>
-                    <v6Lang>0</v6Lang>
-                    <v6LangP>0</v6LangP>
-                    <vShortEn>2</vShortEn>
-                    <vShortWch>2</vShortWch>
-                    <v6Lto>2</v6Lto>
-                    <v6WtE>2</v6WtE>
-                    <v6Rtti>2</v6Rtti>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>stm32wbxx_ll_dma.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_dma.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>1</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <uC99>2</uC99>
-                    <uGnu>2</uGnu>
-                    <useXO>2</useXO>
-                    <v6Lang>0</v6Lang>
-                    <v6LangP>0</v6LangP>
-                    <vShortEn>2</vShortEn>
-                    <vShortWch>2</vShortWch>
-                    <v6Lto>2</v6Lto>
-                    <v6WtE>2</v6WtE>
-                    <v6Rtti>2</v6Rtti>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
+              <FilePath>..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_spi_ex.c</FilePath>
             </File>
             <File>
               <FileName>stm32wbxx_hal_tim.c</FileName>
@@ -2773,16 +2173,6 @@
               <FileName>stm32wbxx_hal_uart_ex.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart_ex.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32wbxx_hal_spi.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_spi.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32wbxx_hal_spi_ex.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_spi_ex.c</FilePath>
             </File>
           </Files>
         </Group>

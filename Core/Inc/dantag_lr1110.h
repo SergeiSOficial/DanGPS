@@ -18,7 +18,6 @@ extern "C" {
 
 #include "lorawan_commissioning.h"
 #include "lr1110_tracker_board.h"
-#include "wifi_scan.h"
 #include "gnss_scan.h"
 #include "tracker_utility.h"
 //#include "ble_thread.h"

@@ -1481,9 +1481,6 @@
                     <name>$PROJ_DIR$\..\Core\Src\ipcc.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Core\Src\iwdg.c</name>
-                </file>
-                <file>
                     <name>$PROJ_DIR$\..\Core\Src\lptim.c</name>
                 </file>
                 <file>
@@ -1494,9 +1491,6 @@
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\Core\Src\rf.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\Core\Src\rng.c</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\Core\Src\rtc.c</name>
@@ -1716,9 +1710,6 @@
                 <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_ipcc.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_iwdg.c</name>
-            </file>
-            <file>
                 <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_lptim.c</name>
             </file>
             <file>
@@ -1735,9 +1726,6 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rcc_ex.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rng.c</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rtc.c</name>
@@ -1767,22 +1755,7 @@
                 <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_adc.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_dma.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_exti.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_gpio.c</name>
-            </file>
-            <file>
                 <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_rcc.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_spi.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Drivers\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_utils.c</name>
             </file>
         </group>
     </group>

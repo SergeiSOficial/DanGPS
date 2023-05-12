@@ -512,7 +512,8 @@ static lr1110_modem_hal_status_t lr1110_modem_hal_wait_on_unbusy( const void* co
     uint32_t current = 0;
     while( hal_gpio_get_value( ( ( lr1110_t* ) context )->busy.pin ) == 1 )
     {
-        current = hal_rtc_get_time_ms( );
+        current =
+          hal_rtc_get_time_ms( );
         if( ( int32_t )( current - start ) > ( int32_t ) timeout_ms )
         {
             return LR1110_MODEM_HAL_STATUS_ERROR;

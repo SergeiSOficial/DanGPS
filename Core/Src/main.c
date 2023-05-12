@@ -24,11 +24,9 @@
 #include "crc.h"
 #include "i2c.h"
 #include "ipcc.h"
-#include "iwdg.h"
 #include "lptim.h"
 #include "pka.h"
 #include "rf.h"
-#include "rng.h"
 #include "rtc.h"
 #include "spi.h"
 #include "usart.h"
@@ -120,8 +118,6 @@ int main(void)
   MX_LPTIM1_Init();
   MX_USART1_UART_Init();
   MX_AES2_Init();
-  MX_IWDG_Init();
-  MX_RNG_Init();
   MX_PKA_Init();
   MX_RF_Init();
   /* USER CODE BEGIN 2 */
@@ -130,7 +126,7 @@ int main(void)
   /* USER CODE END 2 */
 
   /* Init code for STM32_WPAN */
-  MX_APPE_Init();
+  //MX_APPE_Init();
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -138,7 +134,7 @@ int main(void)
   {
     //lr1110_MainLoop();
     /* USER CODE END WHILE */
-    MX_APPE_Process();
+    //MX_APPE_Process();
 
     /* USER CODE BEGIN 3 */
   }
@@ -162,24 +158,13 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_LSI2
-                              |RCC_OSCILLATORTYPE_HSE|RCC_OSCILLATORTYPE_LSE
-                              |RCC_OSCILLATORTYPE_MSI;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_HSE
+                              |RCC_OSCILLATORTYPE_LSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.LSEState = RCC_LSE_ON;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
-  RCC_OscInitStruct.MSIState = RCC_MSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
-  RCC_OscInitStruct.MSICalibrationValue = RCC_MSICALIBRATION_DEFAULT;
-  RCC_OscInitStruct.MSIClockRange = RCC_MSIRANGE_11;
-  RCC_OscInitStruct.LSIState = RCC_LSI_ON;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_MSI;
-  RCC_OscInitStruct.PLL.PLLM = RCC_PLLM_DIV3;
-  RCC_OscInitStruct.PLL.PLLN = 8;
-  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
-  RCC_OscInitStruct.PLL.PLLR = RCC_PLLR_DIV2;
-  RCC_OscInitStruct.PLL.PLLQ = RCC_PLLQ_DIV2;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -203,10 +188,6 @@ void SystemClock_Config(void)
   }
   HAL_RCC_MCOConfig(RCC_MCO1, RCC_MCO1SOURCE_HSE, RCC_MCODIV_1);
   HAL_RCCEx_EnableLSCO(RCC_LSCOSOURCE_LSE);
-
-  /** Enable MSI Auto calibration
-  */
-  HAL_RCCEx_EnableMSIPLLMode();
 }
 
 /**
@@ -240,7 +221,7 @@ void Error_Handler(void)
   /* USER CODE BEGIN Error_Handler_Debug */
   /* User can add his own implementation to report the HAL error return state */
   __disable_irq();
-  asm("BKPT #0");
+  __ASM("BKPT #0");
   while (1)
   {
   }
@@ -258,7 +239,9 @@ void Error_Handler(void)
 void assert_failed(uint8_t *file, uint32_t line)
 {
   /* USER CODE BEGIN 6 */
-  asm("BKPT #0");
+  __ASM("BKPT #0");
+	while(1)
+	{}
   /* User can add his own implementation to report the file name and line number,
      ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
   /* USER CODE END 6 */

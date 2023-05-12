@@ -61,7 +61,7 @@
  * --- PRIVATE VARIABLES -------------------------------------------------------
  */
 
-static RNG_HandleTypeDef rng_handle;
+// static RNG_HandleTypeDef rng_handle;
 
 /*
  * -----------------------------------------------------------------------------
@@ -77,49 +77,49 @@ uint32_t hal_rng_get_random( void )
 {
     uint32_t rand_nb = 0;
 
-    /* Init and enable RNG */
-    rng_handle.Instance = RNG;
+    // /* Init and enable RNG */
+    // rng_handle.Instance = RNG;
 
-    if( HAL_RNG_Init( &rng_handle ) != HAL_OK )
-    {
-        hal_mcu_panic( );
-    }
+    // if( HAL_RNG_Init( &rng_handle ) != HAL_OK )
+    // {
+    //     hal_mcu_panic( );
+    // }
 
-    /* Wait for data ready interrupt: 42+4 RNG clock cycles */
-    HAL_RNG_GenerateRandomNumber( &rng_handle, &rand_nb  );
+    // /* Wait for data ready interrupt: 42+4 RNG clock cycles */
+    // HAL_RNG_GenerateRandomNumber( &rng_handle, &rand_nb  );
 
-    /* Disable RNG */
-    HAL_RNG_DeInit( &rng_handle );
+    // /* Disable RNG */
+    // HAL_RNG_DeInit( &rng_handle );
 
     return rand_nb;
 }
 
 uint32_t hal_rng_get_random_in_range( const uint32_t val_1, const uint32_t val_2 )
 {
-    if( val_1 <= val_2 )
-    {
-        return ( uint32_t )( ( hal_rng_get_random( ) % ( val_2 - val_1 + 1 ) ) + val_1 );
-    }
-    else
-    {
-        return ( uint32_t )( ( hal_rng_get_random( ) % ( val_1 - val_2 + 1 ) ) + val_2 );
-    }
+    // if( val_1 <= val_2 )
+    // {
+    //     return ( uint32_t )( ( hal_rng_get_random( ) % ( val_2 - val_1 + 1 ) ) + val_1 );
+    // }
+    // else
+    // {
+    //     return ( uint32_t )( ( hal_rng_get_random( ) % ( val_1 - val_2 + 1 ) ) + val_2 );
+    // }
 }
 
 int32_t hal_rng_get_signed_random_in_range( const int32_t val_1, const int32_t val_2 )
 {
-    uint32_t tmp_range = 0;  // ( val_1 <= val_2 ) ? ( val_2 - val_1 ) : ( val_1 - val_2 );
+    // uint32_t tmp_range = 0;  // ( val_1 <= val_2 ) ? ( val_2 - val_1 ) : ( val_1 - val_2 );
 
-    if( val_1 <= val_2 )
-    {
-        tmp_range = ( val_2 - val_1 );
-        return ( int32_t )( ( val_1 + hal_rng_get_random_in_range( 0, tmp_range ) ) );
-    }
-    else
-    {
-        tmp_range = ( val_1 - val_2 );
-        return ( int32_t )( ( val_2 + hal_rng_get_random_in_range( 0, tmp_range ) ) );
-    }
+    // if( val_1 <= val_2 )
+    // {
+    //     tmp_range = ( val_2 - val_1 );
+    //     return ( int32_t )( ( val_1 + hal_rng_get_random_in_range( 0, tmp_range ) ) );
+    // }
+    // else
+    // {
+    //     tmp_range = ( val_1 - val_2 );
+    //     return ( int32_t )( ( val_2 + hal_rng_get_random_in_range( 0, tmp_range ) ) );
+    // }
 }
 
 // void HAL_RNG_MspInit( RNG_HandleTypeDef* hrng )

@@ -37,7 +37,7 @@
 #include <time.h>
 #include "lr1110_tracker_board.h"
 #include "tracker_utility.h"
-#include "main_tracker.h"
+#include "main.h"
 #include "lorawan_commissioning.h"
 
 /*
